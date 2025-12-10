@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fermLIVING.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <title>ferm LIVING</title>
+</head>
+<body>
+    <div id="cart">
+        <div data-pos="ab" id="dltCart_Popup">
+            <h3 class="mm26">Delete product</h3>
+            <p class="bk12">Are you sure you want to delete it? <br> This action cannot be undone.</p>
+            <input type="button" value="Cancel" class="mm15 closeBtn">
+            <input type="button" value="Delete" class="mm15">
+        </div>
+        <form action="ja_checkout_mycart.html"> 
+            <div data-dp="flex">
+                <input type="button" value="close" class="closeBtn">
+                <h2 class="bk30">Shopping Cart (<span class="count">2</span>)</h2>  
+                <input class="mm13" type="submit" value="Checkout">
+            </div>
+            <div data-fl="fL">
+                <span data-dp="block" class="mm15">Items<mark data-pos="re" data-ba="bf" class="bk10">items In cart are not reserved</mark></span>
+                <span data-dp="block" class="mm15">Quantity</span>
+                <ul>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_01.webp" alt="Rotben - Sculptural Piece black product image">
+                            <b class="mm15">Rotben - Sculptural Piece</b>
+                            <span class="bk15">Black</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">545</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_02.webp" alt="Benzon White and Brown product image">
+                            <b class="mm15">Benzon</b>
+                            <span class="bk15">White/Brown</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">39</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                </ul>
+                <p data-dp="none" class="mm15 emptyCart">Your Shopping Cart is Empty</p>
+            </div>
+            <div>
+                <div data-dp="flex">
+                    <h3 class="mm15">Total</h3>
+                    <strong class="mm26">EUR <span class="totalPrice">584</span>,00</strong>
+                    <input class="mm15" type="submit" value="Checkout">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="search">
+        <input data-pos="ab" type="button" value="close" class="closeBtn">
+        <div data-pos="re">
+            <form>
+                <input class="bk26" type="search" placeholder="Search ferm LIVING" title="search for products">
+                <input data-pos="ab" type="submit" value="enter">
+            </form>
+        </div>
+    </div>
+    <header>
+        <div data-dp="flex">
+            <div>
+                <input class="bd10_200" type="button" value="COMPANY" data-mui="muiSubMenu">
+                <ul data-flDT="fL" class="mm12" id="muiSubMenu">
+                    <li><a href="k_stories.html">Inspiration</a></li>
+                    <li><a href="k_boutique.html">Our World</a></li>
+                    <li><a href="fb_giftCards.html">Gift Cards</a></li>
+                    <li><a href="fe_storeLocator.html">Store Locator</a></li>
+                </ul>
+            </div>
+            <div data-fl="fL" class="mm12">
+                <a data-dp="block" class="login" href="hb_accountOverview.html">Welcome jennie!</a>
+                <button data-pos="re" data-ba="bf" type="button" data-dp="block" data-panel="cart">cart</button>
+                <span class="count tc">2</span>
+            </div>
+        </div>
+        <div data-pos="re">
+            <h1>
+                <a data-dp="block" href="index_signIn.html">
+                    <img src="images/logo_CS01.svg" alt="welcome to ferm LIVING">
+                </a>
+            </h1>
+            <input type="button" value="muiMenu" data-panel="muiMenu">
+            <nav id="muiMenu">
+                <button type="button" class="closeBtn">close</button>
+                <h1>
+                    <a data-dp="block" href="index_signIn.html">
+                        <img src="images/logo_CS13.svg" alt="welcome to ferm LIVING">
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Living</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_01.png" alt="Outdoor seating image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Outdoor seating</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="aa_livingExplore.html">Living Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">OUTDOOR LIVING</h2>                   
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ab_list01_outdoorLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ab_list02_outdoorAcc.html">Outdoor accessories</a></li>
+                                            <li><a data-dp="block" href="ab_list03_outdoorSeating.html">Outdoor seating</a></li>
+                                            <li><a data-dp="block" href="ab_list04_outdoorTables.html">Outdoor tables</a></li>
+                                            <li><a data-dp="block" href="ab_list05_plantPots.html">Plant pots</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">GREEN LIVING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ac_list01_greenLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ac_list02_plantBox.html">Plant box</a></li>
+                                            <li><a data-dp="block" href="ac_list03_potsVases_1p.html">Pots and vases</a></li>
+                                            <li><a data-dp="block" href="ac_list04_plantstandsHolders.html">Plant stands and holders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RESPONSIBLE PRODUCTS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ad_list01_responsibleAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ad_list02_responsibleLiving_1p.html">Responsible LIVING products</a></li>
+                                            <li><a data-dp="block" href="ad_list03_responsibleKids_1p.html">Responsible KIDS products</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Furniture &amp; Kitchen</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_02.png" alt="Insert Side Table image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Insert Side Table</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ba_furnitureKitchenExplore.html">Furniture &amp; Kitchen Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">FURNITURE</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bb_list01_furnitureAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bb_list02_chairsBenches.html">Chairs and benches</a></li>
+                                            <li><a data-dp="block" href="bb_list03_tables.html">Tables</a></li>
+                                            <li><a data-dp="block" href="bb_list04_storageShelves.html">Storage and shelves</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">KITCHEN</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bc_list01_kitchenAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bc_list02_glassesCups.html">Glasses and cups</a></li>
+                                            <li><a data-dp="block" href="bc_list03_platesBowls.html">Plates and bowls</a></li>
+                                            <li><a data-dp="block" href="bc_list04_kitchenTextiles.html">Kitchen textiles</a></li>
+                                            <li><a data-dp="block" href="bc_list05_kitchentoolsUtensils.html">Kitchen tools and utensils</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">SOFAS AND DAYBEDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bd_list01_sofasAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="bd_list02_dase.html">Dase</a></li>
+                                            <li><a data-dp="block" href="bd_list03_rico.html">Rico</a></li>
+                                            <li><a data-dp="block" href="bd_list04_catena.html">Catena</a></li>
+                                            <li><a data-dp="block" href="bd_list05_turn.html">Turn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Decor &amp; Lighting</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_03.png" alt="Klint Tape Dispenser image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Klint Tape Dispenser</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ca_decorLightingExplore.html">Decor &amp; Lighting Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">ACCESSORIES &amp; DECOR</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cb_list01_accDecorAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cb_list02_accessories.html">Accessories</a></li>
+                                            <li><a data-dp="block" href="cb_list03_decorations.html">Decorations</a></li>
+                                            <li><a data-dp="block" href="cb_list04_candlesCandleholder.html">Candles and candleholders</a></li>
+                                            <li><a data-dp="block" href="cb_list05_hooksHolders.html">Hooks and holders</a></li>
+                                            <li><a data-dp="block" href="cb_list06_mirrors.html">Mirrors</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">LIGHTING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cc_list01_lightingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cc_list02_floorLamps.html">Floor lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list03_tableLamps.html">Table lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list04_wallLamps.html">Wall lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list05_pendantLamps.html">Pendant lamps</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">WALLPAPER</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cd_list01_wallpaperAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="cd_list02_katieScott.html">ferm LIVING x Katie Scott</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Textiles</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_04.png" alt="Daze Bedspread image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Daze Bedspread</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="da_textilesExplore.html">Textiles Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">TEXTILES</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="db_list01_textileAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="db_list02_cushions.html">Cushions</a></li>
+                                            <li><a data-dp="block" href="db_list03_bedding.html">Bedding</a></li>
+                                            <li><a data-dp="block" href="db_list04_throwsBlankets.html">Throws and blankets</a></li>
+                                            <li><a data-dp="block" href="db_list05_towels.html">Towels</a></li>
+                                            <li><a data-dp="block" href="db_list06_showerCurtains.html">Shower curtains</a></li>
+                                            <li><a data-dp="block" href="db_list07_bagBaskets.html">Bags and baskets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RUGS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="dc_list01_rugsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="dc_list02_rectangularRugs.html">Rectangular rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list03_roundRugs.html">Round rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list04_matsRunners.html">Mats and runners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">KIDS</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_05.png" alt="Benzon, Mumbo, Donna, Elly image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Benzon, Mumbo, Donna, Elly</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ea_kidsExplore.html">KIDS Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">KIDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="eb_list01_kidsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="eb_list02_kidsObjects_1p.html">Kids objects</a></li>
+                                            <li><a data-dp="block" href="eb_list03_kidsFurniture.html">Kids furniture</a></li>
+                                            <li><a data-dp="block" href="eb_list04_kidsTextiles.html">Kids textiles</a></li>
+                                            <li><a data-dp="block" href="eb_list05_kidsRugs.html">Kids rugs</a></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-dp="block" data-pos="re" class="mm15" href="fa_aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <input data-pos="ab" type="button" value="search" data-panel="search">
+        </div>
+        <p class="mm15 tc">Freshen your table s palette for Sunday brunch. <a class="bd15" href="ba_furnitureKitchenExplore.html">Shop Furniture &amp; Kitchen</a></p>
+    </header>
+    <div class="ourResponsibleArea tabs">
+        <ol data-flDT="fL" class="pageNav mm10">
+            <li><a href="index.html">HOME</a></li>
+            <li>RESPONSIBLE PRODUCTS</li>
+        </ol>
+        <article class="bk15">
+            <h2 class="lt60">Our Perspective on Responsibility</h2>
+            <p>At ferm LIVING, we embrace life's contrasts, seeing them as opportunities for growth. We want to empower individuals to confidently create spaces for a more sustainable existence, with products that reflect our design philosophy. We recognise our role in guiding this journey, inspiring change and enabling responsible choices.</p>
+            <p>Our commitment to sustainability extends to both environmental and social contexts, with an unwavering goal to communicate our advancements and enhance transparency. Our responsibility  ambition: 'We work for a better tomorrow, so you can feel good about your choices today' is To this end, we have set out an ambitious responsibility strategy centred   around nine 2030 Commitments spanning the themes 'Our Planet,' 'Our Society' and 'Our Community.'</p>
+            <p>Our passionate team, including our Changemaker ambassadors, is dedicated to driving progress, undertaking initiatives, projects and actions to ensure continuous improvement at every level—from material selection and design processes to production methods, logistics and culture.</p>
+            <p>Our commitments extend to the durability and longevity of our designs, both in terms of functionality and aesthetics. Following stringent Responsible criteria and established frameworks, we adopt a cradle-to-grave approach, meticulously considering the entire lifecycle of our products. And we continually work to integrate more responsible materials and methods into our future designs.</p>
+            <p>Dedicated to responsible production, we work with certifications and testing to encourage better ways, better products and to safeguard fair working conditions in our supply chain. Our long-lasting partnerships with suppliers and craftspeople are built on mutual respect, transparency and consideration, where everyone is empowered to explore opportunities for responsible business and better living.</p>
+            <p>Working towards reducing our impact on the environment, we use a climate screening tool to measure the CO2 footprint of our products and to gain valuable knowledge and data for our future targets. We are proud to participate in the UN Global Compact, the world's largest corporate sustainability initiative, and report our progress in our annual Responsibility Report, holding ourselves accountable for our efforts.</p>
+            <p>Placing sustainability at the forefront of the Danish design agenda is vital in shaping the future of design, bringing sustainability into the spotlight. We recognise that our journey towards increased responsibility and sustainability has no fixed endpoint. As the world evolves, so do our goals, shaped by the invaluable lessons learned along the path toward a better tomorrow.</p>
+        </article>
+        <div class="selectWrap">
+            <b data-dp="block" class="bd10_200">RESPONSIBILITY DETAILS:</b>
+            <ol class="bk15 select">
+                <li data-pos="re" data-tab="responsible01" class="active"><a data-dp="block" href="#responsible01"><small data-pos="ab" class="bk13">1/12</small>Design Philosophy</a></li>
+                <li data-pos="re" data-tab="responsible02"><a data-dp="block" href="#responsible02"><small data-pos="ab" class="bk13">2/12</small>Materials And Concious Consumption</a></li>
+                <li data-pos="re" data-tab="responsible03"><a data-dp="block" href="#responsible03"><small data-pos="ab" class="bk13">3/12</small>Production</a></li>
+                <li data-pos="re" data-tab="responsible04"><a data-dp="block" href="#responsible04"><small data-pos="ab" class="bk13">4/12</small>Quality</a></li>
+                <li data-pos="re" data-tab="responsible05"><a data-dp="block" href="#responsible05"><small data-pos="ab" class="bk13">5/12</small>Responsibility Strategy</a></li>
+                <li data-pos="re" data-tab="responsible06"><a data-dp="block" href="#responsible06"><small data-pos="ab" class="bk13">6/12</small>Packaging</a></li>
+                <li data-pos="re" data-tab="responsible07"><a data-dp="block" href="#responsible07"><small data-pos="ab" class="bk13">7/12</small>Freight &amp; Transport</a></li>
+                <li data-pos="re" data-tab="responsible08"><a data-dp="block" href="#responsible08"><small data-pos="ab" class="bk13">8/12</small>Environment</a></li>
+                <li data-pos="re" data-tab="responsible09"><a data-dp="block" href="#responsible09"><small data-pos="ab" class="bk13">9/12</small>People</a></li>
+                <li data-pos="re" data-tab="responsible10"><a data-dp="block" href="#responsible10"><small data-pos="ab" class="bk13">10/12</small>Certifications &amp; Testing</a></li>
+                <li data-pos="re" data-tab="responsible11"><a data-dp="block" href="#responsible11"><small data-pos="ab" class="bk13">11/12</small>Un Sustainable Development Goals</a></li>
+                <li data-pos="re" data-tab="responsible12"><a data-dp="block" href="#responsible12"><small data-pos="ab" class="bk13">12/12</small>Actions Realised</a></li>
+            </ol>
+        </div>  
+        <div>
+            <h3 class="lt48">Our view on responsibility</h3>
+            <ol>
+                <li id="responsible01" class="active">
+                    <img data-dp="block" src="images/responsibility_bg01.png" alt="A designer is conceptualizing a chair using miniature models and sketches.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">1/12</small>
+                            Design Philosophy
+                        </h4>
+                        <p>We want to inspire people to live a more mindful and sustainable lifestyle. To us, this means buying less, buying better and keeping things in use for longer. We therefore design for longevity - both in terms of function and aesthetics. We value authentic design and clear functionality, working to create high-quality products that are made responsibly and with a lasting aesthetic appeal.</p>
+                        <p>We take a holistic approach to sustainability and have implemented responsible thinking throughout all areas of our business. In the design phase, where the first important choices for a product are made, we employ a range of Responsibility Criteria for new products that include longevity, material, designing for disassembly, certifications, climate screening, production and social responsibility. We take a ‘cradle to grave’ approach in order to consider the entire life cycle of our products and promote circularity. Working within this set framework of practices allows us to balance compliance, climate and social parameters.</p>
+                        <p>We believe that designing for longevity is the foundation to minimizing our resource consumption and CO₂ emissions. To ensure we move in the right direction, our Sustainability Manager works closely with the design and product teams, tracking our progress and helping us identify opportunities to implement more sustainable solutions in both social and environmental contexts.</p>
+                        <p>We know that we are not perfect, and so it’s with both determination and humility that we pursue better and easier ways for our customers to make responsible choices.</p>
+                    </div>
+                </li>
+                <li id="responsible02">
+                    <img data-dp="block" src="images/responsibility_bg02.png" alt="A variety of furniture knobs in different materials and colors are displayed on a marble surface.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">2/12</small>
+                            Materials And Conscious Consumption
+                        </h4>
+                        <p>Today, approximately one third of our products have a RESPONSIBLE tag. This means that a product is either FSC™, GOTS or OSC 100/ Organic blended certified or produced in a recycled material. In the future, our definition of RESPONSIBLE will expand due to committed work to our Responsible Criteria being implemented even more in the early design phase.</p>
+                        <p>We challenge ourselves to make more sustainable choices already in the design phase. We work to ensure that as many of our products as possible are made from responsible materials, and several of our designs are made from a single material, making it easier to recycle if and when our customers wish to do so. In 2020, 21% of the products in our collection had a RESPONSIBLE tag. In 2021, the number of RESPONSIBLE products increased to 28%. Our goal for 2022 was to increase that percentage to 32%. Regrettably, we were unable to meet this target due to several internal and external challenges and the number of RESPONSIBLE products in the collection at the end of 2022 was 28.7%.</p>
+                        <p>We are dedicated to and continuously working on implementing new, responsible materials and ways of working, and remain committed to our goal of increasing the proportion of RESPONSIBLE products in our collection to 32% in 2023. Although our ambition is for this percentage to grow, we know that it may vary from year to year, as our design collection is dependent on various factors, and there may be years in which we will have to remove a RESPONSIBLE product from the collection, for example, if that product no longer is in demand.</p>
+                        <p>Today we use RESPONSIBLE as a tag on our products to signify that a product is either FSC™, GOTS or OSC 100/ Organic blended certified or produced in a recycled material, such as recycled glass and ceramics, recycled paper pulp or PET-yarn made from post-consumer plastic bottles. In the future, our definition of RESPONSIBLE will expand due to committed work to our Responsible Criteria being implemented even more in the early design phase.</p>
+                    </div>
+                </li>
+                <li id="responsible03">
+                    <img data-dp="block" src="images/responsibility_bg03.png" alt="Naturally textured ceramic containers are arranged on top of stacked books.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">3/12</small>
+                            Production
+                        </h4>
+                        <p>We work in close partnership with talented artisans and craftspeople in the industry. We produce our products in different regions of the world depending on the raw materials and the know-how required. Every ferm LIVING product is made by skilled and dedicated craftsmen and women with whom we work closely in partnerships built on mutual respect.</p>
+                        <p>Upholstered and wooden furniture, metal products, wallpaper and a portion of our textiles are produced in Europe, in countries that include the Baltics, Italy, Poland, Portugal, Sweden and Turkey, while we collaborate with suppliers in India and China on the production of textiles, glassware, ceramics and lighting. We are committed to ethical and responsible business practices, as reflected in our Code of Conduct which is based on the UN Global Compact’s Ten Guiding Principles.</p>
+                        <p>All suppliers must comply with this CoC to promote responsible business practices. Taking social responsibility in our supply chain is a mission we take seriously. Being members of Amfori enables us to have all our key suppliers BSCI audited. In 2023, we aim to have 40% of all our suppliers rated as ‘Responsible Suppliers’. To us, this means a supplier that has acted on social responsibility by working with initiatives or certifications as BSCI, SA 8000 or FSC™ or GOTS, which all have high standards for social responsibility and making sure that human rights and fair working conditions are upheld.</p>
+                        <p>Throughout our supply chain, we nurture long-lasting relationships based on mutual value-creation, respectful behaviour and transparent communication. We want to open our world for everyone to be inspired by, and by sharing supplier and production stories, we invite people behind the scenes and into the journey of our products and our work with responsibility.</p>
+                        <b data-dp="block" class="mm16">Compliance</b>
+                        <p>ferm LIVING is committed to ensuring the safety of its products. To achieve this, the company will continue to research and stay up to date on all chemical and product safety laws and regulations in collaboration with accredited consultants in 2023. To proactively address safety concerns, the company has developed checklists that are used from the first developmental step. These checklists help to ensure that safety is taken into consideration at every stage of the product development process. Additionally, a system platform is used to maintain and assure accurate documentation both internally and externally, further ensuring that safety is a top priority.</p>
+                        <b data-dp="block" class="mm16">Our Global Supply Chain</b>
+                        <p>We work with artisans around the world, fusing our Scandinavian mindset with global skills and traditions.</p>
+                    </div>
+                </li>
+                <li id="responsible04">
+                    <img data-dp="block" src="images/responsibility_bg04.png" alt="Glass vases glowing in the light are placed on a table.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">4/12</small>
+                            Quality
+                        </h4>
+                        <p>At ferm LIVING, we want to help consumers make responsible choices. This means buying less, buying better and using items for longer. That’s why we design products that are made to last - in terms of both function and aesthetics.</p>
+                        <p>Designing for longevity is the foundation for minimising our resource consumption and CO₂ emissions. Our designs are made to last, and it is our ambition that they live for many years - timeless, enduring and passed on. For this to happen, our products need to be of high quality, and they must arrive at their destination in good condition.</p>
+                        <p>We employ strict Responsibility Criteria for new products and have a comprehensive quality control system in order to ensure that each product lives up to our quality standards. In addition to this, our suppliers consistently perform on-site quality control inspections, while we routinely visit manufacturing locations to conduct our own quality control checks. In 2021 our claim rate was 1.1% and we are working hard to reduce it further.</p>
+                    </div>
+                </li>
+                <li id="responsible05">
+                    <img data-dp="block" src="images/responsibility_bg05.png" alt="A stylish bookshelf decorated with various books and decorative objects.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">5/12</small>
+                            Responsibility Strategy
+                        </h4>
+                        <p>Our responsibility ambition is to work for a better tomorrow so you can feel good about your choices today. Working towards a better tomorrow, our 2030 commitments extend across all aspects of our business. From material choices and design processes to production methods, delivery logistics and shaping our organisational culture, our dedication to longevity of function and aesthetics guides our endeavours. On a daily basis, each department is actively engaged in initiatives, projects and actions aimed at advancing progress, accountability and integrity across all facets of our operations. As participants in the UN Global Compact, we report our progress on their platform annually. We advocate for better ways, fostering lasting relations based on mutual value creation, transparent communication and considerate behaviour. We believe in empowering everyone to explore opportunities for responsible business practices and better living. While we acknowledge that the ongoing journey will present challenges, we contribute to the sustainability dialogue, leverage insights for collective growth and progress towards a better tomorrow.</p>
+                        <b data-dp="block" data-popup="res1Popup" class="mm15">Read More Responsibility Strategy</b>
+                    </div>
+                </li>
+                <li id="responsible06">
+                    <img data-dp="block" src="images/responsibility_bg06.png" alt="Hands explore sculptural samples over a design sketchbook.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">6/12</small>
+                            Packaging
+                        </h4>
+                        <p>From gift boxes and protective material to hang-tags and tote bags, packaging is an area where we can make a big difference.</p>
+                        <p>To demonstrate our commitment to sustainability, ferm LIVING is also working towards making all gift boxesfrom FSC™ certified cardboard and printed with black soy-based ink. In 2022, we achieved a significant milestone as a large packaging supplier in India obtained FSC™ certification. We are dedicated to achieving this goal 100% within 2023. All tags are already FSC™ certified, while our tote bags are made from sustainably produced textiles and in a design that inspires repeated use.</p>
+                        <p>The majority of the packaging used to protect products during shipping is made from natural-based materialssuch as cardboard, paper pulp and craft paper. Smaller items and textiles are packaged in recyclable plastic bags. To ensure all our products arrive to their destination in good condition, some of our products are protected with Styrofoam during transport. In 2020, this applied to approximately 10% of our products. During 2021, we managed to reduce this to only 5%. We are pleased with our progress.</p>
+                        <p>Our target for 2022 was to reduce this number even further so that only 3% of our products required Styrofoam packaging. We knew this would be a challenge for us and would require us to seek more innovative solutions, as traditional alternatives have already been tested. We have, for example, successfully implemented the use of FSC™ certified honeycomb for our Pond Mirrors.</p>
+                        <p>We recognise that while we want to reduce our impact by finding alternatives to Styrofoam, we have a numberof products that are delicate and therefore require adequate protection during shipping - we are therefore mindful that producing and shipping a new product to cover a claim often results in higher CO₂ emissions than the use of Styrofoam. Unfortunately we did not meet our 2022 target of 3% and instead saw an increase to 4.5%.</p>
+                        <p>We are actively engaged in reducing our reliance on Styrofoam and exploring alternative solutions. We maintainclose communication with our major packaging suppliers to identify materials that can effectively act as a replacement. Our goal for 2023 is to decrease Styrofoam usage to 3.5%.</p>
+                    </div>
+                </li>
+                <li id="responsible07">
+                    <img data-dp="block" src="images/responsibility_bg07.png" alt="A cozy children’s room chair with a teddy bear and warm-toned decor.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">7/12</small>
+                            Freight &amp; Transport
+                        </h4>
+                        <p>All of our shipping is carried out by external forwarders. Our European freight is transported by road or rail, while products from Asia arrive by sea. As a rule, we avoid air transport but on certain occasions choose to make high-priority shipments by air. The general split for the different modes of freight transport is:</p>
+                        <b data-dp="block" class="mm16">52,7% transported by sea</b>
+                        <b data-dp="block" class="mm16">46% transported by road</b>
+                        <b data-dp="block" class="mm16">0,3% transported by air</b>
+                        <b data-dp="block" class="mm16">1% transported by rail</b>
+                        <p>In 2020, our air transport rate doubled to 4% as a result of COVID-19-related delays. However, in 2021, we successfully reduced it significantly to 0.2%. In 2022, our objective was to maintain air transport below 1%, and we are pleased to report that we have successfully kept it remarkably low at 0.3%. Simultaneously, our road and rail transportation has been gradually and steadily increasing due to heightened production in Europe compared to the Far East.</p>
+                        <p>We are continuously working to optimise our logistic procedures to make them as efficient and space-saving as possible. We measure container space and CO₂e emissions though software calculators to keep both the environmental impact and cost of our transport to an absolute minimum.</p>
+                    </div>
+                </li>
+                <li id="responsible08">
+                    <img data-dp="block" src="images/responsibility_bg08.png" alt="Fresh fruits and juice are placed on a sunlit table.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">8/12</small>
+                            Environment
+                        </h4>
+                        <p>At ferm LIVING, we consider the impact of our business and measure the CO₂e footprint of our products. This work will help in establishing a baseline from which future reduction targets and strategic ‘in-settings’ will be set. Our environmental policy is centered around three 2030 key commitments:</p>
+                        <b data-dp="block" class="mm16">Create full transparency on all products</b>
+                        <b data-dp="block" class="mm16">Obtain third-party certifications on all products where possible</b>
+                        <b data-dp="block" class="mm16">Work towards CO₂e-neutrality</b>
+                        <p>In collaboration with the Danish company Målbar, we are using their Climate Screening Tool to measure the CO₂e footprint of our individual products taking every step of the manufacturing process into account – from the raw materials to the arrival of a final product at our warehouse. So far, we have onboarded nine key suppliers to measure the climate impact of the products that they produce, from raw material to the final product arriving at the warehouse. In 2023, we have committed to onboarding an additional 9 key suppliers and conducting climate screenings on our 100 top-selling products. In freight and transport we measure container space and CO₂ emissions though software calculators to keep both the environmental impact and cost of our transport to an absolute minimum.</p>
+                        <b data-dp="block" class="mm16">We’re proud to be a CO₂ Neutral Website</b>
+                        <p>As part of our ongoing Responsibility journey, our site is now CO₂ Neutral across all our domains. This certification ensures the CO₂ emissions released through the operation of our website are offset through various long-term climate projects. As opposed to using a one-size-fits all solution, certificates are tailored to each site’s individual emissions, taking into account the servers, data traffic and site visitors. To view the valid certificate, click the logo below.</p>
+                    </div>
+                </li>
+                <li id="responsible09">
+                    <img data-dp="block" src="images/responsibility_bg09.png" alt="People enjoying a warm dinner while toasting with wine glasses.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">9/12</small>
+                            People
+                        </h4>
+                        <p>We are a community of colleagues and partners who do what we do with all our hearts. By being enthusiastic, helpful and respectful, we embrace our differences, lift each other up and create space for each of us to be our best. For us, responsibility and decency go hand in hand. No one is above anyone else and we work to create an inclusive environment where everyone can feel safe and is treated equally.</p>
+                        <ul>
+                            <li>- We participate in the UN Global Compact and conduct ourselves and treat others in accordance with the principles and values set out within it.</li>
+                            <li>- We embrace diversity and value all human beings equally regardless of race, age, religion, sexual orientation or social status.</li>
+                            <li>- We oppose racism in all its forms as well as physical, verbal and emotional abuse.</li>
+                            <li>- We hire for talent and will always employ the person with the best qualifications for the job, regardless of ethnicity, age, gender, religion, sexual preference, disability and social identity.</li>
+                            <li>- We pride ourselves on a flat organisational structure and maintain a casual working environment in our day-to-day business.</li>
+                            <li>- We promote a healthy life balance and encourage a healthy body and mind.</li>
+                            <li>- We invest in long-term relationships with partners and suppliers. Our relationships are built on mutual respect and value.</li>
+                            <li>- We are entrepreneurial and have high ambitions but never pursue only the lowest manufacturing price.</li>
+                            <li>- We continually strive to provide the best possible service to all, regardless of who they are.</li>
+                        </ul>
+                        <b data-dp="block" class="mm16">Health and Safety</b>
+                        <p>ferm LIVING systematically registers workplace accidents, and no accidents were registered in the reporting year. Due to the nature of the company, no specific health and safety procedures have been implemented but the company has a Working Environment Committee. Also, a Team Engagement Culture Survey was conducted again in November 2022, and the company will work with the results both in individual departments and on the Extended Leadership Team level throughout 2023</p>
+                        <b data-dp="block" class="mm16">Shipped FREE and with love</b>
+                        <b data-dp="block" class="mm16">On orders above €135*</b>
+                        <b data-dp="block" class="mm16">Carefully delivered within 1-3 days</b>
+                        <b data-dp="block" class="mm16">And packaged with love.</b>
+                        <b data-dp="block" class="mm16">Buy now, pay later</b>
+                    </div>
+                </li>
+                <li id="responsible10">
+                    <img data-dp="block" src="images/responsibility_bg10.png" alt="A creative meeting focused on pottery design sketches and ideas.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">10/12</small>
+                            Certifications &amp; Testing
+                        </h4>
+                        <p>We work with certifications and testing to ensure working conditions in our supply chain are safe and fair and that our products are responsibly produced and of high quality.</p>
+                        <p>We are deeply committed to social responsibility in our supply chain, and as members of Amfori, we are able to ensure that our key suppliers undergo BSCI audits. Our goal for 2023 is to have 40% of our suppliers classified as ‘Responsible suppliers,’ indicating their dedication to social responsibility through initiatives or certifications such as BSCI, SA 8000, FSC™, or GOTS. These certifications uphold stringent standards for human rights and fair working conditions, aligning with our mission of promoting responsible practices. Where relevant, products are tested before they become part of our collection. This includes lighting, furniture, outdoor pieces, kitchen and children’s products. In order to adhere to REACH regulations, accredited testing agencies, such as the Danish Technological Institute, conduct tests on our products through processes defined by law.</p>
+                        <p>RESPONSIBLE - We use RESPONSIBLE as a tag on our products to signify that a product is either FSC™, GOTS or OSC 100/ Organic blended certified or produced in a recycled material, such as recycled glass, recycled aluminium, recycled paper pulp or PET-yarn made from post-consumer plastic bottles. We are dedicated to, and continuously working on, implementing even more responsible materials and ways of working in our future designs.</p>
+                        <b data-dp="block" data-popup="res2Popup" class="mm15">Read More Certifications &amp; Testing</b>
+                    </div>
+                </li>
+                <li id="responsible11">
+                    <img data-dp="block" src="images/responsibility_bg11.png" alt="A workspace scene planning interior design using various materials and color samples.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">11/12</small>
+                            Un Sustainable Development Goals (SDG’S)
+                        </h4>
+                        <p>We aim to manufacture just the right number of products, and never burn or destroy unsold items. We hold an annual stock sale where leftover or unsold items are donated to NGOs such as the Red Cross.</p>
+                        <p>The SDG’s are a blueprint to achieve a better and more sustainable future for all. They address the global challenges we face including poverty, inequality, climate change, environmental degradation, peace and justice.</p>
+                        <p>Investing in sustainable and responsible practices is morally right as well as good business. We support the UN's SDGs and use them to guide the integration of sustainable policies into our business strategy and cultural mindset. Along with our partners and suppliers, we are committed to working with SDGs 8, 12 and 17, which is where our business can make the biggest difference to people and the environment.</p>
+                        <b data-dp="block" data-popup="res3Popup" class="mm15">Read More Un Sustainable Development Goals</b>
+                    </div>
+                </li>
+                <li id="responsible12">
+                    <img data-dp="block" src="images/responsibility_bg12.png" alt="A tidy desk with documents and a card holder bathed in sunlight.">
+                    <div class="bk15">
+                        <h4 class="bk26">
+                            <small data-dp="block" class="mm13">12/12</small>
+                            Actions Realised
+                        </h4>
+                        <p><b data-dp="block" class="mm16">2022 Key Actions</b></p>
+                        <p>In 2022, we achieved the following milestones on our responsibility journey.</p>
+                        <p><b data-dp="block" class="mm16">RESPONSIBILITY REPORTS</b></p>
+                        <p>As an element of holding ourselves responsible for making sustainable choices that will work for a better tomorrow, we are a part of the world’s largest corporate sustainability initiative, UN Global Compact, and publish a yearly Responsibility Report.</p>
+                        <a data-dp="block" class="mm16" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/fermLIVING_ResponsibilityReport_2022_b1abb29a-09bb-467e-8ca9-b246beec774f.pdf?v=1699949437">Read our 2022 Responsibility Report</a>
+                        <a data-dp="block" class="mm16" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/Responsibility_report_2022_web_low.pdf?v=1663836559">Read our 2021 Responsibility Report</a>
+                        <b data-dp="block" data-popup="res4Popup" class="mm15">Read More Actions Realised</b>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <section>
+            <h3 class="lt48 tc">Our 2030 Commitments</h3>
+            <ul>
+                <li data-dp="flex">
+                    <div>
+                        <h4 class="bk26">Our Planet</h4>
+                        <ul class="bk15">
+                            <li>- Create full transparency on all products</li>
+                            <li>- Obtain third-party certifications on all products where possible</li>
+                            <li>- Work towards CO2-neutrality</li>
+                        </ul>
+                        <b data-fl="fR" data-dp="block" data-popup="res5Popup" class="mm15 reversalBtn tc">Learn More</b>
+                    </div>
+                    <img data-dp="block" src="images/responsibility_Thumbnail01.png" alt="pots and green plants made of eco-friendly materials">
+                </li>
+                <li data-dp="flex">
+                    <div>
+                        <h4 class="bk26">Our Society</h4>
+                        <ul class="bk15">
+                            <li>- Build value on all bottom lines: people, planet, profit &amp; purpose</li>
+                            <li>- Inspire customers to make responsible choices</li>
+                            <li>- Give back to local communities in support of better homes</li>
+                        </ul>
+                        <b data-fl="fR" data-dp="block" data-popup="res6Popup" class="mm15 reversalBtn tc">Learn More</b>
+                    </div>
+                    <img data-dp="block" src="images/responsibility_Thumbnail02.png" alt="A woman relaxing on a flower-filled veranda enjoying a peaceful moment.">
+                </li>
+                <li data-dp="flex">
+                    <div>
+                        <h4 class="bk26">Our Community</h4>
+                        <ul class="bk15">
+                            <li>- Maintain a strong culture with clear values &amp; purpose</li>
+                            <li>- Nurture long-lasting relations built on trust and respect</li>
+                            <li>- Empower all of us to learn and grow together</li>
+                        </ul>
+                        <b data-fl="fR" data-dp="block" data-popup="res7Popup" class="mm15 reversalBtn tc">Learn More</b>
+                    </div>
+                    <img data-dp="block" src="images/responsibility_Thumbnail03.png" alt="A visually inspiring workspace filled with creative ideas and materials.">
+                </li>
+            </ul>
+        </section>
+        <article id="res1Popup">
+            <button class="closeBtn" type="button">close</button>
+            <img data-dp="block"data-dp="block"data-dp="block"src="images/responsibility_Popup_bg01.png" alt="A peaceful natural landscape with lush forests and rolling hills.">
+            <div class="popupTitle tc">
+                <h4 class="lt48">Our planet</h4>
+                <time data-dp="block" datetime="2022" class="bd10_200">2022 actions</time>
+                <p class="bk16_25">Create full transparency on all products</p>
+            </div>
+            <div class="bk16_25 txtBox">
+                <ul>
+                    <li>- Continue to develop production and supplier presentations. We want to share our joint sustainability journey, including every challenge we face along the way and the decisions we take to overcome them. Read our production and supplier presentations</li>
+                    <li>- 'RESPONSIBLE' tag on products. Products with this tag are either produced with responsible, recycled materials or have one of the following certifications: GOTS, OCS or FSC™.</li>
+                </ul>
+                <p>We continuously work to increase the number of responsible products in our collections.</p>
+                <b data-dp="block" class="mm15_20">Obtain third-party certifications on all products where possible</b>
+                <ul>
+                    <li>- Increase amount of certification. Today, we work with FSC™, GOTS, OCS and BSCI certification. During 2022 we aim to become GRS-certified. We can use this certification on for example PET-yarn textile products (yarn made from post-consumer plastic bottles). Read more about our certification and testing</li>
+                </ul>
+                <b data-dp="block" class="mm15_20">Work towards CO2-neutrality</b>
+                <ul>
+                    <li>- Set targets for improving CO2 footprint. We will identity our top 30 product series and map out the suppliers of these. In collaboration with Danish consultants, Målbar, we will then conduct a CO2-analysis using Målbar's climate screening tool to measure impact from raw material to final product. The data we gain will help us to set targets for reducing CO2 footprint on the products we produce most of.</li>
+                    <li>- Reduce transport by air. In 2020, our air transport doubled from 2% to 4% due to delays caused by the COVID-19 pandemic. This was reduced again in 2021. During 2022, we aim to reduce transport by air to 1%. Read more about our freight and transport</li>
+                </ul>
+            </div>
+            <button class="mm15 closeBtn arrowBoxBtn" type="button">All Responsibility</button>
+        </article>
+        <article id="res2Popup">
+            <button class="closeBtn" type="button">close</button>
+            <img data-dp="block"data-dp="block"data-dp="block"src="images/responsibility_Popup_bg02.png" alt="A woman relaxing on a flower-filled veranda enjoying a peaceful moment.">
+            <div class="popupTitle tc">
+                <h4 class="lt48">Our Society</h4>
+                <time data-dp="block" datetime="2022" class="bd10_200">2022 actions</time>
+                <p class="bk16_25">Build value on all bottom lines: people, planet, profit &amp; purpose</p>
+            </div>
+            <div class="bk16_25 txtBox">
+                <ul>
+                    <li>- Setting clear targets on all parameters. We have started the process of measuring on parameters other than profit, such as the wellbeing of our employees and our impact on the environment. Insights and data will help us to define where improvements can be made and bigger value achieved.</li>
+                </ul>
+                <b data-dp="block" class="mm15_20">Inspire customers to make responsible choices</b>
+                <ul>
+                    <li>- Inspire through campaigns and communication. We will continue to inspire people to make responsible choices, by inviting to dialogue and openly sharing our knowledge on responsibility and sustainability in all our communication. This includes clarifying responsibility at product level across all touchpoints, including labels, hang-tags, product descriptions, fact sheets and social channels.</li>
+                    <li>- Our product catalogues. We have commenced the ongoing process of defining the most useful and sustainable ways to present our products and our brand.</li>
+                </ul>
+                <b data-dp="block" class="mm15_20">Give back to local communities in support of better homes</b>
+                <ul>
+                    <li>- Contributing positively to the world around us has always been of great importance. We are taking steps towards increasing donations and social initiatives that are closely linked to our core: helping people create space to be comfortable and feel at home.</li>
+                </ul>
+                <p>ferm LIVING has partnered with Red Cross to support those who have lost their homes as a result of the war in Ukraine. We donate a fixed amount per company employee on an annual basis, helping to support people who repair damaged homes, provide heating solutions for displaced people in refugee centers and distribute blankets and other warm sleeping equipment to the most vulnerable families.</p>
+                <b data-dp="block" class="mm15_20">ferm LIVING x Red Cross</b>
+            </div>
+            <button class="mm15 closeBtn arrowBoxBtn" type="button">All Responsibility</button>
+        </article>
+        <article id="res3Popup">
+            <button class="closeBtn" type="button">close</button>
+            <img data-dp="block"data-dp="block"data-dp="block"data-dp="block" src="images/responsibility_Popup_bg03.png" alt="A visually inspiring workspace filled with creative ideas and materials.">
+            <div class="popupTitle tc">
+                <h4 class="lt48">Our Community</h4>
+                <time data-dp="block" datetime="2022" class="bd10_200">2022 actions</time>
+                <p class="bk16_25">Maintain a strong culture with clear values</p>
+            </div>
+            <div class="bk16_25 txtBox">
+                <ul>
+                    <li>- Activating our values. We are a close family of colleagues, partners and suppliers who do what we do with all our hearts and based on the same ideals. We have defined and formulated the values that we live by and actively work to ensure they are embraced by everyone.</li>
+                    <li>- Responsible employees. As a part of integrating responsible thinking and behaviour into the core of our business, we have incorporated our views and expectations on responsibility and sustainability as an important element of job interviews.</li>
+                    <li>- Brand review. As we move forward, it's important to our success that the way we act is in line with our DNA and resonates with people internally and externally. We have commenced a process of reviewing our brand foundation and are speaking with people across our extended family to get a clear idea of where we are doing well and where we could do better.</li>
+                </ul>
+                <b data-dp="block" class="mm15_20">Nurture long-lasting relations built on trust and respect</b>
+                <ul>
+                    <li>- Nurturing our extended family. We continue to work with our partners and suppliers on a foundation of mutual value creation, transparent communication and considerate behaviour. We share their stories. work together to gain certifications, and constantly inspire each other to find better and more sustainable ways to do business.</li>
+                    <li>- Measuring retention and engagement rate. Our employees are the foundation of our success. We want them to feel engaged and appreciated, and we would like them to stay with us for a long time. Measuring our retention and engagement rates, helps us to provide the best possible work environment and build a strong foundation with happy and committed employees.</li>
+                </ul>
+                <b data-dp="block" class="mm15_20">Empower all of us to learn and grow together</b>
+                <ul>
+                    <li>- Exploring opportunities. At ferm LIVING, we learn and grow, as individuals and as a business, by sharing expertise, knowledge and good ideas. This is particularly important for our responsibility ambition, where we need to know a lot more than we do today. That is why we continuously work with external partners, such as Märk, Målbar, UN Global Compact, Amfori, FSC™ and the Red Cross. With their unique expertise and knowledge, together we explore opportunities and find solutions for more responsible business and better living.</li>
+                </ul>
+            </div>
+            <button class="mm15 closeBtn arrowBoxBtn" type="button">All Responsibility</button>
+        </article>
+        <article id="res4Popup">
+            <button class="closeBtn" type="button">close</button>
+            <img data-dp="block"data-dp="block"data-dp="block"src="images/responsibility_Popup_bg04.png" alt="A design meeting centered around sketching pottery forms and sharing ideas.">
+            <div class="popupTitle tc">
+                <h4 class="lt48">Responsibility Strategy</h4>
+                <p class="bk16_25">Our responsibility ambition is to work for a better tomorrow so you can feel good about your choices today. Working towards a better tomorrow, our 2030 commitments extend across all aspects of our business. From material choices and design processes to production methods, delivery logistics and shaping our organisational culture, our dedication to longevity of function and aesthetics guides our endeavours. On a daily basis, each department is actively engaged in initiatives, projects and actions aimed at advancing progress, accountability and integrity across all facets of our operations. As participants in the UN Global Compact, we report our progress on their platform annually. We advocate for better ways, fostering lasting relations based on mutual value creation, transparent communication and considerate behaviour. We believe in empowering everyone to explore opportunities for responsible business practices and better living. While we acknowledge that the ongoing journey will present challenges, we contribute to the sustainability dialogue, leverage insights for collective growth and progress towards a better tomorrow.</p>
+            </div>
+            <div class="bk16_25 txtBox">
+                <b data-dp="block" class="mm15_20">Responsibility Ambition</b>
+                <p>We work for a better tomorrow, so you can feel good about your choices today</p>
+                <b data-dp="block" class="mm15_20">2030 Commitments</b>
+                <p>Looking to the actions, initiatives and values that shape our company, we have defined nine 2030 commitments under three pillars that encompass planet, society and community and which enable us to adopt a comprehensive approach to responsibility.</p>
+                <h5 class="mm15_20">Our planet</h5>
+                <ul>
+                    <li>- Create full transparency on all products</li>
+                    <li>- Obtain third-party certifications on all products where possible</li>
+                    <li>- Work towards CO2-neutrality</li>
+                </ul>
+                <h5 class="mm15_20">Our Society</h5>
+                <ul>
+                    <li>- Build value on all bottom lines: people, planet, profit &amp; purpose</li>
+                    <li>- Inspire customers to make responsible choices</li>
+                    <li>- Give back to local communities in support of better homes</li>
+                </ul>
+                <h5 class="mm15_20">Our Community</h5>
+                <ul>
+                    <li>- Maintain a strong culture with clear values</li>
+                    <li>- Nurture long-lasting relations built on trust and respect</li>
+                    <li>- Empower all of us to learn and grow together</li>
+                </ul>
+                <h5 class="bk26">Strategic Focus Areas</h5>
+                <p>Our business operates within a framework that is organised around strategic focus areas and our brand purpose to inspire individuals to create personal and comfortable homes that balance the contrasts of life, helping to create a better tomorrow with responsibly made products. Each focus area encompasses various projects and initiatives outlined in our detailed action plan for 2024 and beyond. Aligned with our 2030 Commitments and evolving over time, these actions move us towards our goals.</p>
+                <b data-dp="block" class="mm15_20">Business in Balance</b>
+                <p>Striking an optimal balance between cultivating a thriving business and making a positive impact on the world has consistently held significant importance for ferm LIVING.</p>
+                <p>The responsible decisions we make may sometimes run counter to our economic considerations, yet we proceed with them, nonetheless. We wholeheartedly adopt responsible practices in all aspects of our operations, working with integrity and shouldering the responsibility for our impact by broadening our focus to also encompass non-financial metrics. We are committed to measuring ourselves against these parameters, actively working towards a better tomorrow in both environmental and social realms.</p>
+                <b data-dp="block" class="mm15_20">Empowering Relations</b>
+                <p>We are a community of colleagues and partners deeply committed to our work. With genuine enthusiasm, helpfulness and respect, we celebrate our differences, uplift one another and cultivate an environment where each individual can shine. Our relationships with suppliers are built on a foundation of responsible practices to improve our joint efforts in sustainability. We prioritise mutual value creation, transparent communication and considerate behaviour to foster lasting relations. We empower individuals to learn and grow by exploring opportunities for responsible business and better living.</p>
+                <b data-dp="block" class="mm15_20">Responsible Living</b>
+                <p>Our ambition is to help individuals to establish a balance amidst life’s many contrasts, creating homes and spaces that reflect a responsible mindset through carefully considered products. To realise this, we are dedicated to embedding a mindset of responsibility and sustainability at the core of our business. We continually enhance our methodologies, from material selection and design processes to production methods and delivery logistics to make it easier for our customers to make responsible choices.</p>
+                <b data-dp="block" class="mm15_20">Inspiring Change</b>
+                <p>Prioritising sustainable and responsible actions in every facet of life is crucial for both human well-being and the health of our planet. Recognising that this is an ongoing journey with much progress yet to be made, we move closer to our goals each day in our shared pursuit of positive change. Our aim is to instil confidence in individuals as they make choices that contribute to a more sustainable way of living. Transparency about our own journey toward responsibility is key, serving as inspiration for others to join us in our quest for change.</p>
+                <b data-dp="block" class="mm15_20">Read our full Responsibility Report here:</b>
+                <a data-dp="block" class="mm15_20" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/Responsibility_report_2023_Interactive.pdf?v=1711112354">Read our 2023 Responsibility Report</a>
+                <a data-dp="block" class="mm15_20" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/fermLIVING_ResponsibilityReport_2022_b1abb29a-09bb-467e-8ca9-b246beec774f.pdf?v=1699949437">Read our 2022 Responsibility Report</a>
+                <a data-dp="block" class="mm15_20" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/Responsibility_report_2022_web_low.pdf?v=1663836559">Read our 2021 Responsibility Report</a>
+            </div>
+            <button class="mm15 closeBtn arrowBoxBtn" type="button">All Responsibility</button> 
+        </article>
+        <article id="res5Popup">
+            <button class="closeBtn" type="button">close</button>
+            <img data-dp="block"data-dp="block"data-dp="block"src="images/responsibility_Popup_bg05.png" alt="A stylish open shelf filled with books and artistic objects.">
+            <div class="popupTitle tc">
+                <h4 class="lt48">Certifications &amp; Testing</h4>
+                <p class="bk16_25">We are deeply committed to environmental and social responsibility in all aspects of our business and work with certifications and testing to ensure safe and fair working conditions in our supply chain and the responsible production of high-quality products.</p>
+                <p class="bk16_25">To that end, we have created an internal framework entitled ‘Responsible suppliers’. As engaged members of Amfori, we ensure our key suppliers undergo BSCI audits. To be classified a responsible supplier, ours must adhere to initiatives and certifications like BSCI, SA 8000, FSC™ and GOTS, reflecting their dedication to aligning with our mission of promoting responsible practices and ensuring stringent criteria for human rights and fair working conditions are met. We aim for 60% of our suppliers to be classified as such by the end of 2024, building on our 54% achievement in 2023.</p>
+                <p class="bk16_25">Our products undergo risk assessment and rigorous testing in accredited laboratories, and we comply with applicable national and international regulations and standards such as REACH for environmental and health requirements.</p>
+            </div>
+            <div class="bk16_25 txtBox">
+                <dl>
+                    <dt class="mm15_20">The RESPONSIBLE tag</dt>
+                    <dd>denotes that a product is either FSC™-, GOTS- or OSC 100-/Organic blended-certified or produced in a recycled material, such as recycled glass, recycled aluminium, recycled cotton, recycled paper pulp, recycled ceramic or PET yarns spun from post-consumer plastic. Materials such as brown cotton, nettle and cotton mâché are included due to their lower environmental footprint compared to more conventional counterparts. We are consistently working on integrating more responsible materials and methods into our future designs.</dd>
+                </dl>
+                <h5 class="bk26">Our current initiatives and certifications:</h5>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt class="mm15_20">GOTS</dt>
+                            <dd>The Global Organic Textile Standard. Recognised as the world’s leading processing standard for textiles made from organic fibres. It defines high-level environmental and social criteria along the entire organic textiles supply chain.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt class="mm15_20">OCS</dt>
+                            <dd>The Organic Content Standard. Products certified to the Organic Content Standard (OCS) Contain organically grown content/material that has been independantly verified at each stage of the supply chain, from source to final product.  </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt class="mm15_20">FSC™</dt>
+                            <dd>The Forest Stewardship Council™ An international, non-profit certification scheme for wood and paper. In FSC forestry, animals and plantlife are protected and no more wood is felled than the forrest can reproduce, either through natural regeneration or replanting. At the same time, the FSC ensures that workers’ rights throughout the certified supply chain are respected.</dd>
+                            <dd>Look for our FSC™ Certified products on our website.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt class="mm15_20">NORDIC SWAN ECOLABEL.</dt>
+                            <dd>A Nordic Swan Ecolabel candle is a candle meeting specific criteria for environmental performance as well as health aspects, quality and safety.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt class="mm15_20">BSCI</dt>
+                            <dd>Business Social Compliance Initiative. An industry-driven initiative by Amfori, which aims to monitor and assess workplace standards across global supply chains. An Amfori BSCI audit helps us to ensure that suppliers treat their workers legally and ethically..</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt class="mm15_20">UN Global Compact</dt>
+                            <dd>We are engaged participants in the UN Global Compact and our Code of Conduct aligns with their Ten Principles. This code establishes the ethical framework for our business and is endorsed by all our partners and suppliers. Its principles aim to safeguard the health and safety of workers during production, fostering an ethical and equitable partnership for all stakeholders. *Our Code of Conduct is available at fermliving.com</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <b data-dp="block" class="mm15_20">From end 2024, ferm LIVING expects to add the following certification:</b>
+                <p>GRS, the Global Recycling Standard. Promoting the use of recycled materials, the GRS certification signifies the inclusion of recycled materials, with each stage of the supply chain independently verified - from the initial recycling phase to the final product. Certified organisations are required to adhere to social, environmental and chemical standards throughout.</p>
+            </div>
+            <button class="mm15 closeBtn arrowBoxBtn" type="button">All Responsibility</button> 
+        </article>
+        <article id="res6Popup">
+            <button class="closeBtn" type="button">close</button>
+            <img data-dp="block"data-dp="block"data-dp="block"src="images/responsibility_Popup_bg06.png" alt="Hands arranging material and color samples while planning an interior design concept.">
+            <div class="popupTitle tc">
+                <h4 class="lt48">Un Sustainable Development Goals (SDG’S)</h4>
+                <p class="bk16_25">The SDG’s are a blueprint to achieve a better and more sustainable future for all. They address the global challenges we face including poverty, inequality, climate change, environmental degradation, peace and justice.</p>
+                <p class="bk16_25">Investing in sustainable and responsible practices is morally right as well as good business. We support the UN's SDGs and use them to guide the integration of sustainable policies into our business strategy and cultural mindset. Along with our partners and suppliers, we are committed to working with SDGs 8, 12 and 17, which is where our business can make the biggest difference to people and the environment.</p>
+            </div>
+            <div class="bk16_25 txtBox">
+                <b data-dp="block" class="mm15_20">GOAL 8: DECENT WORK AND ECONOMIC GROWTH</b>
+                <p>To promote inclusive and sustainable economic growth, employment and decent work for all. Decent work means opportunities for everyone to get work that is productive and delivers a fair income, security in the workplace and social protection for families, better prospects for personal development and social integration.</p>
+                <p>At ferm LIVING, we contribute to positive change by providing decent jobs and working conditions. Through our Code of Conduct and certifications such as BSCI, we are a proactive partner in ensuring that the rights of workers in our supply chain are upheld.</p>
+                <b data-dp="block" class="mm15_20">GOAL 12: RESPONSIBLE CONSUMPTION AND PRODUCTION</b>
+                <p>Sustainable consumption and production are about doing more and better with less. It is also about decoupling economic growth from environmental degradation, increasing resource efficiency and promoting sustainable lifestyles. Sustainable consumption and production refer to "the use of services and related products, which respond to basic needs and bring a better quality of life while minimising the use of natural resources and toxic materials, as well as the emissions of waste and pollutants over the life cycle of the service or product, so as not to jeopardise the needs of future generations".</p>
+                <p>At ferm LIVING, we design to create products that last both in terms of function and aesthetics. For us, this means high-quality designs that are produced with responsible materials and with an aesthetic appeal that can last the test of time.</p>
+                <p>In close collaboration with our suppliers, we work within a framework of practices, and continually develop and improve all phases of our supply chain. Through rigorous quality testing and numerous certifications, we ensure materials and final products are of a consistently high standard.</p>
+                <p>We aim to manufacture just the right number of products, and never burn or destroy unsold items. We hold an annual, private stock sale where leftover or unsold items are donated to NGOs such as the Red Cross, which is our main charity that we donate to, and donate a fixed amount per company employee on an annual basis.</p>
+                <p>We embrace the challenge of making increasingly sustainable choices during the design phase, guided by our list of Responsibility Criteria. Our commitment extends to selecting responsible materials and designing for disassembly, adopting a cradle-to-grave approach for all new products. This ensures ease of recycling for our customers if and when they decide to discontinue product usage, promoting longevity and a circular mindset.</p>
+                <b data-dp="block" class="mm15_20">GOAL 17: PARTNERSHIPS FOR THE GOALS</b>
+                <p>This goal seeks to revitalize and enhance the global partnership for sustainable development through intensive and systematic engagement of governments, civil society, the private sector, the United Nations system, and other actors in the implementation of the other sixteen SDGs. We have a long-term partnership with the Red Cross, where we annually donate a fixed amount per employee. We will continue to support their work in providing shelter, essential supplies, healthcare and financial aid to those who need it the most.</p>
+                <p>At ferm LIVING, we have a holistic and humble approach to working with sustainability. Recognizing that perfection is unattainable and acknowledging our limitations in various domains, we prioritize forging long-term partnerships with specialists in their respective fields. Through these collaborative efforts, we continuously learn and progress, ensuring that we constantly improve our responsible practices and move forward on our journey towards greater sustainability.</p>
+            </div>
+            <button class="mm15 closeBtn arrowBoxBtn" type="button">All Responsibility</button> 
+        </article>
+        <article id="res7Popup">
+            <button class="closeBtn" type="button">close</button>
+            <img data-dp="block"data-dp="block"data-dp="block"src="images/responsibility_Popup_bg07.png" alt="A tidy desk with documents and a card holder bathed in sunlight.">
+            <div class="popupTitle tc">
+                <h4 class="lt48">Actions Realised</h4>
+                <time data-dp="block" datetime="2022" class="bd10_200">2022 Key Actions</time>
+                <p class="bk16_25">In 2022, we achieved the following milestones on our responsibility journey.</p>
+            </div>
+            <div class="bk16_25 txtBox">
+                <b data-dp="block" class="mm15_20">RESPONSIBILITY REPORTS</b>
+                <p>As an element of holding ourselves responsible for making sustainable choices that will work for a better tomorrow, we are a part of the world’s largest corporate sustainability initiative, UN Global Compact, and publish a yearly Responsibility Report.</p>
+                <a data-dp="block" class="mm15_20 note" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/fermLIVING_ResponsibilityReport_2022_b1abb29a-09bb-467e-8ca9-b246beec774f.pdf?v=1699949437">Read our 2022 Responsibility Report</a>
+                <a data-dp="block" class="mm15_20 note" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/Responsibility_report_2022_web_low.pdf?v=1663836559">Read our 2021 Responsibility Report</a>
+                <b data-dp="block" class="mm15_20">RESPONSIBILITY STRATEGY</b>
+                <p>In 2022, we have implemented and worked with our responsibility strategy across all departments, making sure that we incorporate responsibility into all the branches of our business. We completed many of our initiatives and initiated new, long-term projects from our shared action plan, lead by our Responsibility Ambassador team who ensure progress and knowledge within each of the departments.</p>
+                <b data-dp="block" class="mm15_20">ferm LIVING x Red Cross</b>
+                <b data-dp="block" class="mm15_20">FSC™ CERTIFIED - THE FOREST STEWARDSHIP COUNCIL™</b>
+                <p>We are proud to have expanded our network of FSC™ suppliers as well as the number of products in our collection, while actively promoting the value of this certification, which protects healthy, resilient forests as well as promoting biodiversity and human rights.</p>
+                <b data-dp="block" class="mm15_20">CO2e IMPACT</b>
+                <p>We consider the impact of our decisions and continue to measure the CO₂e footprint of our products using Mål¬bar’s Climate Screening tool. We have now onboarded nine of our key suppliers, measuring our climate impact on a product level that takes the entire production pro¬cess into account, from raw material until it arrives at our warehouse. In 2023, we aim to onboard an additional 9 key suppliers and have climate screenings for our 100 top-selling products. This will help to establish a baseline from which future reduction targets and ‘in-settings’ (as opposed to off-settings) will be set, helping us to invest in better and more responsible ways early in the design and production process. In addition, our largest textile sup¬plier now runs their entire production on 90-95% solar power.</p>
+                <b data-dp="block" class="mm15_20">AMFORI MEMBERSHIP - BSCI BUSINESS SOCIAL COMPLIANCE INITIATIVE</b>
+                <p>Taking social responsibility in our supply chain is a mission we take seriously. Being members of Amfori enables us to have all our key suppliers BSCI audited. In 2022, two-thirds of our key suppliers have been BSCI audited.</p>
+                <b data-dp="block" class="mm15_20">RESPONSIBILITY AND SUSTAINABILITY YEARLY COMMUNICATION </b>
+                <p>Throughout 2023, we have continued to share our progress on our responsibility journey as well as increase our transparency around production and design - being mindful not to Greenwash or Greenhush. By sharing production and design stories, we invite people behind the scenes and into the journey our products take.</p>
+                <b data-dp="block" class="mm15_20">PACKAGING</b>
+                <p>In 2022, we achieved a significant milestone as a large packaging supplier in India obtained FSC™ certification, bringing us closer to our objective of ensuring all our packaging is FSC™ certified by the end of 2023.</p>
+            </div>
+            <button class="mm15 closeBtn arrowBoxBtn" type="button">All Responsibility</button> 
+        </article>
+    </div>
+    <footer>
+        <div>
+            <h2 class="mm11_100">WELCOME TO OUR HOME</h2>
+            <label data-dp="block" for="userEmail" class="bk13">Subscribe to our newsletter and be among the first to hear about new arrivals, sale, events and  special offers.</label>
+            <form>
+                <div data-fl="fL">
+                    <input class="bk26" type="email" placeholder="Enter Email Address" title="Enter Email Address" required id="userEmail">
+                    <input type="submit" value="Subscribe">
+                    <mark data-dp="none" class="bk13 invalidMsg">Invalid email address</mark>
+                    <mark data-dp="none" class="bk13 validMsg">This is the correct email format.</mark>
+                </div>
+                <input data-dp="none" type="checkbox" id="ck_subscribeAgree">
+                <label data-dp="block" for="ck_subscribeAgree" class="mm12">By signing up, you agree to receive our newsletter and accept our <a class="mm12" href="fi_privacyPolicy.html">Privacy Policy</a>. You can  unsubscribe anytime.</label>
+            </form>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h3 class="mm13">Products</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fb_giftCards.html">Gift Card</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://e.issuu.com/embed.html?d=product_overview_2024&u=fermliving">Catalogues</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://fermliving.presscloud.com/digitalshowroom/#/gallery/assembly-manuals-world">Product manuals</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/FermLiving_Fabric_LeatherOverview_SS25_61f9bc57-1969-47f3-a932-55ce97fcbd0a.pdf?v=1747313550">Fabric Overview</a></li>
+                        <li><a data-dp="block" href="fc_responsibleProducts.html">Responsible Products</a></li>
+                        <li><a data-dp="block" href="fd_claimForm.html">Product Claim Form</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">Customer Service</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fd_claimForm.html">Contact</a></li>
+                        <li><a data-dp="block" href="fe_storeLocator.html">Store Locator</a></li>
+                        <li><a data-dp="block" href="ff_faq.html">FAQ</a></li>
+                        <li><a data-dp="block" href="fg_shippingReturn.html">Shipping &amp; Return</a></li>
+                        <li><a data-dp="block" href="fh_termsConditions.html">Terms and conditions</a></li>
+                        <li><a data-dp="block" href="fi_privacyPolicy.html">Privacy policy</a></li>
+                        <li><a data-dp="block" href="fj_cookies.html">Cookies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">About ferm LIVING</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fa_aboutUs.html">About us</a></li>
+                        <li><a data-dp="block" href="fk_career.html">Career</a></li>
+                        <li><a data-dp="block" href="fl_contractCases.html">Contract cases</a></li>
+                        <li><a data-dp="block" href="fm_imprintRights.html">Imprint &amp; Rights</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-dp="flex">
+            <h2 data-dp="flex" class="bd10">
+                <img src="images/favicon.png" alt="Thank you for visiting ferm LIVING">ferm LIVING
+            </h2>
+            <div data-dp="flex">
+                <a target="_blank" href="https://www.youtube.com/user/fermliving">ferm LIVING youtube</a>
+                <a target="_blank" href="https://www.tiktok.com/@fermliving_official">ferm LIVING tiktok</a>
+                <a target="_blank" href="https://www.instagram.com/fermliving/">ferm LIVING instagram</a>
+                <a target="_blank" href="https://www.facebook.com/fermLIVING/">ferm LIVING facebook</a>
+                <a target="_blank" href="https://kr.pinterest.com/fermliving/">ferm LIVING pinterest</a>
+                <p class="mm10">ferm LIVING Aps CVR No. 30070186</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

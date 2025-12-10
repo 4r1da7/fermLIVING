@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fermLIVING.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <title>ferm LIVING</title>
+</head>
+<body>
+    <div id="cart">
+        <div data-pos="ab" id="dltCart_Popup">
+            <h3 class="mm26">Delete product</h3>
+            <p class="bk12">Are you sure you want to delete it? <br> This action cannot be undone.</p>
+            <input type="button" value="Cancel" class="mm15 closeBtn">
+            <input type="button" value="Delete" class="mm15">
+        </div>
+        <form action="ja_checkout_mycart.html"> 
+            <div data-dp="flex">
+                <input type="button" value="close" class="closeBtn">
+                <h2 class="bk30">Shopping Cart (<span class="count">2</span>)</h2>  
+                <input class="mm13" type="submit" value="Checkout">
+            </div>
+            <div data-fl="fL">
+                <span data-dp="block" class="mm15">Items<mark data-pos="re" data-ba="bf" class="bk10">items In cart are not reserved</mark></span>
+                <span data-dp="block" class="mm15">Quantity</span>
+                <ul>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_01.webp" alt="Rotben - Sculptural Piece black product image">
+                            <b class="mm15">Rotben - Sculptural Piece</b>
+                            <span class="bk15">Black</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">545</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_02.webp" alt="Benzon White and Brown product image">
+                            <b class="mm15">Benzon</b>
+                            <span class="bk15">White/Brown</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">39</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                </ul>
+                <p data-dp="none" class="mm15 emptyCart">Your Shopping Cart is Empty</p>
+            </div>
+            <div>
+                <div data-dp="flex">
+                    <h3 class="mm15">Total</h3>
+                    <strong class="mm26">EUR <span class="totalPrice">584</span>,00</strong>
+                    <input class="mm15" type="submit" value="Checkout">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="search">
+        <input data-pos="ab" type="button" value="close" class="closeBtn">
+        <div data-pos="re">
+            <form>
+                <input class="bk26" type="search" placeholder="Search ferm LIVING" title="search for products">
+                <input data-pos="ab" type="submit" value="enter">
+            </form>
+        </div>
+    </div>
+    <header>
+        <div data-dp="flex">
+            <div>
+                <input class="bd10_200" type="button" value="COMPANY" data-mui="muiSubMenu">
+                <ul data-flDT="fL" class="mm12" id="muiSubMenu">
+                    <li><a href="k_stories.html">Inspiration</a></li>
+                    <li><a href="k_boutique.html">Our World</a></li>
+                    <li><a href="fb_giftCards.html">Gift Cards</a></li>
+                    <li><a href="fe_storeLocator.html">Store Locator</a></li>
+                </ul>
+            </div>
+            <div data-fl="fL" class="mm12">
+                <a data-dp="block" class="login" href="hb_accountOverview.html">Welcome jennie!</a>
+                <button data-pos="re" data-ba="bf" type="button" data-dp="block" data-panel="cart">cart</button>
+                <span class="count tc">2</span>
+            </div>
+        </div>
+        <div data-pos="re">
+            <h1>
+                <a data-dp="block" href="index_signIn.html">
+                    <img src="images/logo_CS01.svg" alt="welcome to ferm LIVING">
+                </a>
+            </h1>
+            <input type="button" value="muiMenu" data-panel="muiMenu">
+            <nav id="muiMenu">
+                <button type="button" class="closeBtn">close</button>
+                <h1>
+                    <a data-dp="block" href="index_signIn.html">
+                        <img src="images/logo_CS13.svg" alt="welcome to ferm LIVING">
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Living</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_01.png" alt="Outdoor seating image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Outdoor seating</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="aa_livingExplore.html">Living Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">OUTDOOR LIVING</h2>                   
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ab_list01_outdoorLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ab_list02_outdoorAcc.html">Outdoor accessories</a></li>
+                                            <li><a data-dp="block" href="ab_list03_outdoorSeating.html">Outdoor seating</a></li>
+                                            <li><a data-dp="block" href="ab_list04_outdoorTables.html">Outdoor tables</a></li>
+                                            <li><a data-dp="block" href="ab_list05_plantPots.html">Plant pots</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">GREEN LIVING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ac_list01_greenLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ac_list02_plantBox.html">Plant box</a></li>
+                                            <li><a data-dp="block" href="ac_list03_potsVases_1p.html">Pots and vases</a></li>
+                                            <li><a data-dp="block" href="ac_list04_plantstandsHolders.html">Plant stands and holders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RESPONSIBLE PRODUCTS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ad_list01_responsibleAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ad_list02_responsibleLiving_1p.html">Responsible LIVING products</a></li>
+                                            <li><a data-dp="block" href="ad_list03_responsibleKids_1p.html">Responsible KIDS products</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Furniture &amp; Kitchen</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_02.png" alt="Insert Side Table image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Insert Side Table</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ba_furnitureKitchenExplore.html">Furniture &amp; Kitchen Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">FURNITURE</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bb_list01_furnitureAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bb_list02_chairsBenches.html">Chairs and benches</a></li>
+                                            <li><a data-dp="block" href="bb_list03_tables.html">Tables</a></li>
+                                            <li><a data-dp="block" href="bb_list04_storageShelves.html">Storage and shelves</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">KITCHEN</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bc_list01_kitchenAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bc_list02_glassesCups.html">Glasses and cups</a></li>
+                                            <li><a data-dp="block" href="bc_list03_platesBowls.html">Plates and bowls</a></li>
+                                            <li><a data-dp="block" href="bc_list04_kitchenTextiles.html">Kitchen textiles</a></li>
+                                            <li><a data-dp="block" href="bc_list05_kitchentoolsUtensils.html">Kitchen tools and utensils</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">SOFAS AND DAYBEDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bd_list01_sofasAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="bd_list02_dase.html">Dase</a></li>
+                                            <li><a data-dp="block" href="bd_list03_rico.html">Rico</a></li>
+                                            <li><a data-dp="block" href="bd_list04_catena.html">Catena</a></li>
+                                            <li><a data-dp="block" href="bd_list05_turn.html">Turn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Decor &amp; Lighting</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_03.png" alt="Klint Tape Dispenser image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Klint Tape Dispenser</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ca_decorLightingExplore.html">Decor &amp; Lighting Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">ACCESSORIES &amp; DECOR</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cb_list01_accDecorAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cb_list02_accessories.html">Accessories</a></li>
+                                            <li><a data-dp="block" href="cb_list03_decorations.html">Decorations</a></li>
+                                            <li><a data-dp="block" href="cb_list04_candlesCandleholder.html">Candles and candleholders</a></li>
+                                            <li><a data-dp="block" href="cb_list05_hooksHolders.html">Hooks and holders</a></li>
+                                            <li><a data-dp="block" href="cb_list06_mirrors.html">Mirrors</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">LIGHTING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cc_list01_lightingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cc_list02_floorLamps.html">Floor lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list03_tableLamps.html">Table lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list04_wallLamps.html">Wall lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list05_pendantLamps.html">Pendant lamps</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">WALLPAPER</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cd_list01_wallpaperAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="cd_list02_katieScott.html">ferm LIVING x Katie Scott</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Textiles</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_04.png" alt="Daze Bedspread image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Daze Bedspread</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="da_textilesExplore.html">Textiles Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">TEXTILES</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="db_list01_textileAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="db_list02_cushions.html">Cushions</a></li>
+                                            <li><a data-dp="block" href="db_list03_bedding.html">Bedding</a></li>
+                                            <li><a data-dp="block" href="db_list04_throwsBlankets.html">Throws and blankets</a></li>
+                                            <li><a data-dp="block" href="db_list05_towels.html">Towels</a></li>
+                                            <li><a data-dp="block" href="db_list06_showerCurtains.html">Shower curtains</a></li>
+                                            <li><a data-dp="block" href="db_list07_bagBaskets.html">Bags and baskets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RUGS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="dc_list01_rugsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="dc_list02_rectangularRugs.html">Rectangular rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list03_roundRugs.html">Round rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list04_matsRunners.html">Mats and runners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">KIDS</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_05.png" alt="Benzon, Mumbo, Donna, Elly image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Benzon, Mumbo, Donna, Elly</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ea_kidsExplore.html">KIDS Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">KIDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="eb_list01_kidsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="eb_list02_kidsObjects_1p.html">Kids objects</a></li>
+                                            <li><a data-dp="block" href="eb_list03_kidsFurniture.html">Kids furniture</a></li>
+                                            <li><a data-dp="block" href="eb_list04_kidsTextiles.html">Kids textiles</a></li>
+                                            <li><a data-dp="block" href="eb_list05_kidsRugs.html">Kids rugs</a></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-dp="block" data-pos="re" class="mm15" href="fa_aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <input data-pos="ab" type="button" value="search" data-panel="search">
+        </div>
+        <p class="mm15 tc">Freshen your table s palette for Sunday brunch. <a class="bd15" href="ba_furnitureKitchenExplore.html">Shop Furniture &amp; Kitchen</a></p>
+    </header>
+    <ol data-flDT="fL" class="pageNav mm10">
+        <li><a href="index.html">HOME</a></li>
+        <li>CPMTRACT CASES</li>
+    </ol>
+    <div class="ftetcContractArea tabs">
+        <div class="titleBox tc">
+            <h2 class="lt48">Contract Cases</h2>
+            <p class="bk16_25">At ferm LIVING, we create collections of furniture, lighting and accessories, so you can create space to feel comfortably you. Be inspired to create an atmosphere that feels authentic to you by exploring the following spaces that have been created by some of our clients.</p>
+        </div>
+        <ul class="mm15 tc">
+            <li data-dp="inbk" data-tab="contractTab1" class="active">All Cases</li>
+            <li data-pos="re" data-ba="bf" data-dp="inbk" data-tab="contractTab2">Office</li>
+            <li data-pos="re" data-ba="bf" data-dp="inbk" data-tab="contractTab3">Residential</li>
+            <li data-pos="re" data-ba="bf" data-dp="inbk" data-tab="contractTab4">Hotel</li>
+            <li data-pos="re" data-ba="bf" data-dp="inbk" data-tab="contractTab5">Museum</li>
+        </ul>
+        <div>
+            <ul data-dp="none" id="contractTab1" class="active">
+                <li data-popup="contract1Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail01.png" alt="A modern lobby space with a curved lounge chair and a low table.">
+                    <h3 class="bk24"><mark data-dp="block" data-dp="block" class="mm10 c01">OFFICE</mark>Israel, Dior, Tel Aviv</h3>
+                </li>
+                <li data-popup="contract2Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail02.png" alt="A cosy dining area decorated with soft shades and minimal furniture.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, ferm LIVING HQ, Copenhagen</h3>
+                </li>
+                <li data-popup="contract3Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail03.png" alt="Modern rotating chairs are placed in a classic conference room full of natural light.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, Office in the Office Club, Copenhagen</h3>
+                </li>
+                <li data-popup="contract4Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail04.png" alt="Sensuous lounge corner with formative furniture, stable atmosphere with warm lighting.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>The Netherlands, Public Audio, Amsterdam</h3>
+                </li>
+                <li data-popup="contract5Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail05.png" alt="A bright, soft meeting space with warm pink-toned chairs and lights.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Sweden, TINK, Stockholm</h3>
+                </li>
+                <li data-popup="contract6Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail06.png" alt="chairs and tables reflected in the mirror create a cozy atmosphere with a cozy sofa.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>Denmark, Pasteur's Tower, Copenhagen</h3>
+                </li>
+                <li data-popup="contract7Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail07.png" alt="A minimal living room with a soft curved cream sofa and formative props in harmony.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>France, Good Design Store x Archik, Marseille</h3>
+                </li>
+                <li data-popup="contract8Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail08.png" alt="An emotional interior design with various objects and plants by the window.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Denmark, Residential Suite at Villa Copenhagen</h3>
+                </li>
+                <li data-popup="contract9Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail09.png" alt="A natural emotional interior scene with wild plants stuck in a clunky textured ceramic vase.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Greece, Atoles Retreat, Santorini</h3>
+                </li>
+                <li data-popup="contract10Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail10.png" alt="A bright terrace space with a small outdoor tub and lounge chair finished in terracotta tiles.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Spain, Hotel Plácido y Grata, Sevilla</h3>
+                </li>
+                <li data-popup="contract11Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail11.png" alt="a messy but well-organized bookcase">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c04">MUSEUM</mark>Denmark, Copenhagen Contemporary</h3>
+                </li>
+            </ul>
+            <ul data-dp="none" id="contractTab2">
+                <li data-popup="contract1Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail01.png" alt="A modern lobby space with a curved lounge chair and a low table.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Israel, Dior, Tel Aviv</h3>
+                </li>
+                <li data-popup="contract2Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail02.png" alt="A cosy dining area decorated with soft shades and minimal furniture.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, ferm LIVING HQ, Copenhagen</h3>
+                </li>
+                <li data-popup="contract3Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail03.png" alt="Modern rotating chairs are placed in a classic conference room full of natural light.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, Office in the Office Club, Copenhagen</h3>
+                </li>
+                <li data-popup="contract4Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail04.png" alt="Sensuous lounge corner with formative furniture, stable atmosphere with warm lighting.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>The Netherlands, Public Audio, Amsterdam</h3>
+                </li>
+                <li data-popup="contract5Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail05.png" alt="A bright, soft meeting space with warm pink-toned chairs and lights.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Sweden, TINK, Stockholm</h3>
+                </li>
+            </ul>
+            <ul data-dp="none" id="contractTab3">
+                <li data-popup="contract6Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail06.png" alt="chairs and tables reflected in the mirror create a cozy atmosphere with a cozy sofa.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>Denmark, Pasteur's Tower, Copenhagen</h3>
+                </li>
+                <li data-popup="contract7Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail07.png" alt="A minimal living room with a soft curved cream sofa and formative props in harmony.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>France, Good Design Store x Archik, Marseille</h3>
+                </li>
+            </ul>
+            <ul data-dp="none" id="contractTab4">
+                <li data-popup="contract8Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail08.png" alt="An emotional interior design with various objects and plants by the window.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Denmark, Residential Suite at Villa Copenhagen</h3>
+                </li>
+                <li data-popup="contract9Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail09.png" alt="A natural emotional interior scene with wild plants stuck in a clunky textured ceramic vase.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Greece, Atoles Retreat, Santorini</h3>
+                </li>
+                <li data-popup="contract10Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail10.png" alt="A bright terrace space with a small outdoor tub and lounge chair finished in terracotta tiles.">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Spain, Hotel Plácido y Grata, Sevilla</h3>
+                </li>
+            </ul>
+            <ul data-dp="none" id="contractTab5">
+                <li data-popup="contract11Popup">
+                    <img data-dp="block" src="images/contract_case_Thumbnail11.png" alt="a messy but well-organized bookcase">
+                    <h3 class="bk24"><mark data-dp="block" class="mm10 c04">MUSEUM</mark>Denmark, Copenhagen Contemporary</h3>
+                </li>
+            </ul>
+        </div>
+        <article id="contract1Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c01">OFFICE</mark>
+                    Israel, Dior, Tel Aviv
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Tel Aviv, Israel</span>
+                <cite data-dp="block" class="mm15_20">Designer: Design by Kfir Galatia Azulay for kot architects</cite>
+                <cite data-dp="block" class="mm15_20">Photographer: Amit Geron</cite>
+                <time class="bd10_200" datetime="2023">Year: 2023</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case1_img01.webp" alt="A stylish showroom featuring soft-curved sofas and tiered seating.">
+                <img data-dp="block" src="images/contract_case1_img02.webp" alt="A minimalist interior with tall shelves and well-organized displays.">
+                <img data-dp="block" src="images/contract_case1_img03.webp" alt="A luxurious seating area with decorative items, set against a backdrop of high-rise views.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract2Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail02.png" alt="A cosy dining area decorated with soft shades and minimal furniture.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, ferm LIVING HQ, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract6Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail06.png" alt="chairs and tables reflected in the mirror create a cozy atmosphere with a cozy sofa.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>Denmark, Pasteur's Tower, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract10Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail10.png" alt="A bright terrace space with a small outdoor tub and lounge chair finished in terracotta tiles.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Spain, Hotel Plácido y Grata, Sevilla</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract2Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c01">OFFICE</mark>
+                    Denmark, ferm LIVING HQ, Copenhagen
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Copenhagen, Denmark</span>
+                <cite data-dp="block" class="mm15_20">Photographer: Mikkel Tjellesen</cite>
+                <time class="bd10_200" datetime="2023">Year: 2023</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case2_img01.webp" alt="A cozy dining space with warm wooden beams and neutral-toned furniture.">
+                <img data-dp="block" src="images/contract_case2_img02.webp" alt="A refined meeting space where soft curtains complement the plush-textured chairs.">
+                <img data-dp="block" src="images/contract_case2_img03.webp" alt="A modern meeting room featuring a minimalist large conference table in a sleek setting.">
+                <img data-dp="block" src="images/contract_case2_img04.webp" alt="A meeting area with a sharp-edged wooden table and stylish black chairs in harmony.">
+                <img data-dp="block" src="images/contract_case2_img05.webp" alt="A stylish workspace featuring a striped chair and neatly organized storage boxes.">
+                <img data-dp="block" src="images/contract_case2_img06.webp" alt="A striped designer chair placed in a naturally lit, cozy interior space.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract5Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail05.png" alt="A bright, soft meeting space with warm pink-toned chairs and lights.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Sweden, TINK, Stockholm</h3>
+                    </li>
+                    <li data-popup="contract9Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail09.png" alt="A natural emotional interior scene with wild plants stuck in a clunky textured ceramic vase.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Greece, Atoles Retreat, Santorini</h3>
+                    </li>
+                    <li data-popup="contract11Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail11.png" alt="a messy but well-organized bookcase">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c04">MUSEUM</mark>Denmark, Copenhagen Contemporary</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract3Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c01">OFFICE</mark>
+                    Denmark, Office in the Office Club, Copenhagen
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Copenhagen, Denmark</span>
+                <cite data-dp="block" class="mm15_20">Photographer: Mikkel Tjellesen</cite>
+                <time class="bd10_200" datetime="2023">Year: 2022</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case3_img01.webp" alt="An elegant meeting space with swivel fabric chairs and a simple table on a warm-toned rug.">
+                <img data-dp="block" src="images/contract_case3_img02.png" alt="Elegant dining space with soft beige swivel chairs paired with a black table.">
+                <img data-dp="block" src="images/contract_case3_img03.png" alt="A minimalist swivel chair neatly placed by the window with natural light streaming in.">
+                <img data-dp="block" src="images/contract_case3_img04.webp" alt="A bold striped accent chair stylishly fills a cozy corner by the window.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract2Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail02.png" alt="A cosy dining area decorated with soft shades and minimal furniture.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, ferm LIVING HQ, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract6Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail06.png" alt="chairs and tables reflected in the mirror create a cozy atmosphere with a cozy sofa.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>Denmark, Pasteur's Tower, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract10Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail10.png" alt="A bright terrace space with a small outdoor tub and lounge chair finished in terracotta tiles.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Spain, Hotel Plácido y Grata, Sevilla</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract4Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c01">OFFICE</mark>
+                    The Netherlands, Public Audio, Amsterdam
+                </h3>
+                <span data-dp="block"class="bk16_25">Location: Amsterdam, Netherlands</span>
+                <cite data-dp="block" class="mm15_20">Architect: Studio Paradis</cite>
+                <cite data-dp="block" class="mm15_20">Stylist: Studio Paradis</cite>
+                <cite data-dp="block" class="mm15_20">Photographer: Studio Paradis</cite>
+                <time class="bd10_200" datetime="2022">Year: 2022</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case4_img01.webp" alt="A minimalist lounge area with a cream-colored sofa and table harmonizing with warm wood-paneled walls.">
+                <img data-dp="block" src="images/contract_case4_img02.webp" alt="A cozy corner featuring two softly curved armchairs and a small table under warm lighting.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract5Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail05.png" alt="A bright, soft meeting space with warm pink-toned chairs and lights.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Sweden, TINK, Stockholm</h3>
+                    </li>
+                    <li data-popup="contract9Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail09.png" alt="A natural emotional interior scene with wild plants stuck in a clunky textured ceramic vase.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Greece, Atoles Retreat, Santorini</h3>
+                    </li>
+                    <li data-popup="contract11Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail11.png" alt="a messy but well-organized bookcase">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c04">MUSEUM</mark>Denmark, Copenhagen Contemporary</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract5Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c01">OFFICE</mark>
+                    Sweden, TINK, Stockholm
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Stockholm, Sweden</span>
+                <cite data-dp="block" class="mm15_20">Photographer: Note Design Studio</cite>
+                <cite data-dp="block" class="mm15_20">Interior Design: Note Design Studio</cite>
+                <time class="bd10_200" datetime="2018">Year: 2018</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case5_img01.webp" alt="A stylish meeting space with pastel-toned chairs and a minimal table against a bright curtain backdrop.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract2Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail02.png" alt="A cosy dining area decorated with soft shades and minimal furniture.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, ferm LIVING HQ, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract6Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail06.png" alt="chairs and tables reflected in the mirror create a cozy atmosphere with a cozy sofa.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>Denmark, Pasteur's Tower, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract10Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail10.png" alt="A bright terrace space with a small outdoor tub and lounge chair finished in terracotta tiles.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Spain, Hotel Plácido y Grata, Sevilla</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract6Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>
+                    Denmark, Pasteur's Tower, Copenhagen
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Copenhagen, Denmark</span>
+                <cite data-dp="block" class="mm15_20">Photographer: Martin Neve</cite>
+                <time class="bd10_200" datetime="2023">Year: 2023</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case6_img01.webp" alt="An organically shaped mirror reflects a soft armchair and sculptural light fixture in a cozy setting.">
+                <img data-dp="block" src="images/contract_case6_img02.webp" alt="A harmonious atmosphere between a naturally toned dining area and a warm, inviting bedroom beyond.">
+                <img data-dp="block" src="images/contract_case6_img03.webp" alt="A warm bedroom corner featuring a minimal wall shelf and a unique decorative candle holder.">
+                <img data-dp="block" src="images/contract_case6_img04.webp" alt="A beige-toned bedroom combines a black chair with a plant pot, creating a neat and warm atmosphere.">
+                <img data-dp="block" src="images/contract_case6_img05.webp" alt="A warm and stylish wall display featuring an art print and small ceramic objects in harmony.">
+                <img data-dp="block" src="images/contract_case6_img06.webp" alt="A space where props and clothes hang on a wall shelf, it stands out for practicality and minimal interior design.">
+                <img data-dp="block" src="images/contract_case6_img07.webp" alt="A floor plan of a small apartment with an open living room, kitchen and bedroom, designed to efficiently utilize the space.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract5Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail05.png" alt="A bright, soft meeting space with warm pink-toned chairs and lights.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Sweden, TINK, Stockholm</h3>
+                    </li>
+                    <li data-popup="contract9Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail09.png" alt="A natural emotional interior scene with wild plants stuck in a clunky textured ceramic vase.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Greece, Atoles Retreat, Santorini</h3>
+                    </li>
+                    <li data-popup="contract11Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail11.png" alt="a messy but well-organized bookcase">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c04">MUSEUM</mark>Denmark, Copenhagen Contemporary</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract7Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>
+                    France, Good Design Store x Archik, Marseille
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Marseille, France</span>
+                <cite data-dp="block" class="mm15_20">Architect: Benjamin Bonneville</cite>
+                <cite data-dp="block" class="mm15_20">Stylist: Benjamin Bonneville</cite>
+                <cite data-dp="block" class="mm15_20">Photographer: Olivier Amsellem</cite>
+                <time class="bd10_200" datetime="2021">Year: 2021</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case7_img01.webp" alt="Beige sofa and modern black floor lamp next to window with natural light.">
+                <img data-dp="block" src="images/contract_case7_img02.webp" alt="A bright and simple dining area with a round hardwood table, a vase, and a white metal chair in harmony.">
+                <img data-dp="block" src="images/contract_case7_img03.webp" alt="a living room table with a curved beige sofa, a unique design of vases, and a cozy space with abstraction.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract2Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail02.png" alt="A cosy dining area decorated with soft shades and minimal furniture.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, ferm LIVING HQ, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract6Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail06.png" alt="chairs and tables reflected in the mirror create a cozy atmosphere with a cozy sofa.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>Denmark, Pasteur's Tower, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract10Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail10.png" alt="A bright terrace space with a small outdoor tub and lounge chair finished in terracotta tiles.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Spain, Hotel Plácido y Grata, Sevilla</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract8Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c03">HOTEL</mark>
+                    Denmark, Residential Suite at Villa Copenhagen
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Copenhagen, Denmark</span>
+                <cite data-dp="block" class="mm15_20">Photographer: Stine Christiansen</cite>
+                <time class="bd10_200" datetime="2023">Year: 2023</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case8_img01.webp" alt="A warm resting area with a beige sofa and a black side table harmoniously arranged by a natural light-lit window.">
+                <img data-dp="block" src="images/contract_case8_img02.webp" alt="A stylish interior with a variety of wall-filled artworks and soft curved furniture.">
+                <img data-dp="block" src="images/contract_case8_img03.png" alt="A minimal, warm workspace with stylish white tabletop lighting and props on a curved wooden desk.">
+                <img data-dp="block" src="images/contract_case8_img04.webp" alt="Soft and cozy bedroom space with patchwork curtains and neutral-toned bedding.">
+                <img data-dp="block" src="images/contract_case8_img05.webp" alt="Warm and sensual living room and dining area with gallery walls, dining table and cozy sofa.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract5Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail05.png" alt="A bright, soft meeting space with warm pink-toned chairs and lights.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Sweden, TINK, Stockholm</h3>
+                    </li>
+                    <li data-popup="contract9Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail09.png" alt="A natural emotional interior scene with wild plants stuck in a clunky textured ceramic vase.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Greece, Atoles Retreat, Santorini</h3>
+                    </li>
+                    <li data-popup="contract11Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail11.png" alt="a messy but well-organized bookcase">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c04">MUSEUM</mark>Denmark, Copenhagen Contemporary</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract9Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c03">HOTEL</mark>
+                    Greece, Atoles Retreat, Santorini
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Santorini, Greece</span>
+                <cite data-dp="block" class="mm15_20">Architect: Stones &amp; Walls</cite>
+                <cite data-dp="block" class="mm15_20">Photographer: Mia Dorier</cite>
+                <time class="bd10_200" datetime="2021">Year: 2021</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case9_img01.webp" alt="Directing interior props that create a warm atmosphere by inserting wildflowers into a ceramic vase with a natural texture.">
+                <img data-dp="block" src="images/contract_case9_img02.webp" alt="A minimal space with unique forms of vases and canvas cloth chairs on the arched shelves of the wall.">
+                <img data-dp="block" src="images/contract_case9_img03.webp" alt="Formal black stools and ceramic vases decorated on a concise wall shelf complete a sophisticated and sensual atmosphere.">
+                <img data-dp="block" src="images/contract_case9_img04.webp" alt="Put towels and flowers on a black metal tray on a natural material table, creating a warm atmosphere of hospitality.">
+                <img data-dp="block" src="images/contract_case9_img05.webp" alt="A terrace area of perfect relaxation with two lounge chairs and tables in the background with stunning ocean views.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract2Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail02.png" alt="A cosy dining area decorated with soft shades and minimal furniture.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, ferm LIVING HQ, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract6Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail06.png" alt="chairs and tables reflected in the mirror create a cozy atmosphere with a cozy sofa.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>Denmark, Pasteur's Tower, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract10Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail10.png" alt="A bright terrace space with a small outdoor tub and lounge chair finished in terracotta tiles.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Spain, Hotel Plácido y Grata, Sevilla</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract10Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c03">HOTEL</mark>
+                    Spain, Hotel Plácido y Grata, Sevilla
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Sevilla, Spain</span>
+                <cite data-dp="block" class="mm15_20">Architect: Kiran Vasnani &amp; Marta Santana</cite>
+                <cite data-dp="block" class="mm15_20">Stylist: Your Living Space </cite>
+                <cite data-dp="block" class="mm15_20">Photographer: Bacon Studio</cite>
+                <cite data-dp="block" class="mm15_20">Interior Design: Your Living Space</cite>
+                <time class="bd10_200" datetime="2021">Year: 2021</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case10_img01.webp" alt="Bright and relaxed outdoor bathroom space with terra cotta tile tubs and lounge chairs in harmony.">
+                <img data-dp="block" src="images/contract_case10_img02.webp" alt="Relaxed outdoor bathroom space and two lounge chairs">
+                <img data-dp="block" src="images/contract_case10_img03.webp" alt="a potted plant and lounge chair on an open balcony">
+                <img data-dp="block" src="images/contract_case10_img04.webp" alt="Checkered wall decorations are shining in the sun, creating checkered shadows on the balcony.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract5Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail05.png" alt="A bright, soft meeting space with warm pink-toned chairs and lights.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Sweden, TINK, Stockholm</h3>
+                    </li>
+                    <li data-popup="contract9Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail09.png" alt="A natural emotional interior scene with wild plants stuck in a clunky textured ceramic vase.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Greece, Atoles Retreat, Santorini</h3>
+                    </li>
+                    <li data-popup="contract11Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail11.png" alt="a messy but well-organized bookcase">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c04">MUSEUM</mark>Denmark, Copenhagen Contemporary</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+        <article id="contract11Popup">
+            <button class="closeBtn" type="button">close</button>
+            <div class="popupTitle">
+                <h3 class="lt48 tc">
+                    <mark data-dp="block" class="mm10 c04">MUSEUM</mark>
+                    Denmark, Copenhagen Contemporary, Copenhagen
+                </h3>
+                <span data-dp="block" class="bk16_25 tc">Location: Copenhagen, Denmark</span>
+                <time class="bd10_200" datetime="2022">Year: 2022</time>
+            </div>
+            <figure>
+                <img data-dp="block" src="images/contract_case11_img01.webp" alt="There are several spacious desks and circular chairs in a well-organized office space.">
+                <img data-dp="block" src="images/contract_case11_img02.webp" alt="There are pictures and colored pencils drawn by a child on the desk.">
+            </figure>
+            <div class="moreCaseBox">
+                <h4 class="bk32">More from the Cases</h4>
+                <ul>
+                    <li data-popup="contract2Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail02.png" alt="A cosy dining area decorated with soft shades and minimal furniture.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c01">OFFICE</mark>Denmark, ferm LIVING HQ, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract6Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail06.png" alt="chairs and tables reflected in the mirror create a cozy atmosphere with a cozy sofa.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c02">RESIDENTIAL</mark>Denmark, Pasteur's Tower, Copenhagen</h3>
+                    </li>
+                    <li data-popup="contract10Popup">
+                        <img data-dp="block" src="images/contract_case_Thumbnail10.png" alt="A bright terrace space with a small outdoor tub and lounge chair finished in terracotta tiles.">
+                        <h3 class="bk24"><mark data-dp="block" class="mm10 c03">HOTEL</mark>Spain, Hotel Plácido y Grata, Sevilla</h3>
+                    </li>
+                </ul>
+                <button class="mm15 closeBtn arrowBoxBtn" type="button">All Cases</button>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <div>
+            <h2 class="mm11_100">WELCOME TO OUR HOME</h2>
+            <label data-dp="block" for="userEmail" class="bk13">Subscribe to our newsletter and be among the first to hear about new arrivals, sale, events and  special offers.</label>
+            <form>
+                <div data-fl="fL">
+                    <input class="bk26" type="email" placeholder="Enter Email Address" title="Enter Email Address" required id="userEmail">
+                    <input type="submit" value="Subscribe">
+                    <mark data-dp="none" class="bk13 invalidMsg">Invalid email address</mark>
+                    <mark data-dp="none" class="bk13 validMsg">This is the correct email format.</mark>
+                </div>
+                <input data-dp="none" type="checkbox" id="ck_subscribeAgree">
+                <label data-dp="block" for="ck_subscribeAgree" class="mm12">By signing up, you agree to receive our newsletter and accept our <a class="mm12" href="fi_privacyPolicy.html">Privacy Policy</a>. You can  unsubscribe anytime.</label>
+            </form>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h3 class="mm13">Products</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fb_giftCards.html">Gift Card</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://e.issuu.com/embed.html?d=product_overview_2024&u=fermliving">Catalogues</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://fermliving.presscloud.com/digitalshowroom/#/gallery/assembly-manuals-world">Product manuals</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/FermLiving_Fabric_LeatherOverview_SS25_61f9bc57-1969-47f3-a932-55ce97fcbd0a.pdf?v=1747313550">Fabric Overview</a></li>
+                        <li><a data-dp="block" href="fc_responsibleProducts.html">Responsible Products</a></li>
+                        <li><a data-dp="block" href="fd_claimForm.html">Product Claim Form</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">Customer Service</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fd_claimForm.html">Contact</a></li>
+                        <li><a data-dp="block" href="fe_storeLocator.html">Store Locator</a></li>
+                        <li><a data-dp="block" href="ff_faq.html">FAQ</a></li>
+                        <li><a data-dp="block" href="fg_shippingReturn.html">Shipping &amp; Return</a></li>
+                        <li><a data-dp="block" href="fh_termsConditions.html">Terms and conditions</a></li>
+                        <li><a data-dp="block" href="fi_privacyPolicy.html">Privacy policy</a></li>
+                        <li><a data-dp="block" href="fj_cookies.html">Cookies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">About ferm LIVING</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fa_aboutUs.html">About us</a></li>
+                        <li><a data-dp="block" href="fk_career.html">Career</a></li>
+                        <li><a data-dp="block" href="fl_contractCases.html">Contract cases</a></li>
+                        <li><a data-dp="block" href="fm_imprintRights.html">Imprint &amp; Rights</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-dp="flex">
+            <h2 data-dp="flex" class="bd10">
+                <img src="images/favicon.png" alt="Thank you for visiting ferm LIVING">ferm LIVING
+            </h2>
+            <div data-dp="flex">
+                <a target="_blank" href="https://www.youtube.com/user/fermliving">ferm LIVING youtube</a>
+                <a target="_blank" href="https://www.tiktok.com/@fermliving_official">ferm LIVING tiktok</a>
+                <a target="_blank" href="https://www.instagram.com/fermliving/">ferm LIVING instagram</a>
+                <a target="_blank" href="https://www.facebook.com/fermLIVING/">ferm LIVING facebook</a>
+                <a target="_blank" href="https://kr.pinterest.com/fermliving/">ferm LIVING pinterest</a>
+                <p class="mm10">ferm LIVING Aps CVR No. 30070186</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

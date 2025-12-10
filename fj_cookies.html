@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fermLIVING.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <title>ferm LIVING</title>
+</head>
+<body>
+    <div id="cart">
+        <div data-pos="ab" id="dltCart_Popup">
+            <h3 class="mm26">Delete product</h3>
+            <p class="bk12">Are you sure you want to delete it? <br> This action cannot be undone.</p>
+            <input type="button" value="Cancel" class="mm15 closeBtn">
+            <input type="button" value="Delete" class="mm15">
+        </div>
+        <form action="ja_checkout_mycart.html"> 
+            <div data-dp="flex">
+                <input type="button" value="close" class="closeBtn">
+                <h2 class="bk30">Shopping Cart (<span class="count">2</span>)</h2>  
+                <input class="mm13" type="submit" value="Checkout">
+            </div>
+            <div data-fl="fL">
+                <span data-dp="block" class="mm15">Items<mark data-pos="re" data-ba="bf" class="bk10">items In cart are not reserved</mark></span>
+                <span data-dp="block" class="mm15">Quantity</span>
+                <ul>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_01.webp" alt="Rotben - Sculptural Piece black product image">
+                            <b class="mm15">Rotben - Sculptural Piece</b>
+                            <span class="bk15">Black</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">545</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_02.webp" alt="Benzon White and Brown product image">
+                            <b class="mm15">Benzon</b>
+                            <span class="bk15">White/Brown</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">39</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                </ul>
+                <p data-dp="none" class="mm15 emptyCart">Your Shopping Cart is Empty</p>
+            </div>
+            <div>
+                <div data-dp="flex">
+                    <h3 class="mm15">Total</h3>
+                    <strong class="mm26">EUR <span class="totalPrice">584</span>,00</strong>
+                    <input class="mm15" type="submit" value="Checkout">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="search">
+        <input data-pos="ab" type="button" value="close" class="closeBtn">
+        <div data-pos="re">
+            <form>
+                <input class="bk26" type="search" placeholder="Search ferm LIVING" title="search for products">
+                <input data-pos="ab" type="submit" value="enter">
+            </form>
+        </div>
+    </div>
+    <header>
+        <div data-dp="flex">
+            <div>
+                <input class="bd10_200" type="button" value="COMPANY" data-mui="muiSubMenu">
+                <ul data-flDT="fL" class="mm12" id="muiSubMenu">
+                    <li><a href="k_stories.html">Inspiration</a></li>
+                    <li><a href="k_boutique.html">Our World</a></li>
+                    <li><a href="fb_giftCards.html">Gift Cards</a></li>
+                    <li><a href="fe_storeLocator.html">Store Locator</a></li>
+                </ul>
+            </div>
+            <div data-fl="fL" class="mm12">
+                <a data-dp="block" class="login" href="hb_accountOverview.html">Welcome jennie!</a>
+                <button data-pos="re" data-ba="bf" type="button" data-dp="block" data-panel="cart">cart</button>
+                <span class="count tc">2</span>
+            </div>
+        </div>
+        <div data-pos="re">
+            <h1>
+                <a data-dp="block" href="index_signIn.html">
+                    <img src="images/logo_CS01.svg" alt="welcome to ferm LIVING">
+                </a>
+            </h1>
+            <input type="button" value="muiMenu" data-panel="muiMenu">
+            <nav id="muiMenu">
+                <button type="button" class="closeBtn">close</button>
+                <h1>
+                    <a data-dp="block" href="index_signIn.html">
+                        <img src="images/logo_CS13.svg" alt="welcome to ferm LIVING">
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Living</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_01.png" alt="Outdoor seating image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Outdoor seating</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="aa_livingExplore.html">Living Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">OUTDOOR LIVING</h2>                   
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ab_list01_outdoorLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ab_list02_outdoorAcc.html">Outdoor accessories</a></li>
+                                            <li><a data-dp="block" href="ab_list03_outdoorSeating.html">Outdoor seating</a></li>
+                                            <li><a data-dp="block" href="ab_list04_outdoorTables.html">Outdoor tables</a></li>
+                                            <li><a data-dp="block" href="ab_list05_plantPots.html">Plant pots</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">GREEN LIVING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ac_list01_greenLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ac_list02_plantBox.html">Plant box</a></li>
+                                            <li><a data-dp="block" href="ac_list03_potsVases_1p.html">Pots and vases</a></li>
+                                            <li><a data-dp="block" href="ac_list04_plantstandsHolders.html">Plant stands and holders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RESPONSIBLE PRODUCTS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ad_list01_responsibleAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ad_list02_responsibleLiving_1p.html">Responsible LIVING products</a></li>
+                                            <li><a data-dp="block" href="ad_list03_responsibleKids_1p.html">Responsible KIDS products</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Furniture &amp; Kitchen</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_02.png" alt="Insert Side Table image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Insert Side Table</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ba_furnitureKitchenExplore.html">Furniture &amp; Kitchen Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">FURNITURE</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bb_list01_furnitureAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bb_list02_chairsBenches.html">Chairs and benches</a></li>
+                                            <li><a data-dp="block" href="bb_list03_tables.html">Tables</a></li>
+                                            <li><a data-dp="block" href="bb_list04_storageShelves.html">Storage and shelves</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">KITCHEN</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bc_list01_kitchenAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bc_list02_glassesCups.html">Glasses and cups</a></li>
+                                            <li><a data-dp="block" href="bc_list03_platesBowls.html">Plates and bowls</a></li>
+                                            <li><a data-dp="block" href="bc_list04_kitchenTextiles.html">Kitchen textiles</a></li>
+                                            <li><a data-dp="block" href="bc_list05_kitchentoolsUtensils.html">Kitchen tools and utensils</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">SOFAS AND DAYBEDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bd_list01_sofasAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="bd_list02_dase.html">Dase</a></li>
+                                            <li><a data-dp="block" href="bd_list03_rico.html">Rico</a></li>
+                                            <li><a data-dp="block" href="bd_list04_catena.html">Catena</a></li>
+                                            <li><a data-dp="block" href="bd_list05_turn.html">Turn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Decor &amp; Lighting</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_03.png" alt="Klint Tape Dispenser image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Klint Tape Dispenser</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ca_decorLightingExplore.html">Decor &amp; Lighting Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">ACCESSORIES &amp; DECOR</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cb_list01_accDecorAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cb_list02_accessories.html">Accessories</a></li>
+                                            <li><a data-dp="block" href="cb_list03_decorations.html">Decorations</a></li>
+                                            <li><a data-dp="block" href="cb_list04_candlesCandleholder.html">Candles and candleholders</a></li>
+                                            <li><a data-dp="block" href="cb_list05_hooksHolders.html">Hooks and holders</a></li>
+                                            <li><a data-dp="block" href="cb_list06_mirrors.html">Mirrors</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">LIGHTING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cc_list01_lightingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cc_list02_floorLamps.html">Floor lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list03_tableLamps.html">Table lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list04_wallLamps.html">Wall lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list05_pendantLamps.html">Pendant lamps</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">WALLPAPER</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cd_list01_wallpaperAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="cd_list02_katieScott.html">ferm LIVING x Katie Scott</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Textiles</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_04.png" alt="Daze Bedspread image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Daze Bedspread</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="da_textilesExplore.html">Textiles Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">TEXTILES</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="db_list01_textileAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="db_list02_cushions.html">Cushions</a></li>
+                                            <li><a data-dp="block" href="db_list03_bedding.html">Bedding</a></li>
+                                            <li><a data-dp="block" href="db_list04_throwsBlankets.html">Throws and blankets</a></li>
+                                            <li><a data-dp="block" href="db_list05_towels.html">Towels</a></li>
+                                            <li><a data-dp="block" href="db_list06_showerCurtains.html">Shower curtains</a></li>
+                                            <li><a data-dp="block" href="db_list07_bagBaskets.html">Bags and baskets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RUGS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="dc_list01_rugsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="dc_list02_rectangularRugs.html">Rectangular rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list03_roundRugs.html">Round rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list04_matsRunners.html">Mats and runners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">KIDS</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_05.png" alt="Benzon, Mumbo, Donna, Elly image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Benzon, Mumbo, Donna, Elly</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ea_kidsExplore.html">KIDS Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">KIDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="eb_list01_kidsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="eb_list02_kidsObjects_1p.html">Kids objects</a></li>
+                                            <li><a data-dp="block" href="eb_list03_kidsFurniture.html">Kids furniture</a></li>
+                                            <li><a data-dp="block" href="eb_list04_kidsTextiles.html">Kids textiles</a></li>
+                                            <li><a data-dp="block" href="eb_list05_kidsRugs.html">Kids rugs</a></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-dp="block" data-pos="re" class="mm15" href="fa_aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <input data-pos="ab" type="button" value="search" data-panel="search">
+        </div>
+        <p class="mm15 tc">Freshen your table s palette for Sunday brunch. <a class="bd15" href="ba_furnitureKitchenExplore.html">Shop Furniture &amp; Kitchen</a></p>
+    </header>
+    <ol data-flDT="fL" class="pageNav mm10">
+        <li><a href="index.html">HOME</a></li>
+        <li>COOKIES</li>
+    </ol>
+    <div class="ftcsCookiesArea mIrr">
+        <div data-pos="re" data-ba="bf" class="titleBox tc">
+            <h2 data-pos="re" class="lt48">Cookies</h2>
+            <p data-pos="re" class="bk16_25">Our Customer Service team are real people in San Francisco, here to help. If you have any questions, call us at  <a href="tel:+4570227523">+45 7022 7523</a>, start a chat, or email <a href="mailto:webshop@fermliving.com">webshop@fermliving.com</a>. As always, thank you for being here.</p>
+        </div>
+        <div>
+            <aside>
+                <div>
+                    <h3 class="bd10_200">CUSTOMER SERVICE</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="ff_faq.html">FAQ</a></li>
+                        <li><a data-dp="block" href="fg_shippingReturn.html">Shipping &amp; Return</a></li>
+                        <li><a data-dp="block" href="fh_termsConditions.html">Terms and conditions</a></li>
+                        <li><a data-dp="block" href="fi_privacyPolicy.html">Privacy policy</a></li>
+                        <li class="bd15">Cookies</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="bd10_200">CONTACT CUSTOMER SERVICE</h3>
+                    <address class="bk15">
+                        <a data-dp="block" href="mailto:webshop@fermliving.com">webshop@fermliving.com</a>
+                        <a data-dp="block" href="tel:+4570227523">+ 45 7022 7523</a>
+                        <p>Mon-Fri from 8-4 PT</p>
+                    </address>
+                </div>
+            </aside>
+            <article>
+                <h3 class="bk26">Cookies</h3>
+                <ol class="bk15">
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">1. General</b>
+                        <div data-dp="none">
+                            <p>This cookie policy is based on the "Directive on privacy and electronic communications" Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector (Directive on privacy and electronic communications).</p>
+                            <p>This directive contains the rules regarding information about and consents to cookies that are saved on your computer. When you visit this website information about you, your computer and your behaviour on the site is collected. In this cookie policy, you can read in details information about how we handle the collected information, what we use it for, who has access to the information and whom you can contact regarding the collected information.</p>
+                            <p>By visiting and using this website, you give your consent to this cookie policy and the collection of the information about you.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">2. Cookies</b>
+                        <div data-dp="none">
+                            <p>When you visit this website, you automatically receive one or more cookies.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">3. What is a cookie?</b>
+                        <div data-dp="none">
+                            <p>A cookie is a small text file stored in your browser and recognised by the website upon returning, enabling us to send personalised information to your browser. A cookie can contain text, numbers or e.g. a date, but there is no personal information stored in a cookie. It is not a program and cannot contain a virus.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">4. How long do we store the cookies?</b>
+                        <div data-dp="none">
+                            <p>The cookies sent to you from this website is stored for maximum 24 months from your latest visit. Every time you revisit the site, the period is prolonged. The cookies concerned will, therefore, be stored in a maximum of 24 months counting from your last visit to our website.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">5. How do I avoid cookies?</b>
+                        <div data-dp="none">
+                            <p>Rejecting cookies: You can always reject cookies on your computer by changing the settings in your browser. How you find these settings depends on your browser. You must be aware that if you choose to reject cookies, there might be functions you cannot use because these functions and services presuppose that the website remembers the choices you make.</p>
+                            <p>Deleting cookies: Cookies that you previously accepted can afterwards easily be deleted. If you use a PC with a recent Internet browser you can delete your cookies using the keyboard shortcut: CTRL + SHIFT + Delete. If the shortcut does not work, or if you use a MAC, you may start by finding out which browser you use and subsequently clicking the relevant link:</p>
+                            <p><b class="mm15">Remember:</b> If you use several Internet browsers you have to delete the cookies in all of them.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">6. What are cookies used for on our website?</b>
+                        <div data-dp="none">
+                            <p>Cookies are necessary for the website to work properly. Furthermore, cookies help us gain an overview of your visit to the site so that we can optimise and target the website continually to your needs and interests. Cookies remember e.g. what you added to a potential basket if you previously visited the site and what language and currency you prefer on the site. We use cookies to determine who visits our website as well as keeping statistics, analyses and re-marketing. On a general level, the cookies are thus utilised as part of our service to show you content as relevant as possible.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">7. Cookies on fermliving.com</b>
+                        <div data-dp="none">
+                            <p>fermliving.com is hosted on a platform owned by Shopify Inc. Your data is kept in Shopifys database and apps. Your data is kept save on a secure server behind a firewall. The platform registers cookies, which are essential for the function of this website.</p>
+                            <p>This website uses cookies. We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.</p>
+                            <p>Cookies are small text files that can be used by websites to make a user's experience more efficient.</p>
+                            <p>The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.</p>
+                            <p>This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.</p>
+                            <p>You can at any time change or withdraw your consent from the Cookie Declaration on our website.</p>
+                            <p>Learn more about who we are, how you can contact us and how we process personal data in our Privacy Policy.</p>
+                            <p>Please state your consent ID and date when you contact us regarding your consent.</p>
+                            <p>Your consent applies to the following domains: fermliving.nl, fermliving.se, fermliving.fr, fermliving.co.uk, fermliving.de, fermliving.us, fermliving.dk, fermliving.com</p>
+                            <p>Cookie declaration last updated on 24. 5. 29. by Cookiebot:</p>
+                            <h4 class="mm15">Necessary (128)</h4>
+                            <p>Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
+                            <div>
+                                <table>
+                                    <caption>List of Essential Cookies Required for Core Site Functionality</caption>
+                                    <thead class="mm15">
+                                        <tr>
+                                            <th>NAME</th>
+                                            <th>PROVIDER</th>
+                                            <th>PURPOSE</th>
+                                            <th>EXPIRY</th>
+                                            <th>TYPE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>_cmp_a [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Determines whether the user has accepted the cookie consent box.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_dc_gtm_UA-# [x6]</td>
+                                            <td>Google</td>
+                                            <td>Used by Google Tag Manager to control the loading of a Google Analytics script tag.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_ga [x7]</td>
+                                            <td>Google</td>
+                                            <td>Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td>
+                                            <td>2 years</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_gat [x5]</td>
+                                            <td>Google</td>
+                                            <td>Used by Google Analytics to throttle request rate</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_gid [x6]</td>
+                                            <td>Google</td>
+                                            <td>Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_landing_page [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Stores visitors' navigation by registering landing pages - This allows the website to present relevant products and/or measure their advertisement efficiency on other websites.</td>
+                                            <td>13 days</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_orig_referrer [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>This cookie is used to collect information on a visitor. This information will become an ID string with information on a specific visitor - ID information strings can be used to target groups with similar preferences, or can be used by third-party domains or ad-exchanges.</td>
+                                            <td>13 days</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_pay_session [x2]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Shopify</li>
+                                                    <li>Shop</li>
+                                                </ul>
+                                            </td>
+                                            <td>The cookie is necessary for the secure checkout and payment function on the website. This function is provided by shopify.com.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_shopify_s [x7]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Collects data on visitors' behaviour and interaction - This is used to optimize the website and make advertisement on the website more relevant.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_shopify_sa_p [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Collects data on visitors' behaviour and interaction - This is used to make advertisement on the website more relevant. The cookie also allows the website to detect any referrals from other websites.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_shopify_sa_t [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Collects data on visitors' behaviour and interaction - This is used to make advertisement on the website more relevant. The cookie also allows the website to detect any referrals from other websites.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_shopify_y [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Collects data on visitors' behaviour and interaction - This is used to optimize the website and make advertisement on the website more relevant.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_tracking_consent [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Stores the user's cookie consent state for the current domain</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.gif</td>
+                                            <td>Cookiebot</td>
+                                            <td>Used to count the number of sessions to the website, necessary for optimizing CMP product delivery.</td>
+                                            <td>Session</td>
+                                            <td>Pixel Tracker</td>
+                                        </tr>
+                                        <tr>
+                                            <td>bugsnag-anonymous-id</td>
+                                            <td>Shopify</td>
+                                            <td>This cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>cart_currency [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>The cookie is necessary for the secure checkout and payment function on the website. This function is provided by shopify.com.</td>
+                                            <td>13 days</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>cjConsent [x6]</td>
+                                            <td>www.mczbf.com</td>
+                                            <td>Stores the user's cookie consent state for the current domain</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CookieConsent [x6]</td>
+                                            <td>Cookiebot</td>
+                                            <td>Stores the user's cookie consent state for the current domain</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>is_eu</td>
+                                            <td>Shopify</td>
+                                            <td>Determines whether the user is located within the EU and therefore is subject to EU's data privacy regulations.</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>laravel_session</td>
+                                            <td>Shopify</td>
+                                            <td>This cookie is used internally by the website’s owners, when uploading or renewing website content.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>openCart [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Pending</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ps_analytics [x6]</td>
+                                            <td>Photoslurp</td>
+                                            <td>Tracks which photos or galleries the specific user has seen. This information serves for marketing purposes.</td>
+                                            <td>29 days</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>rc::a</td>
+                                            <td>Google</td>
+                                            <td>This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>rc::c</td>
+                                            <td>Google</td>
+                                            <td>This cookie is used to distinguish between humans and bots.</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sc_anonymous_id</td>
+                                            <td>go.dimensionetour.com</td>
+                                            <td>Used in context with the 3D-view-function on the website.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>secure_customer_sig [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>This cookie is used to store customer credentials securely when processing a purchase on the website - the cookie is essential in making a secure online transaction.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>shopify_pay_redirect [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>The cookie is necessary for the secure checkout and payment function on the website. This function is provided by shopify.com.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>uw-icon-locales</td>
+                                            <td>cdn.userway.org</td>
+                                            <td>Used to keep settings on the website's accessibility widget. This helps people with e.g. vision disabilities to properly navigate the site.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>wpm-domain-test [x2]</td>
+                                            <td>fermliving.de</td>
+                                            <td>Necessary for the website security.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>XSRF-TOKEN</td>
+                                            <td>Shopify</td>
+                                            <td>Ensures visitor browsing-security by preventing cross-site request forgery. This cookie is essential for the security of the website and visitor.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4 class="mm15">Preferences (10)</h4>
+                            <p>Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.</p>
+                            <div>
+                                <table>
+                                    <caption>a table of preferences</caption>
+                                    <thead class="mm15">
+                                        <tr>
+                                            <th>NAME</th>
+                                            <th>PROVIDER</th>
+                                            <th>PURPOSE</th>
+                                            <th>EXPIRY</th>
+                                            <th>TYPE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>dixa-widget</td>
+                                            <td>Shopify</td>
+                                            <td>Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>dixa-widget-lvc</td>
+                                            <td>Shopify</td>
+                                            <td>Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>klaviyoOnsite</td>
+                                            <td>Klaviyo</td>
+                                            <td>The cookie is used to manage the mailing list, if the visitor has subscribed to any newsletters or blog posts.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>localization [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Holds the users timezone.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>maps/gen_204</td>
+                                            <td>Google</td>
+                                            <td>Used in context with the website's map integration. The cookie stores user interaction with the map in order to optimize its functionality.</td>
+                                            <td>Session</td>
+                                            <td>Pixel Tracker</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4 class="mm15">Statistics (32)</h4>
+                            <p>Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+                            <div>
+                                <table>
+                                    <caption>Table for Statistical Cookies</caption>
+                                    <thead class="mm15">
+                                        <tr>
+                                            <th>NAME</th>
+                                            <th>PROVIDER</th>
+                                            <th>PURPOSE</th>
+                                            <th>EXPIRY</th>
+                                            <th>TYPE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>(unnamed)</td>
+                                            <td>Sleeknote</td>
+                                            <td>Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator.</td>
+                                            <td>Session</td>
+                                            <td>Pixel Tracker</td>
+                                        </tr>
+                                        <tr>
+                                            <td>__kla_id [x6]</td>
+                                            <td>Klaviyo</td>
+                                            <td>This cookie is used to collect information on the visitor's behavior. This information will be stored for internal use on the website - internal analytics is used to optimize the websites or to register if the visitor has subscribed to a newsletter.</td>
+                                            <td>2 years</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>__qca</td>
+                                            <td>Quantcast</td>
+                                            <td>Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>__qca</td>
+                                            <td>Issuu</td>
+                                            <td>Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_dlt [x2]</td>
+                                            <td>Quantcast</td>
+                                            <td>Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_ga_# [x7]</td>
+                                            <td>Google</td>
+                                            <td>Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit.</td>
+                                            <td>2 years</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_hjSession_#</td>
+                                            <td>Hotjar</td>
+                                            <td>Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_hjSessionUser_#</td>
+                                            <td>Hotjar</td>
+                                            <td>Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>collect</td>
+                                            <td>Google</td>
+                                            <td>Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.</td>
+                                            <td>Session</td>
+                                            <td>Pixel Tracker</td>
+                                        </tr>
+                                        <tr>
+                                            <td>hjActiveViewportIds</td>
+                                            <td>Shopify</td>
+                                            <td>This cookie contains an ID string on the current session. This contains non-personal information on what subpages the visitor enters - this information is used to optimize the visitor's experience.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>hjViewportId</td>
+                                            <td>Shopify</td>
+                                            <td>Saves the user's screen size in order to adjust the size of images on the website.</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>klaviyoPagesVisitCount</td>
+                                            <td>Klaviyo</td>
+                                            <td>Stores data on the time spent on the website and its sub-pages, during the current session.</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>qcSes</td>
+                                            <td>Issuu</td>
+                                            <td>Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content.</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sn_global_countdown_last_reset_timestamp</td>
+                                            <td>Sleeknote</td>
+                                            <td>Sets a timestamp for when the visitor entered the website. This is used for analytical purposes on the website.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SNS [x5]</td>
+                                            <td>Sleeknote</td>
+                                            <td>Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>td</td>
+                                            <td>Shopify</td>
+                                            <td>Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator.</td>
+                                            <td>Session</td>
+                                            <td>Pixel Tracker</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4 class="mm15">Marketing (70)</h4>
+                            <p>Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+                            <div>
+                                <table>
+                                    <caption>Table on Marketing Cookies</caption>
+                                    <thead class="mm15">
+                                        <tr>
+                                            <th>NAME</th>
+                                            <th>PROVIDER</th>
+                                            <th>PURPOSE</th>
+                                            <th>EXPIRY</th>
+                                            <th>TYPE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#-#</td>
+                                            <td>YouTube</td>
+                                            <td>Pending</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>__kla_viewed</td>
+                                            <td>Klaviyo</td>
+                                            <td>Collects information on the user's website navigation and preferences - This is used to target potential newsletter based upon this information.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_fbp [x7]</td>
+                                            <td>Meta Platforms, Inc.</td>
+                                            <td>Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.</td>
+                                            <td>3 months</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_pin_unauth [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Used by Pinterest to track the usage of services.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_pinterest_ct_ua</td>
+                                            <td>Pinterest</td>
+                                            <td>Used by Pinterest to track the usage of services.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_sn_a [x5]</td>
+                                            <td>Sleeknote</td>
+                                            <td>Implements pop-up advertisement on the website.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_sn_m [x5]</td>
+                                            <td>Sleeknote</td>
+                                            <td>Implements pop-up advertisement on the website.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_sn_n [x5]</td>
+                                            <td>Sleeknote</td>
+                                            <td>Implements pop-up advertisement on the website.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ads/ga-audiences</td>
+                                            <td>Google</td>
+                                            <td>Used by Google AdWords to re-engage visitors that are likely to convert to customers based on the visitor's online behaviour across websites.</td>
+                                            <td>Session</td>
+                                            <td>Pixel Tracker</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ar_debug</td>
+                                            <td>Pinterest</td>
+                                            <td>Checks whether a technical debugger-cookie is present.</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>fr</td>
+                                            <td>Meta Platforms, Inc.</td>
+                                            <td>Pending</td>
+                                            <td>3 months</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>iU5q-!O9@$</td>
+                                            <td>YouTube</td>
+                                            <td>Registers a unique ID to keep statistics of what videos from YouTube the user has seen.</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>iutk</td>
+                                            <td>Issuu</td>
+                                            <td>Recognises the user's device and what Issuu documents have been read.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LAST_RESULT_ENTRY_KEY</td>
+                                            <td>YouTube</td>
+                                            <td>Used to track user’s interaction with embedded content.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>lastExternalReferrer</td>
+                                            <td>Meta Platforms, Inc.</td>
+                                            <td>Detects how the user reached the website by registering their last URL-address.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>lastExternalReferrerTime</td>
+                                            <td>Meta Platforms, Inc.</td>
+                                            <td>Detects how the user reached the website by registering their last URL-address.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LogsDatabaseV2:V#||LogsRequestsStore</td>
+                                            <td>YouTube</td>
+                                            <td>Pending</td>
+                                            <td>Persistent</td>
+                                            <td>IndexedDB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>mc</td>
+                                            <td>Quantcast</td>
+                                            <td>Collects data on the user's visits to the website, such as what pages have been loaded. The registered data is used for targeted ads.</td>
+                                            <td>13 months</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>nextId</td>
+                                            <td>YouTube</td>
+                                            <td>Used to track user’s interaction with embedded content.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>NID</td>
+                                            <td>Google</td>
+                                            <td>Pending</td>
+                                            <td>6 months</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PREF</td>
+                                            <td>YouTube</td>
+                                            <td>Registers a unique ID that is used by Google to keep statistics of how the visitor uses YouTube videos across different websites.</td>
+                                            <td>8 months</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>prism_# [x8]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>diffuser-cdn.app-us1.com</li>
+                                                    <li>prism.app-us1.com</li>
+                                                </ul>
+                                            </td>
+                                            <td>Collects information on user preferences and/or interaction with web-campaign content - This is used on CRM-campaign-platform used by website owners for promoting events or products.</td>
+                                            <td>29 days</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>remote_sid</td>
+                                            <td>YouTube</td>
+                                            <td>Necessary for the implementation and functionality of YouTube video-content on the website.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>requests</td>
+                                            <td>YouTube</td>
+                                            <td>Used to track user’s interaction with embedded content.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ServiceWorkerLogsDatabase#SWHealthLog</td>
+                                            <td>YouTube</td>
+                                            <td>Necessary for the implementation and functionality of YouTube video-content on the website.</td>
+                                            <td>Persistent</td>
+                                            <td>IndexedDB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TESTCOOKIESENABLED</td>
+                                            <td>YouTube</td>
+                                            <td>Used to track user’s interaction with embedded content.</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>v3/</td>
+                                            <td>Pinterest</td>
+                                            <td>Used by Pinterest to track the usage of services.</td>
+                                            <td>Session</td>
+                                            <td>Pixel Tracker</td>
+                                        </tr>
+                                        <tr>
+                                            <td>VISITOR_INFO1_LIVE</td>
+                                            <td>YouTube</td>
+                                            <td>Tries to estimate the users' bandwidth on pages with integrated YouTube videos.</td>
+                                            <td>179 days</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>VISITOR_PRIVACY_METADATA</td>
+                                            <td>YouTube</td>
+                                            <td>Stores the user's cookie consent state for the current domain</td>
+                                            <td>179 days</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YSC</td>
+                                            <td>YouTube</td>
+                                            <td>Registers a unique ID to keep statistics of what videos from YouTube the user has seen.</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>yt.innertube::nextId</td>
+                                            <td>YouTube</td>
+                                            <td>Registers a unique ID to keep statistics of what videos from YouTube the user has seen.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ytidb::LAST_RESULT_ENTRY_KEY</td>
+                                            <td>YouTube</td>
+                                            <td>Used to track user’s interaction with embedded content.</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YtIdbMeta#databases</td>
+                                            <td>YouTube</td>
+                                            <td>Used to track user’s interaction with embedded content.</td>
+                                            <td>Persistent</td>
+                                            <td>IndexedDB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>yt-remote-cast-available</td>
+                                            <td>YouTube</td>
+                                            <td>Stores the user's video player preferences using embedded YouTube video</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>yt-remote-cast-installed</td>
+                                            <td>YouTube</td>
+                                            <td>Stores the user's video player preferences using embedded YouTube video</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>yt-remote-connected-devices</td>
+                                            <td>YouTube</td>
+                                            <td>Stores the user's video player preferences using embedded YouTube video</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>yt-remote-device-id</td>
+                                            <td>YouTube</td>
+                                            <td>Stores the user's video player preferences using embedded YouTube video</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>yt-remote-fast-check-period</td>
+                                            <td>YouTube</td>
+                                            <td>Stores the user's video player preferences using embedded YouTube video</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>yt-remote-session-app</td>
+                                            <td>YouTube</td>
+                                            <td>Stores the user's video player preferences using embedded YouTube video</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>yt-remote-session-name</td>
+                                            <td>YouTube</td>
+                                            <td>Stores the user's video player preferences using embedded YouTube video</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4 class="mm15">Unclassified (33)</h4>
+                            <p>Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.</p>
+                            <div>
+                                <table>
+                                    <caption>Table for unclassified cookies</caption>
+                                    <thead class="mm15">
+                                        <tr>
+                                            <th>NAME</th>
+                                            <th>PROVIDER</th>
+                                            <th>PURPOSE</th>
+                                            <th>EXPIRY</th>
+                                            <th>TYPE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>"l":# [x3]</td>
+                                            <td>Sleeknote</td>
+                                            <td>Pending</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_shopify_essential [x6]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Pending</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>kl-onsite-modules#kl-event-cache [x5]</td>
+                                            <td>Klaviyo</td>
+                                            <td>Pending</td>
+                                            <td>Persistent</td>
+                                            <td>IndexedDB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ndsp</td>
+                                            <td>pingclock.net</td>
+                                            <td>Pending</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>quot;lquot;:https://# [x2]</td>
+                                            <td>Sleeknote</td>
+                                            <td>Pending</td>
+                                            <td>1 year</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sc-bhistory</td>
+                                            <td>campaign.assets.sitecampaign.com</td>
+                                            <td>Pending</td>
+                                            <td>3 months</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sc-lg-3-hide-on-bottom</td>
+                                            <td>campaign.assets.sitecampaign.com</td>
+                                            <td>Pending</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sc-traffic-source</td>
+                                            <td>campaign.assets.sitecampaign.com</td>
+                                            <td>Pending</td>
+                                            <td>0 day</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                        <tr>
+                                            <td>session-storage-test</td>
+                                            <td>fermliving.dk</td>
+                                            <td>Pending</td>
+                                            <td>Session</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>uw-uid</td>
+                                            <td>cdn.userway.org</td>
+                                            <td>Pending</td>
+                                            <td>Persistent</td>
+                                            <td>HTML Local Storage</td>
+                                        </tr>
+                                        <tr>
+                                            <td>wpm-test-cookie [x11]</td>
+                                            <td>
+                                                <ul>
+                                                    <li>fermliving.co.uk</li>
+                                                    <li>fermliving.com</li>
+                                                    <li>fermliving.de</li>
+                                                    <li>fermliving.dk</li>
+                                                    <li>fermliving.fr</li>
+                                                    <li>fermliving.us</li>
+                                                </ul>
+                                            </td>
+                                            <td>Pending</td>
+                                            <td>Session</td>
+                                            <td>HTTP Cookie</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">8. Contact information</b>
+                        <div data-dp="none">
+                            <p>If you wish to gain further information about this website and its use of cookies, you are welcome to contact us:</p>
+                            <address>
+                                <p>ferm LIVING ApS, Kuglegaardsvej 1-5, 1434 Copenhagen K, Denmark</p>
+                                <p>E-mail: <a href="mailto:webshop@fermliving.com">webshop@fermliving.com</a></p>
+                                <p>Tel: <a href="tel:+4570227523">+45 7022 7523</a></p>
+                            </address>
+                        </div>
+                    </li>
+                </ol>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2 class="mm11_100">WELCOME TO OUR HOME</h2>
+            <label data-dp="block" for="userEmail" class="bk13">Subscribe to our newsletter and be among the first to hear about new arrivals, sale, events and  special offers.</label>
+            <form>
+                <div data-fl="fL">
+                    <input class="bk26" type="email" placeholder="Enter Email Address" title="Enter Email Address" required id="userEmail">
+                    <input type="submit" value="Subscribe">
+                    <mark data-dp="none" class="bk13 invalidMsg">Invalid email address</mark>
+                    <mark data-dp="none" class="bk13 validMsg">This is the correct email format.</mark>
+                </div>
+                <input data-dp="none" type="checkbox" id="ck_subscribeAgree">
+                <label data-dp="block" for="ck_subscribeAgree" class="mm12">By signing up, you agree to receive our newsletter and accept our <a class="mm12" href="fi_privacyPolicy.html">Privacy Policy</a>. You can  unsubscribe anytime.</label>
+            </form>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h3 class="mm13">Products</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fb_giftCards.html">Gift Card</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://e.issuu.com/embed.html?d=product_overview_2024&u=fermliving">Catalogues</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://fermliving.presscloud.com/digitalshowroom/#/gallery/assembly-manuals-world">Product manuals</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/FermLiving_Fabric_LeatherOverview_SS25_61f9bc57-1969-47f3-a932-55ce97fcbd0a.pdf?v=1747313550">Fabric Overview</a></li>
+                        <li><a data-dp="block" href="fc_responsibleProducts.html">Responsible Products</a></li>
+                        <li><a data-dp="block" href="fd_claimForm.html">Product Claim Form</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">Customer Service</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fd_claimForm.html">Contact</a></li>
+                        <li><a data-dp="block" href="fe_storeLocator.html">Store Locator</a></li>
+                        <li><a data-dp="block" href="ff_faq.html">FAQ</a></li>
+                        <li><a data-dp="block" href="fg_shippingReturn.html">Shipping &amp; Return</a></li>
+                        <li><a data-dp="block" href="fh_termsConditions.html">Terms and conditions</a></li>
+                        <li><a data-dp="block" href="fi_privacyPolicy.html">Privacy policy</a></li>
+                        <li><a data-dp="block" href="fj_cookies.html">Cookies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">About ferm LIVING</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fa_aboutUs.html">About us</a></li>
+                        <li><a data-dp="block" href="fk_career.html">Career</a></li>
+                        <li><a data-dp="block" href="fl_contractCases.html">Contract cases</a></li>
+                        <li><a data-dp="block" href="fm_imprintRights.html">Imprint &amp; Rights</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-dp="flex">
+            <h2 data-dp="flex" class="bd10">
+                <img src="images/favicon.png" alt="Thank you for visiting ferm LIVING">ferm LIVING
+            </h2>
+            <div data-dp="flex">
+                <a target="_blank" href="https://www.youtube.com/user/fermliving">ferm LIVING youtube</a>
+                <a target="_blank" href="https://www.tiktok.com/@fermliving_official">ferm LIVING tiktok</a>
+                <a target="_blank" href="https://www.instagram.com/fermliving/">ferm LIVING instagram</a>
+                <a target="_blank" href="https://www.facebook.com/fermLIVING/">ferm LIVING facebook</a>
+                <a target="_blank" href="https://kr.pinterest.com/fermliving/">ferm LIVING pinterest</a>
+                <p class="mm10">ferm LIVING Aps CVR No. 30070186</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

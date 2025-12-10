@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fermLIVING.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <title>ferm LIVING</title>
+</head>
+<body>
+    <div id="cart">
+        <div data-pos="ab" id="dltCart_Popup">
+            <h3 class="mm26">Delete product</h3>
+            <p class="bk12">Are you sure you want to delete it? <br> This action cannot be undone.</p>
+            <input type="button" value="Cancel" class="mm15 closeBtn">
+            <input type="button" value="Delete" class="mm15">
+        </div>
+        <form action="ja_checkout_mycart.html"> 
+            <div data-dp="flex">
+                <input type="button" value="close" class="closeBtn">
+                <h2 class="bk30">Shopping Cart (<span class="count">2</span>)</h2>  
+                <input class="mm13" type="submit" value="Checkout">
+            </div>
+            <div data-fl="fL">
+                <span data-dp="block" class="mm15">Items<mark data-pos="re" data-ba="bf" class="bk10">items In cart are not reserved</mark></span>
+                <span data-dp="block" class="mm15">Quantity</span>
+                <ul>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_01.webp" alt="Rotben - Sculptural Piece black product image">
+                            <b class="mm15">Rotben - Sculptural Piece</b>
+                            <span class="bk15">Black</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">545</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_02.webp" alt="Benzon White and Brown product image">
+                            <b class="mm15">Benzon</b>
+                            <span class="bk15">White/Brown</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">39</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                </ul>
+                <p data-dp="none" class="mm15 emptyCart">Your Shopping Cart is Empty</p>
+            </div>
+            <div>
+                <div data-dp="flex">
+                    <h3 class="mm15">Total</h3>
+                    <strong class="mm26">EUR <span class="totalPrice">584</span>,00</strong>
+                    <input class="mm15" type="submit" value="Checkout">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="search">
+        <input data-pos="ab" type="button" value="close" class="closeBtn">
+        <div data-pos="re">
+            <form>
+                <input class="bk26" type="search" placeholder="Search ferm LIVING" title="search for products">
+                <input data-pos="ab" type="submit" value="enter">
+            </form>
+        </div>
+    </div>
+    <header>
+        <div data-dp="flex">
+            <div>
+                <input class="bd10_200" type="button" value="COMPANY" data-mui="muiSubMenu">
+                <ul data-flDT="fL" class="mm12" id="muiSubMenu">
+                    <li><a href="k_stories.html">Inspiration</a></li>
+                    <li><a href="k_boutique.html">Our World</a></li>
+                    <li><a href="fb_giftCards.html">Gift Cards</a></li>
+                    <li><a href="fe_storeLocator.html">Store Locator</a></li>
+                </ul>
+            </div>
+            <div data-fl="fL" class="mm12">
+                <a data-dp="block" class="login" href="hb_accountOverview.html">Welcome jennie!</a>
+                <button data-pos="re" data-ba="bf" type="button" data-dp="block" data-panel="cart">cart</button>
+                <span class="count tc">2</span>
+            </div>
+        </div>
+        <div data-pos="re">
+            <h1>
+                <a data-dp="block" href="index_signIn.html">
+                    <img src="images/logo_CS01.svg" alt="welcome to ferm LIVING">
+                </a>
+            </h1>
+            <input type="button" value="muiMenu" data-panel="muiMenu">
+            <nav id="muiMenu">
+                <button type="button" class="closeBtn">close</button>
+                <h1>
+                    <a data-dp="block" href="index_signIn.html">
+                        <img src="images/logo_CS13.svg" alt="welcome to ferm LIVING">
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Living</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_01.png" alt="Outdoor seating image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Outdoor seating</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="aa_livingExplore.html">Living Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">OUTDOOR LIVING</h2>                   
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ab_list01_outdoorLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ab_list02_outdoorAcc.html">Outdoor accessories</a></li>
+                                            <li><a data-dp="block" href="ab_list03_outdoorSeating.html">Outdoor seating</a></li>
+                                            <li><a data-dp="block" href="ab_list04_outdoorTables.html">Outdoor tables</a></li>
+                                            <li><a data-dp="block" href="ab_list05_plantPots.html">Plant pots</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">GREEN LIVING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ac_list01_greenLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ac_list02_plantBox.html">Plant box</a></li>
+                                            <li><a data-dp="block" href="ac_list03_potsVases_1p.html">Pots and vases</a></li>
+                                            <li><a data-dp="block" href="ac_list04_plantstandsHolders.html">Plant stands and holders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RESPONSIBLE PRODUCTS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ad_list01_responsibleAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ad_list02_responsibleLiving_1p.html">Responsible LIVING products</a></li>
+                                            <li><a data-dp="block" href="ad_list03_responsibleKids_1p.html">Responsible KIDS products</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Furniture &amp; Kitchen</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_02.png" alt="Insert Side Table image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Insert Side Table</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ba_furnitureKitchenExplore.html">Furniture &amp; Kitchen Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">FURNITURE</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bb_list01_furnitureAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bb_list02_chairsBenches.html">Chairs and benches</a></li>
+                                            <li><a data-dp="block" href="bb_list03_tables.html">Tables</a></li>
+                                            <li><a data-dp="block" href="bb_list04_storageShelves.html">Storage and shelves</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">KITCHEN</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bc_list01_kitchenAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bc_list02_glassesCups.html">Glasses and cups</a></li>
+                                            <li><a data-dp="block" href="bc_list03_platesBowls.html">Plates and bowls</a></li>
+                                            <li><a data-dp="block" href="bc_list04_kitchenTextiles.html">Kitchen textiles</a></li>
+                                            <li><a data-dp="block" href="bc_list05_kitchentoolsUtensils.html">Kitchen tools and utensils</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">SOFAS AND DAYBEDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bd_list01_sofasAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="bd_list02_dase.html">Dase</a></li>
+                                            <li><a data-dp="block" href="bd_list03_rico.html">Rico</a></li>
+                                            <li><a data-dp="block" href="bd_list04_catena.html">Catena</a></li>
+                                            <li><a data-dp="block" href="bd_list05_turn.html">Turn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Decor &amp; Lighting</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_03.png" alt="Klint Tape Dispenser image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Klint Tape Dispenser</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ca_decorLightingExplore.html">Decor &amp; Lighting Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">ACCESSORIES &amp; DECOR</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cb_list01_accDecorAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cb_list02_accessories.html">Accessories</a></li>
+                                            <li><a data-dp="block" href="cb_list03_decorations.html">Decorations</a></li>
+                                            <li><a data-dp="block" href="cb_list04_candlesCandleholder.html">Candles and candleholders</a></li>
+                                            <li><a data-dp="block" href="cb_list05_hooksHolders.html">Hooks and holders</a></li>
+                                            <li><a data-dp="block" href="cb_list06_mirrors.html">Mirrors</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">LIGHTING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cc_list01_lightingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cc_list02_floorLamps.html">Floor lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list03_tableLamps.html">Table lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list04_wallLamps.html">Wall lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list05_pendantLamps.html">Pendant lamps</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">WALLPAPER</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cd_list01_wallpaperAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="cd_list02_katieScott.html">ferm LIVING x Katie Scott</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Textiles</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_04.png" alt="Daze Bedspread image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Daze Bedspread</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="da_textilesExplore.html">Textiles Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">TEXTILES</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="db_list01_textileAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="db_list02_cushions.html">Cushions</a></li>
+                                            <li><a data-dp="block" href="db_list03_bedding.html">Bedding</a></li>
+                                            <li><a data-dp="block" href="db_list04_throwsBlankets.html">Throws and blankets</a></li>
+                                            <li><a data-dp="block" href="db_list05_towels.html">Towels</a></li>
+                                            <li><a data-dp="block" href="db_list06_showerCurtains.html">Shower curtains</a></li>
+                                            <li><a data-dp="block" href="db_list07_bagBaskets.html">Bags and baskets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RUGS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="dc_list01_rugsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="dc_list02_rectangularRugs.html">Rectangular rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list03_roundRugs.html">Round rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list04_matsRunners.html">Mats and runners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">KIDS</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_05.png" alt="Benzon, Mumbo, Donna, Elly image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Benzon, Mumbo, Donna, Elly</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ea_kidsExplore.html">KIDS Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">KIDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="eb_list01_kidsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="eb_list02_kidsObjects_1p.html">Kids objects</a></li>
+                                            <li><a data-dp="block" href="eb_list03_kidsFurniture.html">Kids furniture</a></li>
+                                            <li><a data-dp="block" href="eb_list04_kidsTextiles.html">Kids textiles</a></li>
+                                            <li><a data-dp="block" href="eb_list05_kidsRugs.html">Kids rugs</a></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-dp="block" data-pos="re" class="mm15" href="fa_aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <input data-pos="ab" type="button" value="search" data-panel="search">
+        </div>
+        <p class="mm15 tc">Freshen your table s palette for Sunday brunch. <a class="bd15" href="ba_furnitureKitchenExplore.html">Shop Furniture &amp; Kitchen</a></p>
+    </header>
+    <ol data-flDT="fL" class="pageNav mm10">
+        <li><a href="index.html">HOME</a></li>
+        <li>TERMS AND CONDITIONS</li>
+    </ol>
+    <div class="ftcsConditionsArea mIrr">
+        <div data-pos="re" data-ba="bf" class="titleBox tc">
+            <h2 data-pos="re" class="lt48">Terms and conditions</h2>
+            <p data-pos="re" class="bk16_25">Our Customer Service team are real people in San Francisco, here to help. If you have any questions, call us at <a href="tel:+4570227523">+45 7022 7523</a>, start a chat, or email <a href="mailto:webshop@fermliving.com">webshop@fermliving.com</a>. As always, thank you for being here.</p>
+        </div>
+        <div>
+            <aside>
+                <div>
+                    <h3 class="bd10_200">CUSTOMER SERVICE</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="ff_faq.html">FAQ</a></li>
+                        <li><a data-dp="block" href="fg_shippingReturn.html">Shipping &amp; Return</a></li>
+                        <li class="bd15">Terms and conditions</li>
+                        <li><a data-dp="block" href="fi_privacyPolicy.html">Privacy policy</a></li>
+                        <li><a data-dp="block" href="fj_cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="bd10_200">CONTACT CUSTOMER SERVICE</h3>
+                    <address class="bk15">
+                        <a data-dp="block" href="mailto:webshop@fermliving.com">webshop@fermliving.com</a>
+                        <a data-dp="block" href="tel:+4570227523">+ 45 7022 7523</a>
+                        <p>Mon-Fri from 8-4 PT</p>
+                    </address>
+                </div>
+            </aside>
+            <article>
+                <h3 class="bk26">Terms and conditions</h3>
+                <p class="bk15">These terms and conditions apply to private consumers' purchase of goods in ferm LIVING's webshop. It is not possible to give in VAT/CVR. numbers in the webshop. If you wish to shop on behalf of a business, please contact us via our contact form. If you place an order in the webshop on behalf of a business within the EU, you are responsible for claiming the VAT, not ferm LIVING ApS.  </p>
+                <p class="bk15">The website is owned by ferm LIVING ApS, Kuglegaardsvej 1-5, 1434 Copenhagen K, Denmark, telephone: +45 7022 7523, e-mail: webshop@fermliving.com, CVR.: 30070186.</p>
+                <p class="bk15">Purchase agreements are contracted in Danish, English or German and are legally binding when you receive an order confirmation. All prices and offers on the webshop are without obligo.</p>
+                <ol class="bk15">
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">1. Payment</b>
+                        <div data-dp="none">
+                            <p>We accept payment with Dankort, Visa, MasterCard, PayPal and Sofort (DE). We do not charge credit card fees. The amount will not be charged until the goods have been shipped.</p>
+                            <p>If you have ordered several goods and one of them is in back order, the payment for these goods will be charged on the date of the shipment.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">2. Prices</b>
+                        <div data-dp="none">
+                            <p>You can choose to have our prices shown in DKK or Euros. The prices include 25 % VAT. If you want shipment to a country outside of the EU where Danish VAT is not collected, the prices will be shown without VAT upon checkout.</p>
+                            <p>For orders with delivery in Germany VAT of 19 % is added.</p>
+                            <p>The freight costs will be added to the price - see freight costs below.</p>
+                            <h4 class="mm15">Klarna</h4>
+                            <p>In cooperation with Klarna Bank AB (publ), Sveavägen 46, 111 34 Stockholm, Sweden, we offer you the following payment options. Payment is to be made to Klarna:</p>
+                            <ul>
+                                <li>- Pay now. Klarna.</li>
+                                <li>- Pay over time with Klarna.</li>
+                                <li>- Buy now, pay later with Klarna.</li>
+                            </ul>
+                            <p>Further information and Klarna's user terms you can find here. General information on Klarna you can find here. Your personal data is handled in accordance with applicable data protection law and in accordance with the information in Klarnas privacy statement.</p>
+                            <p>In order to be able to offer you Klarna’s payment options, we will pass to Klarna certain aspects of your personal information, such as contact and order details, in order for Klarna to assess whether you qualify for their payment options and to tailor the payment options for you. General information on Klarna you can find here. Your personal data is handled in accordance with applicable data protection law and in accordance with the information in Klarnas privacy statement.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">3. Pre-ordering items</b>
+                        <div data-dp="none">
+                            <p>It is possible to pre-order selected items in our online store. It will be clearly marked on the item if it is possible to pre-order. On the item, in the basket and on your order confirmation, you will see the expected delivery date of the product. When you pre-order an item, we will not withdraw the amount until we ship - we simply reserve the amount on your payment card until we are ready to ship the item. Once we are ready to ship your item, we will send you an email.</p>
+                            <p>You may cancel your order at any time before the delivery. If you want to cancel a pre-order, please contact our customer service at webshop@fermliving.com</p>
+                            <p>NOTE: You cannot buy a pre-order item with a product that is in stock. If you want to order more items, please do so on multiple orders.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">4. Made to order</b>
+                        <div data-dp="none">
+                            <p>We offer a selection of made to order furniture items. It will be clearly marked on the item if it is a made to order item. The expected delivery date of the product will be clearly stated on the product page, at checkout and on your order confirmation. When ordering a “Made to order” product, the product is made especially for you - which means that you can expect a longer delivery time than usual. You will be charged immediately upon placing your order. Please note that made to order products cannot be cancelled or returned.</p>
+                            <p>We strive to provide the most accurate estimated arrival date for made to order items. However, fulfillment of made to order items can be delayed due to unforeseen circumstances (delays from the supplier, the shipping carrier, natural disasters etc.). We will of course do our best to keep you informed of any delays to your order. Once we are ready to ship your made to order item(s), we will send you an email.</p>
+                            <p>Note: You cannot buy a made to order item with a product that are in stock. If you want to order items, please do so on multiple orders.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">5. Gift card</b>
+                        <div data-dp="none">
+                            <h4 class="mm15">How do I check the balance on my gift card?</h4>
+                            <p>You can always check the balance on your gift card online through the link in the gift card e-mail. If you no longer have the gift card e-mail, you can contact our customer service at webshop@fermliving.com to get a resend of the e-mail.</p>
+                            <p>PLEASE NOTE: If you were given the gift card as a present, the e-mail will be resent to the gift giver.</p>
+                            <h4 class="mm15">Loss of gift card</h4>
+                            <p>A gift card is a bearer instrument and must therefore be viewed as cash. The person using the gift card can use it as payment. No further identification of the person is required. Even if you have confirmation from the gift giver or a receipt, we must unfortunately insist that only the gift card itself is of value to its bearer. Gift cards which were lost or which expired more than a year ago will not be replaced.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">6. Course of order</b>
+                        <div data-dp="none">
+                            <p>Our webshop works in the following way: You collect the wanted goods in the basket by clicking the button "Add to Cart" (You find the button under each product). When you have collected the goods you want to purchase, click "My bag" (the button is at the top right of the page). Subsequently, a window of your bag containing your wanted goods is opened. Here you can click “go to purchase”. You must check off the box “I accept ferm LIVINGs terms &amp; conditions” before you can go further to check out. We recommend you read the terms and conditions. Please note, if you wish to change the number of products (add/remove) you will have to go back, change “my bag” and then accept the terms and conditions once more. All information you have already typed in, will be saved, so you don’t have to redo it. If you wish to delete the information already typed in - read how to in our Cookie Policy.</p>
+                            <p>After clicking on “Go to check out” you will be forward to our check out page. Here you can type your name, address, phone number and e-mail for the delivery (you can choose to sign up for our newsletter, when typing in your email. This is not mandatory.) You have the possibility to save your information for fast check out next time you shop at our webshop. By clicking on this check field, you accept us saving your information cf. our Privacy Policy. At any time, you can e-mail us and have us delete your information on webshop@fermliving.com. When you have typed all of your information in, you click the button “Continue to shipping”.</p>
+                            <p>After clicking “continue to shipping” you will be redirected to our shipping page. Here you can choose your preferred delivery method. (Please note, large quantity of products may limit the choice of delivery method due to special carrier). After you have chosen you delivery method, the total price of your order will be shown in the right site of the screen right under the order summary. Now, you can click on “Continue to payment”.</p>
+                            <p>On the payment page you can review all your information and you can choose your preferred payment and click “Complete order”. You will be redirected to a secure payment window with your chose payment. Please note, if you have chosen PayPal or SoFort, you will be directed to their login page to complete you purchase. When this is done, you will be redirected back to our success page where you can review your receipt. You will receive and order confirmation shortly via e-mail. You can print out the receipt by using the print function of your computer. The purpose of this receipt is solely to give you transparency and documentation for receiving your order and does not constitute an accept of your order. A purchase agreement is finalized when the completion of the order is confirmed in another e-mail (order confirmation). We keep the receipts and order confirmation (purchase agreements) to administrate your order efficiently - cf. our Privacy Policy.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">7. Delivery time and freight costs</b>
+                        <div data-dp="none">
+                            <p>*These freight prices you see are indicative and not for specific products. The freight rates can vary according to the number of products and the volume of these in your basket. For the specific price for your order, please go to check out and select your delivery country. Xpress delivery are not subject to free delivery.</p>
+                            <p>We process your order as quickly as possible. All orders are fulfilled at our warehouse in Denmark within 1-3 business days. All customers paying by credit card, will, however, be subject to validation controls and ferm LIVING reserves the right to delay an order if we consider further security control to be necessary. When your order is shipped, we will e-mail you the tracking number of the package.</p>
+                            <p>We do not deliver to PO boxes.</p>
+                            <p>In case the delivery appears damaged, we ask you to receive with reservation. If the contents are damaged, please contact customer service at <a href="mailto:webshop@fermliving.com">webshop@fermliving.com</a>.</p>
+                            <p><u data-dp="block" class="mm15">We ship to the following countries:</u> Albania, Andorra, Armenia, Australia, Austria, Belgium, Bosnia-Herzegovina, Bulgaria, Canada, China, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Greece, Grenada, Guatemala, Hong Kong, Hungary, Iceland, India, Indonesia, Ireland, Israel, Italy, Japan, Korea, South, Kuwait, Latvia, Liechtenstein, Lithuania, Luxembourg, Macedonia (FYROM), Malaysia, Malta, Moldova, Monaco, Montenegro, Netherlands, New Zealand, Norway, Poland, Portugal, Romania, Saudi Arabia, Serbia, Singapore, Slovak Republic, Slovakia, Slovenia, South Africa, Spain (not included: Canary or Baleric Island), Sweden, Switzerland, Taiwan, Thailand, Turkey, Turkey, United Arab Emirates, Vietnam.</p>
+                            <p>Below are the estimated delivery times from the time the parcel is shipped from our warehouse. If you place your order before 2PM it will be shipped the same day.</p>
+                            <div>
+                                <h4 class="mm15">Delivery to Germany</h4>
+                                <ul>
+                                    <li>GLS Delivery: 2-3 business days</li>
+                                    <li>DHL Delivery: 2-3 business days</li>
+                                    <li>Express Delivery: 1-2 business days</li>
+                                    <li>Schenker Curbside: 2-3 business days</li>
+                                </ul>
+                                <u>Prices</u>
+                                <ul>
+                                    <li>Purchase below 150 euro: from 8 €</li>
+                                    <li>Purchase above 150 euro: Free delivery*</li>
+                                </ul>
+                                <p>*Does not include deliveries of furniture and larger items (Schenker and Express deliveries).</p>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to Switzerland</h4>
+                                <ul>
+                                    <li>GLS Delivery: 2-5 business days</li>
+                                    <li>Express Delivery: 1-2 business days</li>
+                                    <li>Schenker Curbside: 3-6 business days</li>
+                                </ul>
+                                <u>Prices</u>
+                                <ul>
+                                    <li>Purchase below 150 euro: from 6,50 €</li>
+                                    <li>Purchase above 150 euro: Free delivery*</li>
+                                </ul>
+                                <p>*Does not include deliveries of furniture and larger items (Schenker and Express deliveries).</p>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to France, Finland, Netherlands, Belgium, Luxembourg and Italy</h4>
+                                <ul>
+                                    <li>GLS Delivery: 2-5 business days</li>
+                                    <li>Express Delivery: 1-2 business days</li>
+                                    <li>Schenker Curbside: 3-6 business days</li>
+                                </ul>
+                                <u>Prices</u>
+                                <ul>
+                                    <li>Purchase below 150 euro: from 3,50 €</li>
+                                    <li>Purchase above 150 euro: Free delivery*</li>
+                                </ul>
+                                <p>*Does not include deliveries of furniture and larger items (Schenker and Express deliveries).</p>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to Norway</h4>
+                                <ul>
+                                    <li>GLS Delivery: 2-5 business days</li>
+                                    <li>Express Delivery: 1-2 business days</li>
+                                    <li>Schenker Curbside: 3-6 business days</li>
+                                </ul>
+                                <u>Prices</u>
+                                <ul>
+                                    <li>Purchase below 150 euro: from 20 €</li>
+                                    <li>Purchase above 150 euro: Free delivery*</li>
+                                </ul>
+                                <p>*Does not include deliveries of furniture and larger items (Schenker and Express deliveries).</p>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to Denmark</h4>
+                                <ul>
+                                    <li>GLS Home Delivery: 1-2 business days</li>
+                                    <li>GLS Parcel Shop: 1-2 business days</li>
+                                    <li>GLS Business: 1-2 business days</li>
+                                    <li>Click and Collect: 1-2 business days*</li>
+                                    <li>Schenker and PostNord Curbside: 1-2 business days</li>
+                                </ul>
+                                <u>Prices</u>
+                                <ul>
+                                    <li>Purchase below 1000 DKK: from 39 DKK</li>
+                                    <li>Purchase above 1000 DKK: Free delivery*</li>
+                                </ul>
+                                <p>*Does not include deliveries of furniture and larger items (Schenker and PostNord deliveries)</p>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to Sweden</h4>
+                                <ul>
+                                    <li>GLS Delivery: 2-4 business days</li>
+                                    <li>DHL Delivery: 2-4 business days</li>
+                                    <li>Express Delivery: 1-2 business days</li>
+                                    <li>Schenker Curbside: 2-6 business days</li>
+                                </ul>
+                                <u>Prices</u>
+                                <ul>
+                                    <li>Purchase below 150 euro: from 3,50 €</li>
+                                    <li>Purchase above 150 euro: Free delivery*</li>
+                                </ul>
+                                <p>*Does not include deliveries of furniture and larger items (Schenker and Express deliveries).</p>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to rest of Europe</h4>
+                                <ul>
+                                    <li>GLS Delivery: 3-6 business days</li>
+                                    <li>Express Delivery: 1-2 business days</li>
+                                    <li>Schenker Curbside: 3-7 business days</li>
+                                </ul>
+                                <u>Prices</u>
+                                <ul>
+                                    <li>Purchase below 150 euro: from 8 €</li>
+                                    <li>Purchase above 150 euro: Free delivery*</li>
+                                </ul>
+                                <p>*Does not include deliveries of furniture and larger items (Schenker and Express deliveries).</p>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to Canada</h4>
+                                <ul>
+                                    <li>Express Delivery: 5-7 business days</li>
+                                    <li>Prices from 49 euro</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to Australia, New Zealand, Japan, Thailand, China, Singapore, Hong Kong, South Korea, Malaysia, India and Taiwan</h4>
+                                <ul>
+                                    <li>Express Delivery: 4-7 business days</li>
+                                    <li>Prices from 67 euro</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="mm15">Delivery to all other countries</h4>
+                                <ul>
+                                    <li>Express Delivery: 4-9 business days</li>
+                                    <li>Prices from 67 euro</li>
+                                </ul>
+                            </div>
+                            <u data-dp="block" class="mm15">Delivery of furniture and larger items</u>
+                            <p>When ordering furniture or larger goods, they will be shipped with a special courier to your delivery address. All customers within EU will be contacted by email regarding the time of delivery. You can choose delivery within the next three coming weekdays between 07.00-17.00. Please make sure to be home at the address upon delivery. If you happen not to be home at the agreed time of delivery, your item might be returned to the warehouse. In that case, please contact us for further assistance.</p>
+                            <p>For customers from Norway, UK, Andorra, Albania, Kazakhstan, Lichtenstein, Malta, Montenegro, Macedonia, Serbia, Turkey &amp; Ukraine, you will be contacted by phone and can arrange time of delivery directly with the shipping company.</p>
+                            <u data-dp="block" class="mm15">Special courier services overview</u>
+                            <u data-dp="block" class="mm15">Express Delivery</u>
+                            <p>The parcel will be delivered to the curb, and if this is not possible then as close to your delivery address as possible. You are responsible for getting the delivery from the curb into your home. This service does not include removal of any packaging materials nor pallets. Please note, DSV ship the goods with FedEx or TNT. You will receive your tracking information directly from DSV, FedEx or TNT.</p>
+                            <u data-dp="block" class="mm15">Schenker Curbside</u>
+                            <p>The parcel will be delivered to the curb, and if this is not possible then as close to your delivery address as possible. You are responsible for getting the delivery from the curb into your home. This service does not include removal of any packaging materials nor pallets.</p>
+                            <u data-dp="block" class="mm15">Please note</u>
+                            <p>Delivery to non-bridged islands may be subject to an additional freight fee and such fee will not appear on your order confirmation. In such cases, we will contact you directly with a revised freight quotation and ask you to reconfirm your order.</p>
+                            <u data-dp="block" class="mm15">Taxes for shipping outside of the EU</u>
+                            <p>When ordering goods for delivery outside of the EU, we do not collect Danish VAT; however, import duties and/or taxes according to national laws may be levied when the package arrive at the destination country. Unfortunately, we cannot predict the cost imposed on your order. You are responsible for paying all the associated import costs to the chosen country.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">8. Right of cancellation</b>
+                        <div data-dp="none">
+                            <p>Private persons have the right to cancel within 14 days without stating reasons.</p>
+                            <p>The cancellation deadline shall be 14 days from the day on which you or a third party appointed by you, have or has taken possession of the last goods (14 days for goods on sale).</p>
+                            <p>If you have ordered more items in one order and we are not able to deliver the goods at the same time, the right of cancellation runs from the time where you or another person of your choosing has the last goods in physical possession.</p>
+                            <p>If the deadline expires on a national holiday, June 5, Saturday, Christmas Eve, or New Year's Day, the deadline is extended to the following business day.</p>
+                            <h4 class="mm15">Partial cancellation</h4>
+                            <p>As a rule, the right of cancellation only applies if the entire purchase is returned. However, we offer the possibility for you to return you purchase partially, i.e. if you bought a Wire Basket and a Plant Box and you wish to keep the Wire Basket but return the Plant Box. The procedure and terms are the same as when you cancel the entire order (see further information in the paragraph “Right of Cancellation”). However, in the case of partial cancellation, the freight charges will not be refunded.</p>
+                            <h4 class="mm15">How to make use of your right of cancellation</h4>
+                            <p>You can cancel the order by noticing us thereof. Please contact us via e-mail or telephone letting us know that you want to return:</p>
+                            <address>
+                                <p>E-mail: <a href="mailto:webshop@fermliving.com">webshop@fermliving.com</a></p>
+                                <p>Telephone: <a href="tel:+4570227523">+45 7022 7523</a></p>
+                            </address>
+                            <p>You cannot use your right of cancellation by refusing to accept the goods at delivery, or by omitting to collect it, without at the same time letting us know that you wish to return.</p>
+                            <p>If you do this, we will immediately acknowledge the reception of your cancellation via e-mail.</p>
+                            <p>The deadline for cancellation is kept if you notice us of the cancellation before the time limit expires.</p>
+                            <h4 class="mm15">Return of the goods and return costs</h4>
+                            <p>If you have cancelled an order, you must send or deliver the goods to:</p>
+                            <address>
+                                <p>Ferm Living</p>
+                                <p>C/O DSV Solutions A/S</p>
+                                <p>Mossvej 27</p>
+                                <p>Port 682-696</p>
+                                <p>8700 Horsens</p>
+                                <p>Denmark</p>
+                            </address>
+                            <p>without unnecessary delay and at the latest 14 days after you notice us of your cancellation. The time deadline is kept if you return the goods before the expiry of the 14 days.</p>
+                            <p>The goods cannot be sent COD or without distribution.</p>
+                            <p>Postage as well as any other expenses in relation to returning such as secure packaging must be paid by you, the customer. If a package is not picked up, we reserve the right to deduct the costs incurred by us from the purchase price before reimbursement. Please, be aware that some carriers charge a fine if the package is not picked up.</p>
+                            <p>Upon return, you are responsible for wrapping the goods securely. You hold the risk of the goods as of delivery. You are responsible for the arrival of the package at our warehouse. We recommend using track and trace so that you may follow the shipment. </p>
+                            <p>Please note: The return parcel must be shipped with ‘door to door’ delivery. Return parcels delivered to parcel shops cannot be processed and will be returned to sender.</p>
+                            <p>The return costs in Denmark until 2 kg are expected to be no more than 80 DKK if the goods are sent as a package. See more at Post Nord or GLS Denmark</p>
+                            <p>Some goods cannot - due to their size - be sent by regular mail and will instead have to be returned via a special carrier. This goes for the most furniture such as shelving systems, desks, tables, side tables, chairs, sofas, daybeds, etc.</p>
+                            <p>The cost of return with a special carrier usually starts at 300-400 DKK. The return cost depends on the goods' weight and volume, as well as the distance. Typically, there is a fixed price per kilometre. Please note that there may be a difference in price according to the chosen carrier. You can get offers on the price for returning your goods by contacting a carrier.</p>
+                            <h4 class="mm15">Standard cancellation form</h4>
+                            <p>(This form is only to be filled in and returned when the right to cancel is exercised)</p>
+                            <address>
+                                <p>To: ferm LIVING ApS, Kuglegaardsvej 1-5, 1434 Copenhagen K.</p>
+                                <p>e-mail: webshop@fermliving.com</p>
+                            </address>
+                            <p>I wish to make use of the right to cancel in a purchase agreement concerning the following goods/services:</p>
+                            <ul>
+                                <li>Ordered, date:___________________</li>
+                                <li>Received, date:___________________</li>
+                                <li>Consumer’s name:___________________</li>
+                                <li>Consumer’s address:___________________</li>
+                                <li>Consumer’s signature:___________________</li>
+                                <li>Date:___________________</li>
+                                <li>(only if the content of the form is given on paper)</li>
+                            </ul>
+                            <h4 class="mm15">Refunds</h4>
+                            <p>When you use the right of cancellation for the entire purchase, we refund all payments from you, including any standard freight charges (no return costs). However, if you choose a more expensive form of delivery than our standard delivery, we will not refund any additional costs associated with the more expensive form of delivery.</p>
+                            <p>By partial cancellation, we don’t refund the freight charges. </p>
+                            <p>We refund the amount without undue delay and in any case no later than 14 days from the date of receiving your notice. However, we reserve the right to hold the return payment until we have received the goods you returned, or you have presented documentation confirming that you have returned the items before we have received them.</p>
+                            <p>We can withhold the reimbursement until we have received the refunded items or you have sent documentation proving the return of the products.</p>
+                            <p>We will complete such compensation via the same means of payment as you used for the original transaction (including gift cards). In any case, you will not be charged any fees as a consequence of the reimbursement.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">9. Trying the goods and packaging</b>
+                        <div data-dp="none">
+                            <p>You are only liable for any possible decrease of the items’ value caused by the handling of the goods other than what is necessary to determine the character and features of the goods, as well as the way it works. You may examine the goods in the same way as one can and may in a physical store, but you may not start using it, e.g. by removing any stickers or hang tags. If you have used the goods in a way that is not allowed in a physical store, causing that we cannot resell it or sell it at full price again, you must expect us to deduct the decrease of value from your reimbursement. If the goods no longer have market value, we will not reimburse your purchase.</p>
+                            <p>Lacking original packing may constitute a decrease in value so to be certain to get a full refund it is recommended to return the goods in original packaging.</p>
+                            <p>Furthermore, you should make sure that the goods are safely wrapped when returning it. You are responsible for the package/the goods until we receive them. Save the receipt of sending as well as track and trace number, if possible.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">10. Claims</b>
+                        <div data-dp="none">
+                            <p>If you purchase goods that have a defect the Danish Sale of Goods Act applies.</p>
+                            <p>You can make your claim with 24 months from time of delivery by addressing us at Kuglegaardsvej 1-5, 1434 Copenhagen K, webshop@fermliving.com or +45 70 22 75 23. You must, however, always make your claim within "reasonable time" upon discovering the defect. We recommend that you file your complaint as soon as possible and within 2 months after noticing the defect.</p>
+                            <p>If you need to report a problem with a product, you can do so by using our product claim form. The product(s) in question must have been purchased in the official ferm LIVING webshop. If the product(s) was purchased at one of our retailers, please contact the point of purchase directly.</p>
+                            <p>You can find our product claim form <a href="fd_claimForm.html">here</a>.</p>
+                            <p>Once the product claim form has been filled out and sent through via the link, we will get back to you within 3 business days. Should you have any questions regarding the claim process, please contact our Customer Service Team at webshop@fermliving.com.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">11. Complaint to authority</b>
+                        <div data-dp="none">
+                            <p>If we cannot agree on the handling of the claim, you may file a complaint to the EU Online Dispute Resolution. If you want to make use of the EU Online Dispute Resolution, you can use this link: http://ec.europa.eu/odr</p>
+                            <p>When filing a complaint, you must give this e-mail address: <a href="mailto:webshop@fermliving.com">webshop@fermliving.com</a></p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">12. Laws and venue</b>
+                        <div data-dp="none">
+                            <p>Danish law shall apply to any purchase made in the webshop, and the venue is The City Court of Copenhagen. However, absolute national legislation may apply upon delivery outside of Denmark.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">13. Disclaimer</b>
+                        <div data-dp="none">
+                            <p>ferm LIVING may at any time change the content of this site. ferm LIVING cannot be held responsible for any damages caused as a result of using the site or for that matter lacking access to the website.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">14. Fair use policy</b>
+                        <div data-dp="none">
+                            <p>Our Fair Use Policy sets forth the guidelines and expectations for the utilization of promotional codes, discounts, gifts, and offers in our online store. The purpose of this policy is to ensure an exceptional shopping experience for all customers, while discouraging any behavior that exploits our services, other customers, our business, or the environment.</p>
+                            <p>Promotional codes and discounts are intended for personal use and enjoyment by customers. We expect customers to utilize these codes in an honest and fair manner.</p>
+                            <p>Examples of dishonest use include, but are not limited to the following:</p>
+                            <ol>
+                                <li>1. Sharing promotional codes with individuals who are not eligible or authorized to use them.</li>
+                                <li>2. Engaging in fraudulent activities with the intent of obtaining unauthorized promotional codes or discounts.</li>
+                                <li>3. Providing false or misleading information to appear eligible for a promotional code or misrepresenting eligibility criteria.</li>
+                            </ol>
+                            <p>In order to protect our company and ensure fair treatment of all customers, we reserve the right to take necessary actions if we suspect any dishonest use of promotional codes. These actions may include, but is not limited to, the following measures:</p>
+                            <ol>
+                                <li>1. We may verify the eligibility of customers using promotional codes by requesting additional information or documentation.</li>
+                                <li>2. In cases where a violation is suspected, we may temporarily suspend the customer's order while conducting an investigation to prevent further misuse.</li>
+                                <li>3. We may cancel any benefits obtained through the dishonest use of promotional codes</li>
+                                <li>4. We reserve the right to refuse or cancel an order if we have reasonable grounds to believe that the customer is attempting to commit fraud or exploit our services to obtain promotional codes inappropriately.</li>
+                            </ol>
+                            <p>We value the integrity of our promotions and discounts, and we appreciate your cooperation in adhering to these guidelines. By doing so, we can maintain a fair and enjoyable shopping experience for all our customers.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">15. Rights</b>
+                        <div data-dp="none">
+                            <p>All rights to the brand ”ferm LIVING” are owned by ferm LIVING ApS. It is not allowed to use ferm LIVING ApS’ brands without explicit consent. You can contact ferm LIVING by phone or e-mail to get acquiescence. The copyright for the design of the website as well as texts and images belong to ferm LIVING ApS. However, the texts may be reproduced with proper references. Furthermore, it is allowed to link to all material on this website. ferm LIVING has all the design rights of the products shown on the website. Any production, marketing or sale of replicas of the products is considered a violation of ferm LIVING’s immaterial rights.</p>
+                        </div>
+                    </li>
+                    <li data-pos="re" data-ba="bf">
+                        <b data-dp="block" class="mm18">16. Imprint</b>
+                        <div data-dp="none">
+                            <strong data-dp="block" class="mm15">Responsible for the content on fermliving.com:</strong>
+                            <address>
+                                ferm LIVING ApS, Kuglegaardsvej 1-5 , DK-1434 Copenhagen K.
+                                <cite data-dp="block">CEO: Peter M. Vedel</cite>
+                            </address>
+                            <p><strong class="mm15">Contact:</strong> +45 7022 7523</p>
+                            <p>For technical issues or content related questions related to this website, please contact us via our contact form.</p>
+                            <p><strong class="mm15">CVR number:</strong> 30070186</p>
+                            <strong data-dp="block" class="mm15">Complaint to Authority:</strong>
+                            <p>If we cannot agree on the handling of the claim, you may file a complaint to the EU Online Dispute Resolution. If you want to make use of the EU Online Dispute Resolution, you can use this link: <a href="http://ec.europa.eu/odr">http://ec.europa.eu/odr</a>  When filing a complaint, you must give this e-mail address: <a href="mailto:webshop@fermliving.com">webshop@fermliving.com</a></p>
+                            <p>Download our terms and conditions <a class="mm15" href="fh_termsConditions.html">here</a>.</p>
+                            <time datetime="2024-06-24">Updated 24 June, 2024.</time>
+                        </div>
+                    </li>
+                </ol>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2 class="mm11_100">WELCOME TO OUR HOME</h2>
+            <label data-dp="block" for="userEmail" class="bk13">Subscribe to our newsletter and be among the first to hear about new arrivals, sale, events and  special offers.</label>
+            <form>
+                <div data-fl="fL">
+                    <input class="bk26" type="email" placeholder="Enter Email Address" title="Enter Email Address" required id="userEmail">
+                    <input type="submit" value="Subscribe">
+                    <mark data-dp="none" class="bk13 invalidMsg">Invalid email address</mark>
+                    <mark data-dp="none" class="bk13 validMsg">This is the correct email format.</mark>
+                </div>
+                <input data-dp="none" type="checkbox" id="ck_subscribeAgree">
+                <label data-dp="block" for="ck_subscribeAgree" class="mm12">By signing up, you agree to receive our newsletter and accept our <a class="mm12" href="fi_privacyPolicy.html">Privacy Policy</a>. You can  unsubscribe anytime.</label>
+            </form>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h3 class="mm13">Products</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fb_giftCards.html">Gift Card</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://e.issuu.com/embed.html?d=product_overview_2024&u=fermliving">Catalogues</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://fermliving.presscloud.com/digitalshowroom/#/gallery/assembly-manuals-world">Product manuals</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/FermLiving_Fabric_LeatherOverview_SS25_61f9bc57-1969-47f3-a932-55ce97fcbd0a.pdf?v=1747313550">Fabric Overview</a></li>
+                        <li><a data-dp="block" href="fc_responsibleProducts.html">Responsible Products</a></li>
+                        <li><a data-dp="block" href="fd_claimForm.html">Product Claim Form</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">Customer Service</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fd_claimForm.html">Contact</a></li>
+                        <li><a data-dp="block" href="fe_storeLocator.html">Store Locator</a></li>
+                        <li><a data-dp="block" href="ff_faq.html">FAQ</a></li>
+                        <li><a data-dp="block" href="fg_shippingReturn.html">Shipping &amp; Return</a></li>
+                        <li><a data-dp="block" href="fh_termsConditions.html">Terms and conditions</a></li>
+                        <li><a data-dp="block" href="fi_privacyPolicy.html">Privacy policy</a></li>
+                        <li><a data-dp="block" href="fj_cookies.html">Cookies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">About ferm LIVING</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fa_aboutUs.html">About us</a></li>
+                        <li><a data-dp="block" href="fk_career.html">Career</a></li>
+                        <li><a data-dp="block" href="fl_contractCases.html">Contract cases</a></li>
+                        <li><a data-dp="block" href="fm_imprintRights.html">Imprint &amp; Rights</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-dp="flex">
+            <h2 data-dp="flex" class="bd10">
+                <img src="images/favicon.png" alt="Thank you for visiting ferm LIVING">ferm LIVING
+            </h2>
+            <div data-dp="flex">
+                <a target="_blank" href="https://www.youtube.com/user/fermliving">ferm LIVING youtube</a>
+                <a target="_blank" href="https://www.tiktok.com/@fermliving_official">ferm LIVING tiktok</a>
+                <a target="_blank" href="https://www.instagram.com/fermliving/">ferm LIVING instagram</a>
+                <a target="_blank" href="https://www.facebook.com/fermLIVING/">ferm LIVING facebook</a>
+                <a target="_blank" href="https://kr.pinterest.com/fermliving/">ferm LIVING pinterest</a>
+                <p class="mm10">ferm LIVING Aps CVR No. 30070186</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fermLIVING.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <title>ferm LIVING</title>
+</head>
+<body>
+    <div id="cart">
+        <div data-pos="ab" id="dltCart_Popup">
+            <h3 class="mm26">Delete product</h3>
+            <p class="bk12">Are you sure you want to delete it? <br> This action cannot be undone.</p>
+            <input type="button" value="Cancel" class="mm15 closeBtn">
+            <input type="button" value="Delete" class="mm15">
+        </div>
+        <form action="ja_checkout_mycart.html"> 
+            <div data-dp="flex">
+                <input type="button" value="close" class="closeBtn">
+                <h2 class="bk30">Shopping Cart (<span class="count">2</span>)</h2>  
+                <input class="mm13" type="submit" value="Checkout">
+            </div>
+            <div data-fl="fL">
+                <span data-dp="block" class="mm15">Items<mark data-pos="re" data-ba="bf" class="bk10">items In cart are not reserved</mark></span>
+                <span data-dp="block" class="mm15">Quantity</span>
+                <ul>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_01.webp" alt="Rotben - Sculptural Piece black product image">
+                            <b class="mm15">Rotben - Sculptural Piece</b>
+                            <span class="bk15">Black</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">545</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                    <li data-flDT="fL">
+                        <div data-fl="fL">
+                            <img src="images/cartProduct_02.webp" alt="Benzon White and Brown product image">
+                            <b class="mm15">Benzon</b>
+                            <span class="bk15">White/Brown</span>
+                        </div>
+                        <div data-fl="fL">
+                            <input type="button" value="quantityMinus">
+                            <input title="Number of products" type="number" class="mm13 tc" value="1" min="1" max="5" step="1">
+                            <input type="button" value="quantityPlus">
+                        </div>
+                        <div>
+                            <strong data-dp="block" class="mm18">EUR <span class="basePrice">39</span>,00</strong>
+                            <input data-popup="dltCart_Popup" class="mm13" type="button" value="Remove">
+                        </div>
+                    </li>
+                </ul>
+                <p data-dp="none" class="mm15 emptyCart">Your Shopping Cart is Empty</p>
+            </div>
+            <div>
+                <div data-dp="flex">
+                    <h3 class="mm15">Total</h3>
+                    <strong class="mm26">EUR <span class="totalPrice">584</span>,00</strong>
+                    <input class="mm15" type="submit" value="Checkout">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="search">
+        <input data-pos="ab" type="button" value="close" class="closeBtn">
+        <div data-pos="re">
+            <form>
+                <input class="bk26" type="search" placeholder="Search ferm LIVING" title="search for products">
+                <input data-pos="ab" type="submit" value="enter">
+            </form>
+        </div>
+    </div>
+    <header>
+        <div data-dp="flex">
+            <div>
+                <input class="bd10_200" type="button" value="COMPANY" data-mui="muiSubMenu">
+                <ul data-flDT="fL" class="mm12" id="muiSubMenu">
+                    <li><a href="k_stories.html">Inspiration</a></li>
+                    <li><a href="k_boutique.html">Our World</a></li>
+                    <li><a href="fb_giftCards.html">Gift Cards</a></li>
+                    <li><a href="fe_storeLocator.html">Store Locator</a></li>
+                </ul>
+            </div>
+            <div data-fl="fL" class="mm12">
+                <a data-dp="block" class="login" href="hb_accountOverview.html">Welcome jennie!</a>
+                <button data-pos="re" data-ba="bf" type="button" data-dp="block" data-panel="cart">cart</button>
+                <span class="count tc">2</span>
+            </div>
+        </div>
+        <div data-pos="re">
+            <h1>
+                <a data-dp="block" href="index_signIn.html">
+                    <img src="images/logo_CS01.svg" alt="welcome to ferm LIVING">
+                </a>
+            </h1>
+            <input type="button" value="muiMenu" data-panel="muiMenu">
+            <nav id="muiMenu">
+                <button type="button" class="closeBtn">close</button>
+                <h1>
+                    <a data-dp="block" href="index_signIn.html">
+                        <img src="images/logo_CS13.svg" alt="welcome to ferm LIVING">
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Living</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_01.png" alt="Outdoor seating image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Outdoor seating</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="aa_livingExplore.html">Living Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">OUTDOOR LIVING</h2>                   
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ab_list01_outdoorLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ab_list02_outdoorAcc.html">Outdoor accessories</a></li>
+                                            <li><a data-dp="block" href="ab_list03_outdoorSeating.html">Outdoor seating</a></li>
+                                            <li><a data-dp="block" href="ab_list04_outdoorTables.html">Outdoor tables</a></li>
+                                            <li><a data-dp="block" href="ab_list05_plantPots.html">Plant pots</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">GREEN LIVING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ac_list01_greenLivingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ac_list02_plantBox.html">Plant box</a></li>
+                                            <li><a data-dp="block" href="ac_list03_potsVases_1p.html">Pots and vases</a></li>
+                                            <li><a data-dp="block" href="ac_list04_plantstandsHolders.html">Plant stands and holders</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RESPONSIBLE PRODUCTS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="ad_list01_responsibleAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="ad_list02_responsibleLiving_1p.html">Responsible LIVING products</a></li>
+                                            <li><a data-dp="block" href="ad_list03_responsibleKids_1p.html">Responsible KIDS products</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Furniture &amp; Kitchen</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_02.png" alt="Insert Side Table image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Insert Side Table</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ba_furnitureKitchenExplore.html">Furniture &amp; Kitchen Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">FURNITURE</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bb_list01_furnitureAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bb_list02_chairsBenches.html">Chairs and benches</a></li>
+                                            <li><a data-dp="block" href="bb_list03_tables.html">Tables</a></li>
+                                            <li><a data-dp="block" href="bb_list04_storageShelves.html">Storage and shelves</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">KITCHEN</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bc_list01_kitchenAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="bc_list02_glassesCups.html">Glasses and cups</a></li>
+                                            <li><a data-dp="block" href="bc_list03_platesBowls.html">Plates and bowls</a></li>
+                                            <li><a data-dp="block" href="bc_list04_kitchenTextiles.html">Kitchen textiles</a></li>
+                                            <li><a data-dp="block" href="bc_list05_kitchentoolsUtensils.html">Kitchen tools and utensils</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">SOFAS AND DAYBEDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="bd_list01_sofasAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="bd_list02_dase.html">Dase</a></li>
+                                            <li><a data-dp="block" href="bd_list03_rico.html">Rico</a></li>
+                                            <li><a data-dp="block" href="bd_list04_catena.html">Catena</a></li>
+                                            <li><a data-dp="block" href="bd_list05_turn.html">Turn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Decor &amp; Lighting</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_03.png" alt="Klint Tape Dispenser image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Klint Tape Dispenser</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ca_decorLightingExplore.html">Decor &amp; Lighting Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">ACCESSORIES &amp; DECOR</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cb_list01_accDecorAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cb_list02_accessories.html">Accessories</a></li>
+                                            <li><a data-dp="block" href="cb_list03_decorations.html">Decorations</a></li>
+                                            <li><a data-dp="block" href="cb_list04_candlesCandleholder.html">Candles and candleholders</a></li>
+                                            <li><a data-dp="block" href="cb_list05_hooksHolders.html">Hooks and holders</a></li>
+                                            <li><a data-dp="block" href="cb_list06_mirrors.html">Mirrors</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">LIGHTING</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cc_list01_lightingAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="cc_list02_floorLamps.html">Floor lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list03_tableLamps.html">Table lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list04_wallLamps.html">Wall lamps</a></li>
+                                            <li><a data-dp="block" href="cc_list05_pendantLamps.html">Pendant lamps</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">WALLPAPER</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="cd_list01_wallpaperAll.html">All products</a></li>
+                                            <li><a data-dp="block" href="cd_list02_katieScott.html">ferm LIVING x Katie Scott</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">Textiles</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_04.png" alt="Daze Bedspread image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Daze Bedspread</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="da_textilesExplore.html">Textiles Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">TEXTILES</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="db_list01_textileAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="db_list02_cushions.html">Cushions</a></li>
+                                            <li><a data-dp="block" href="db_list03_bedding.html">Bedding</a></li>
+                                            <li><a data-dp="block" href="db_list04_throwsBlankets.html">Throws and blankets</a></li>
+                                            <li><a data-dp="block" href="db_list05_towels.html">Towels</a></li>
+                                            <li><a data-dp="block" href="db_list06_showerCurtains.html">Shower curtains</a></li>
+                                            <li><a data-dp="block" href="db_list07_bagBaskets.html">Bags and baskets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="bd10_200">RUGS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="dc_list01_rugsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="dc_list02_rectangularRugs.html">Rectangular rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list03_roundRugs.html">Round rugs</a></li>
+                                            <li><a data-dp="block" href="dc_list04_matsRunners.html">Mats and runners</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <b data-dp="block" data-pos="re" class="mm15">KIDS</b>
+                        <div>
+                            <div>
+                                <figure>
+                                    <img src="images/gnb_05.png" alt="Benzon, Mumbo, Donna, Elly image">
+                                    <figcaption>
+                                        <small class="bd10_200">FEATURED</small>
+                                        <span class="mm15_20">Benzon, Mumbo, Donna, Elly</span>
+                                    </figcaption>
+                                </figure>
+                                <div data-flDT="fL">
+                                    <a class="mm15 arrowBoxBtn notfL" href="ea_kidsExplore.html">KIDS Explore</a>
+                                    <div>
+                                        <h2 class="bd10_200">KIDS</h2>
+                                        <ul class="mm13">
+                                            <li><a data-dp="block" href="eb_list01_kidsAll_1p.html">All products</a></li>
+                                            <li><a data-dp="block" href="eb_list02_kidsObjects_1p.html">Kids objects</a></li>
+                                            <li><a data-dp="block" href="eb_list03_kidsFurniture.html">Kids furniture</a></li>
+                                            <li><a data-dp="block" href="eb_list04_kidsTextiles.html">Kids textiles</a></li>
+                                            <li><a data-dp="block" href="eb_list05_kidsRugs.html">Kids rugs</a></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-dp="block" data-pos="re" class="mm15" href="fa_aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <input data-pos="ab" type="button" value="search" data-panel="search">
+        </div>
+        <p class="mm15 tc">Freshen your table s palette for Sunday brunch. <a class="bd15" href="ba_furnitureKitchenExplore.html">Shop Furniture &amp; Kitchen</a></p>
+    </header>
+    <div class="detailArea">
+        <ol data-flDT="fL" class="pageNav mm10">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ca_decorLightingExplore.html">DECOR &amp; LIGHTING</a></li>
+            <li><a href="cc_list01_lightingAll_1p.html">LIGTHING</a></li>
+            <li><a href="cc_list03_tableLamps.html">TABLE LAMPS</a></li>
+            <li>POEM TABLE LAMP</li>
+        </ol>
+        <div>
+            <aside>
+                <h2 data-pos="re" class="bk32">
+                    <small data-dp="block" class="bd10_200">DECOR &amp; LIGHTING</small>
+                    Poem Table Lamp
+                    <a data-pos="ab" data-dp="block" class="backBtn">go back</a>
+                </h2>
+                <p class="bk15">Drawing inspiration from the opulent details found in Baroque art and architecture, the Poem Table Lamp has a romantic and elegant expression. Made through an intricate process where liquid tissue is sprayed over the lamp's casted aluminium base, the result is a translucent shade that artfully stretches over intricate steel arches, ensuring that the lamp emits a soft, diffused light while resembling a delicate flower. The non-woven polymer shade will beautifully patinate over time, giving it a unique appearance. Place the Poem on your bedside table or let it elegantly illuminate your desk.</p>
+                <div class="mm10">
+                    <span data-dp="inbk">IN STOCK</span>
+                    <span data-dp="inbk">SKU: 1104267055</span>
+                </div>
+                <ul>
+                    <li data-dp="inbk"><a data-dp="block" class="cashmere" href="zc2_detail_lighting_15-1.html">Cashmere</a></li>
+                    <li class="active" data-dp="inbk"><a data-dp="block" class="olive" href="zc2_detail_lighting_15-2.html">Dusty Green</a></li>
+                </ul>
+                <div data-dp="flex">
+                    <label class="mm10" for="qtyText">Qty:</label>
+                    <div data-dp="flex" class="qtyComponent">
+                        <input type="button" value="quantityMinus" id="qtyMinus">
+                        <input class="mm15 tc" type="number" value="1" min="1" max="5" step="1" id="qtyText">
+                        <input type="button" value="quantityPlus" id="qtyPlus">
+                    </div>
+                    <button class="bk15" type="button" data-panel="cart">EUR <strong>269</strong>,00 <b class="mm15">- Add to Cart</b></button>
+                </div>
+                <div>
+                    <button class="mm13 favBtn" type="button">Add to Favorites</button>
+                </div>
+                <ul data-fl="fL">
+                    <li data-pos="re"><a data-dp="block" target="_blank" href="https://www.instagram.com/fermliving/">ferm LIVING instagram</a></li>
+                    <li data-pos="re" data-ba="bf"><a data-dp="block" target="_blank" href="https://www.facebook.com/fermLIVING/">ferm LIVING facebook</a></li>
+                    <li data-pos="re" data-ba="bf"><a data-dp="block" target="_blank" href="https://kr.pinterest.com/fermliving/">ferm LIVING pinterest</a></li>
+                </ul>
+            </aside>
+            <ul class="detail_slider">
+                <li><img src="images/lighting_detail15-2_1.webp" alt="product slider images1"></li>
+                <li><img src="images/lighting_detail15-2_2.webp" alt="product slider images2"></li>
+                <li><img src="images/lighting_detail15-2_3.webp" alt="product slider images3"></li>
+                <li><img src="images/lighting_detail15-2_4.webp" alt="product slider images4"></li>
+            </ul>
+        </div>
+        <article class="bgimg23">
+            <div>
+                <div>
+                    <h3 class="mm12">CARE INSTRUCTIONS</h3>
+                    <p class="bk15">Carefully wipe with a dry cloth. Only use LED Light Bulb</p>
+                </div>
+                <div>
+                    <h3 class="mm12">PRODUCT SPECS</h3>
+                    <ul class="bk15">
+                        <li data-pos="re" data-ba="bf">Color: Dusty Green</li>
+                        <li data-pos="re" data-ba="bf">Size: Ø: 30 x H: 42 cm</li>
+                        <li data-pos="re" data-ba="bf">Weight: 1.8 kg</li>
+                        <li data-pos="re" data-ba="bf">Material: Lampshade made of a steel structure with a sprayed-on polymer skin to softly diffuse the light. Powder coated casted aluminium base with E27 socket with a pull cord on/off switch and 2,6 metre fabric cable</li>
+                        <li data-pos="re" data-ba="bf">Info: Voltage: 220-240V - 50Hz. Light source: E27 max 12 watt LED. Bulb not included. Only approved for EU/NO/CH/UK (UK plug version for UK) and separate version for US. Registered design</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mm12">DELIVERY &amp; RETURN</h3>
+                    <p class="bk15">Please note: All freight prices are calculated by the volume of your chosen product(s). The exact price for your order will be calculated at check-out.For information on estimated delivery time and shipping costs, please see our <a href="fh_termsConditions.html">terms and conditions</a>. <br> View all our shipping prices <a href="fg_shippingReturn.html">here</a>.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <div>
+            <h2 class="mm11_100">WELCOME TO OUR HOME</h2>
+            <label data-dp="block" for="userEmail" class="bk13">Subscribe to our newsletter and be among the first to hear about new arrivals, sale, events and  special offers.</label>
+            <form>
+                <div data-fl="fL">
+                    <input class="bk26" type="email" placeholder="Enter Email Address" title="Enter Email Address" required id="userEmail">
+                    <input type="submit" value="Subscribe">
+                    <mark data-dp="none" class="bk13 invalidMsg">Invalid email address</mark>
+                    <mark data-dp="none" class="bk13 validMsg">This is the correct email format.</mark>
+                </div>
+                <input data-dp="none" type="checkbox" id="ck_subscribeAgree">
+                <label data-dp="block" for="ck_subscribeAgree" class="mm12">By signing up, you agree to receive our newsletter and accept our <a class="mm12" href="fi_privacyPolicy.html">Privacy Policy</a>. You can  unsubscribe anytime.</label>
+            </form>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h3 class="mm13">Products</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fb_giftCards.html">Gift Card</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://e.issuu.com/embed.html?d=product_overview_2024&u=fermliving">Catalogues</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://fermliving.presscloud.com/digitalshowroom/#/gallery/assembly-manuals-world">Product manuals</a></li>
+                        <li><a data-dp="block" target="_blank" href="https://cdn.shopify.com/s/files/1/0150/3336/8640/files/FermLiving_Fabric_LeatherOverview_SS25_61f9bc57-1969-47f3-a932-55ce97fcbd0a.pdf?v=1747313550">Fabric Overview</a></li>
+                        <li><a data-dp="block" href="fc_responsibleProducts.html">Responsible Products</a></li>
+                        <li><a data-dp="block" href="fd_claimForm.html">Product Claim Form</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">Customer Service</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fd_claimForm.html">Contact</a></li>
+                        <li><a data-dp="block" href="fe_storeLocator.html">Store Locator</a></li>
+                        <li><a data-dp="block" href="ff_faq.html">FAQ</a></li>
+                        <li><a data-dp="block" href="fg_shippingReturn.html">Shipping &amp; Return</a></li>
+                        <li><a data-dp="block" href="fh_termsConditions.html">Terms and conditions</a></li>
+                        <li><a data-dp="block" href="fi_privacyPolicy.html">Privacy policy</a></li>
+                        <li><a data-dp="block" href="fj_cookies.html">Cookies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="mm13">About ferm LIVING</h3>
+                    <ul class="bk15">
+                        <li><a data-dp="block" href="fa_aboutUs.html">About us</a></li>
+                        <li><a data-dp="block" href="fk_career.html">Career</a></li>
+                        <li><a data-dp="block" href="fl_contractCases.html">Contract cases</a></li>
+                        <li><a data-dp="block" href="fm_imprintRights.html">Imprint &amp; Rights</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-dp="flex">
+            <h2 data-dp="flex" class="bd10">
+                <img src="images/favicon.png" alt="Thank you for visiting ferm LIVING">ferm LIVING
+            </h2>
+            <div data-dp="flex">
+                <a target="_blank" href="https://www.youtube.com/user/fermliving">ferm LIVING youtube</a>
+                <a target="_blank" href="https://www.tiktok.com/@fermliving_official">ferm LIVING tiktok</a>
+                <a target="_blank" href="https://www.instagram.com/fermliving/">ferm LIVING instagram</a>
+                <a target="_blank" href="https://www.facebook.com/fermLIVING/">ferm LIVING facebook</a>
+                <a target="_blank" href="https://kr.pinterest.com/fermliving/">ferm LIVING pinterest</a>
+                <p class="mm10">ferm LIVING Aps CVR No. 30070186</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
