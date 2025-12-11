@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_무제_그라디언트_24);
+      }
+
+      .cls-2 {
+        fill: url(#_무제_그라디언트_25);
+      }
+
+      .cls-3 {
+        fill: url(#_무제_그라디언트_21);
+      }
+    </style>
+    <linearGradient id="_무제_그라디언트_24" data-name="무제 그라디언트 24" x1="-.04" y1="24" x2="24.09" y2="-.04" gradientUnits="userSpaceOnUse">
+      <stop offset=".09" stop-color="#f9cd66"/>
+      <stop offset=".14" stop-color="#f9c663"/>
+      <stop offset=".2" stop-color="#f9b35b"/>
+      <stop offset=".28" stop-color="#f9944e"/>
+      <stop offset=".37" stop-color="#f9693c"/>
+      <stop offset=".47" stop-color="#f93226"/>
+      <stop offset=".5" stop-color="#f91e1e"/>
+      <stop offset=".51" stop-color="#f12025"/>
+      <stop offset=".58" stop-color="#be315b"/>
+      <stop offset=".66" stop-color="#944088"/>
+      <stop offset=".73" stop-color="#724bab"/>
+      <stop offset=".8" stop-color="#5b53c4"/>
+      <stop offset=".86" stop-color="#4c58d3"/>
+      <stop offset=".91" stop-color="#485ad9"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_21" data-name="무제 그라디언트 21" x1="17.32" y1="6.66" x2="19.58" y2="4.44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7400d4"/>
+      <stop offset="0" stop-color="#7104d4"/>
+      <stop offset=".08" stop-color="#641ed5"/>
+      <stop offset=".16" stop-color="#5a34d6"/>
+      <stop offset=".26" stop-color="#5245d7"/>
+      <stop offset=".38" stop-color="#4c51d8"/>
+      <stop offset=".54" stop-color="#4858d8"/>
+      <stop offset="1" stop-color="#485ad9"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_25" data-name="무제 그라디언트 25" x1="7.61" y1="16.44" x2="16.17" y2="7.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9cd66"/>
+      <stop offset=".51" stop-color="#f91e1e"/>
+      <stop offset="1" stop-color="#485ad9"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M17,2c2.76,0,4.99,2.24,5,5v10c0,2.76-2.24,4.99-5,5H7c-2.76,0-4.99-2.24-5-5V7c0-2.76,2.24-4.99,5-5h10M17,0H7C3.15,0,0,3.15,0,7v10c0,3.85,3.15,7,7,7h10c3.85,0,7-3.15,7-7V7c0-3.85-3.15-7-7-7Z"/>
+  <path class="cls-3" d="M18.5,7c-.83,0-1.5-.67-1.5-1.5s.67-1.5,1.5-1.5,1.5.67,1.5,1.5-.67,1.5-1.49,1.5h-.01Z"/>
+  <path class="cls-2" d="M12,8c2.21,0,4,1.79,4,4s-1.79,4-4,4-4-1.79-4-4,1.79-4,4-4M12,6c-3.31,0-6,2.69-6,6s2.69,6,6,6,6-2.69,6-6-2.69-6-6-6Z"/>
+</svg>
