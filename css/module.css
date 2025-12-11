@@ -1,0 +1,236 @@
+:root{
+    --GS01:#ffffff;
+    --GS02:#F5F5F5;
+    --GS03:#D1D1D1;
+    --GS04:#C4C4C4;
+    --GS05:#B8B8B8;
+    --GS06:#9A9A9A;
+    --GS07:#8D8D8D;
+    --GS08:#707070;
+    --GS09:#525252;
+    --GS10:#4A4A4A;
+    --GS11:#373737;
+    --GS12:#262626;
+    --GS13:#000000;
+
+    --CS01:#F5F4EE;
+    --CS02:#D1CCC6;
+    --CS03:#C4BFB8;
+    --CS04:#B8B1AA;
+    --CS05:#9A8D81;
+    --CS06:#8D7D6C;
+    --CS07:#706356;
+    --CS08:#5D5044;
+    --CS09:#52483D;
+    --CS10:#4A433E;
+    --CS11:#3C3229;
+    --CS12:#373028;
+    --CS13:#26211B;
+
+    --SC01:#005B49;
+    --SC02:#566538;
+    --SC03:#D4E4B0;
+    --SC04:#E0720E;
+    --SC05:#CC0000;
+    --SC06:#963500;
+    --SC07:#4A2604;
+    --SC08:#4A433E;
+
+    --SP5: 5px;
+    --SP10: 10px;
+    --SP15: 15px;
+    --SP20: 15px;
+    --SP25: 20px;
+    --SP30: 25px;
+    --SP35: 30px;
+    --SP40: 35px;
+    --SP50: 45px;
+    --SP60: 55px;
+
+    --LH16 : 16px;
+    --LH18 : 18px;
+    --LH19 : 19px;
+    --LH21 : 21px;
+    --LH22 : 22px;
+    --LH24 : 24px;
+}
+
+body{
+    font-family: 'BentonSans';
+}
+
+.note{color: var(--SC01);}
+[class^="lt"]{font-weight: 300;}
+[class^="bk"]{font-weight: 400;}
+[class^="mm"]{font-weight: 500;}
+[class^="bd"]{font-weight: 700;}
+
+[class*="10"]{font-size: 10px;}
+[class*="10_40"]{font-size: 10px; letter-spacing: 0.02em;} 
+[class*="10_200"]{font-size: 10px; letter-spacing: 2px;} 
+[class*="11_100"]{font-size: 11px; letter-spacing: 1px;} 
+[class*="12"]{font-size: 12px;}
+[class*="13"]{font-size: 13px;}
+[class*="13_20"]{font-size: 13px; letter-spacing: 0.013em;}
+[class*="15"]{font-size: 15px;}
+[class*="15_20"]{font-size: 15px; letter-spacing: 0.013em;}
+[class*="16"]{font-size: 16px;}
+[class*="16_25"]{font-size: 16px; letter-spacing: 0.016em;}
+
+
+@media screen and (max-width:767px) {
+
+    :root{
+        --SP45: 25px;
+        --SP55: 45px;
+        --SP65: 55px;
+        --SP70: 55px;
+        --SP75: 25px;
+        --SP80: 55px;
+        --SP90: 55px;
+        --SP95: 25px;
+        --SP100: 45px;
+        --SP105: 55px;
+        --SP120: 55px;
+        --SP140: 45px;
+
+        --LH30 : 24px;
+        --LH32 : 24px;
+        --LH38 : 24px;
+        --LH55 : 32px;
+        --LH70 : 55px;
+    }
+    [class*="18"]{font-size: 16px;}
+    [class*="24"]{font-size: 18px;}
+    [class*="26"]{font-size: 18px;}
+    [class*="30"]{font-size: 18px;}
+    [class*="32"]{font-size: 18px;}
+    [class*="48"]{font-size: 26px;}
+    [class*="60"]{font-size: 32px;}
+
+    [class*="bk24"]{font-weight: 500;}
+    [class*="bk26"]{font-weight: 500;}
+    [class*="bk30"]{font-weight: 500;}
+    [class*="bk32"]{font-weight: 500;}
+
+    .arrowBtn{
+        box-sizing: border-box; display: block;
+        background-size: var(--SP25) auto; background-repeat: no-repeat;
+        background-position: right 50%; transition: all 0.3s ease;
+    }
+    .arrowBoxBtn{
+        background-color: transparent;
+        display: block;
+        box-sizing: border-box; 
+        background-size: var(--SP30) auto; background-repeat: no-repeat;
+        background-position: 93% 50%; transition: all 0.3s ease;
+    }
+    .lineBtn{
+        text-align: center;
+    }
+    .viewBtn{
+        display: block; color: var(--CS01); text-align: center; border: 2px solid #fff; width: 50%; padding: 20px 0; box-sizing: border-box;
+        transition: all 0.5s ease-in-out;
+    }
+}
+/* *mobile */
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+    :root{
+        --SP45: 25px;
+        --SP55: 50px;
+        --SP65: 55px;
+
+        --SP75: 25px;
+        --SP80: 60px;
+        --SP90: 55px;
+        --SP95: 25px;
+        --SP100: 45px;
+        --SP105: 85px;
+        --SP120: 95px;
+        --SP140: 45px;
+
+        --LH38 : 32px;
+        --LH55 : 38px;
+        --LH70 : 55px;
+    }
+    [class*="30"]{font-size: 24px;}
+    [class*="32"]{font-size: 24px;}
+    [class*="48"]{font-size: 32px;}
+    [class*="60"]{font-size: 48px;}
+    
+    [class*="lt48"]{font-weight: 400;}
+    [class*="bk26"]{font-weight: 500;}
+}
+/* *tablet */
+
+@media screen and (min-width: 1280px){
+    :root{
+        --SP45: 40px;
+        --SP55: 50px;
+        --SP65: 60px;
+        --SP75: 70px;
+        --SP80: 75px;
+        --SP90: 85px;
+        --SP95: 90px;
+        --SP100: 95px;
+        --SP105: 100px;
+        --SP120: 115px;
+        --SP140: 135px;
+
+        --LH38: 38px;
+        --LH55: 55px;
+        --LH70: 70px;
+    }
+
+    [class*="30"]{font-size: 30px; letter-spacing: 0.02em;}
+    [class*="32"]{font-size: 32px;}
+    [class*="48"]{font-size: 48px;}
+    [class*="60"]{font-size: 60px;}
+
+    .arrowBtn:hover{
+        background-position: 97% center;
+    }
+    .arrowBoxBtn:hover{
+        background-color: var(--CS05);
+        background-position: 97% center;
+        border-color: var(--CS05);
+    }
+    .viewBtn:hover{
+        color: var(--CS13); background-color: var(--CS01);
+    }
+}
+/* *desktop */
+
+@media screen and (min-width:768px) {
+    :root{
+        --SP70: 65px;
+
+        --LH32: 32px;
+        --LH30: 30px;
+
+    }
+    [class*="18"]{font-size: 18px;}
+    [class*="24"]{font-size: 24px;}
+    [class*="26"]{font-size: 26px;}
+
+    .arrowBtn{
+        box-sizing: border-box; display: block;
+        background-size: var(--SP25) auto; background-repeat: no-repeat;
+        background-position: 93% center; transition: all 0.3s ease;
+    }
+    .arrowBoxBtn{
+        background-color: transparent;
+        display: block;
+        box-sizing: border-box; 
+        background-size: var(--SP30) auto; background-repeat: no-repeat;
+        background-position: 93% center; transition: all 0.3s ease;
+    }
+    .lineBtn{
+        text-align: center;
+    }
+    .viewBtn{
+        display: block; color: var(--CS01); text-align: center; border: 2px solid #fff; width: 50%; padding: 20px 0; box-sizing: border-box;
+        transition: all 0.5s ease-in-out;
+    }
+}
