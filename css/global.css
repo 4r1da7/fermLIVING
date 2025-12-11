@@ -490,7 +490,6 @@ footer > div:last-child > div > a:not(:first-child){
 }
 
 @media screen and (max-width:767px){
-    /* div.acntFavArea div > div.subBox+div > ul > li > figure figcaption::after, */
     div[class*="OrderCp"] > ul > li::after,
     div.chkoutCartArea section form ul li.listTotal::after{
         display: block; content: ''; clear: both;

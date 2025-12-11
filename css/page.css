@@ -3631,7 +3631,7 @@ div.ourstoreArea > div #map {
         display: flex; 
     }
     .detailArea > div .bx-wrapper .bx-controls-direction a{
-        width: 22px;
+        width: 22px; z-index: 10;
     }
     .detailArea > div .bx-wrapper .bx-prev{
         background: url("../images/arrow_left_SC02.svg") no-repeat;
