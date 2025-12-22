@@ -2105,10 +2105,7 @@ div[class^="our"] > div:last-of-type > ol > li > div > p > b{
 div.ourBoutiqueArea > div:last-of-type > ol > li > div > a{
     padding: var(--SP20) var(--SP40); 
 }
-div.ourResponsibleArea > div:last-of-type > ol > li#responsible05 > div > b,
-div.ourResponsibleArea > div:last-of-type > ol > li#responsible10 > div > b,
-div.ourResponsibleArea > div:last-of-type > ol > li#responsible11 > div > b,
-div.ourResponsibleArea > div:last-of-type > ol > li#responsible12 > div > b{
+div.ourResponsibleArea > div:last-of-type > ol > :is(li#responsible05, li#responsible10, li#responsible11, li#responsible12) > div > b{
     color: #fff; cursor: pointer;
 }
 div.ourResponsibleArea > section > ul > li > div > b{
@@ -2354,18 +2351,17 @@ div.chkoutDeliveryArea > section > div:nth-of-type(2) > input[type='checkbox']+l
 div.chkoutDeliveryArea > section > div:nth-of-type(2) > input[type='checkbox']:checked+label{
     background-image: url("../images/checkbox_on_CS07.svg");
 }
-div.chkoutDeliveryArea > section > div#change > ul > li > label{
+div.chkoutDeliveryArea div#change > ul > li > label{
     border: 1px solid var(--CS05);
     padding: var(--SP15) var(--SP15) var(--SP15) 50px;
 }
-div.chkoutDeliveryArea > section > div#change > ul > li > input[type='radio']+label{
+div.chkoutDeliveryArea div#change > ul > li > input[type='radio']+label{
     background: url("../images/radio_off_CS13.svg") no-repeat 18px 15px / 18px;
 }
-div.chkoutDeliveryArea > section > div#change > ul > li > input[type='radio']:checked+label{
+div.chkoutDeliveryArea div#change > ul > li > input[type='radio']:checked+label{
     background-image: url("../images/radio_on_CS13.svg");
 }
-div.chkoutDeliveryArea > section > div#change > form > fieldset > ul > li:first-child,
-div.chkoutDeliveryArea > section > div#change > form > fieldset > ul > li:nth-child(2){
+div.chkoutDeliveryArea div#change > form > fieldset > ul > :is(li:first-child, li:nth-child(2)){
     height: 80px;
 }
 div.chkoutDeliveryArea > section > div#change > form > fieldset > ul > li > ul.select{
@@ -2374,16 +2370,13 @@ div.chkoutDeliveryArea > section > div#change > form > fieldset > ul > li > ul.s
 div.chkoutDeliveryArea > section > div#change > form > fieldset > ul > li:first-child > ul.select{
     z-index: 12;
 }
-div[class*="Shipping"] > section > div:first-of-type > div,
-div[class*="Pay"] > section > div:first-of-type > div{
+:is(div[class*="Shipping"], div[class*="Pay"]) > section > div:first-of-type > div{
     padding: var(--SP40) 4.3%;
 }
-div[class*="Shipping"] > section > div:first-of-type > div > p,
-div[class*="Pay"] > section > div:first-of-type > div > p{
+:is(div[class*="Shipping"], div[class*="Pay"]) > section > div:first-of-type > div > p{
     overflow-wrap: break-word;
 }
-div[class*="Shipping"] > section > div:first-of-type > div > a,
-div[class*="Pay"] > section > div:first-of-type > div > a{
+:is(div[class*="Shipping"], div[class*="Pay"]) > section > div:first-of-type > div > a{
     right: 4.3%;
 }
 div[class*="Shipping"] > section > form > input[type='radio']+label{
@@ -2550,8 +2543,7 @@ div.ourstoreArea > div #map {
     div.chkoutDeliveryArea > section > div:nth-of-type(2) > input[type='checkbox']+label,
     div[class*="OrderCp"],
     div[class*="OrderCp"] > ul > li:nth-child(4) > span:last-of-type,
-    div[class*="OrderCp"] > ul > li:last-child > span,
-    div[class*="OrderCp"] > ul > li:last-child > strong{
+    div[class*="OrderCp"] > ul > li:last-child > :is(span, strong){
         display: block;
     }
     ol.pageNav,
@@ -2575,8 +2567,7 @@ div.ourstoreArea > div #map {
     [class^="our"] b+ol.select::after{
         position: absolute;
     }
-    div.listArea > aside > div > h2,
-    div[class^="acnt"] > aside > div > h2,
+    :is(div.listArea, div[class^="acnt"]) > aside > div > h2,
     .detailArea > div > .bx-wrapper .bx-pager,
     [class^="our"] div.selectWrap{
         position: relative;
@@ -2585,18 +2576,15 @@ div.ourstoreArea > div #map {
     .detailArea > div > aside > div:nth-of-type(2) > button[type='button'],
     div.aboutArea > article:first-of-type > figure > img:first-of-type,
     div.ftetcStoriesArea > article [class*="deploy"] img,
-    div.ftetcStoriesArea > article > ul.listBox > li > img,
-    div.ftetcStoriesArea > article > ul.listBox > li > dl,
+    div.ftetcStoriesArea > article > ul.listBox > li > :is(img, dl),
     div[class^="ft"] > article > div[class^="more"] > ul > li > img,
     [class^="our"] b+ol.select,
     div.ourstoreArea > div > div > address,
-    div.acntOverviewArea > div > div:last-of-type > div#resetPW form fieldset input[type='submit'],
-    div.acntOverviewArea > div > div:last-of-type > div#resetPW form fieldset input[type='button'],
+    div.acntOverviewArea div#resetPW form fieldset :is(input[type='submit'], input[type='button']),
     div.acntAddressArea div[id*="Address"].active > button[type='button'],
     div.acntFavArea div > div.subBox+div > ul > li > figure > img,
     div[class^="chkout"] > section > div.btnBox > input[type='submit'],
-    div.chkoutCartArea > section > form > ul > li > img,
-    div.chkoutCartArea > section > form > ul > li > dl,
+    div.chkoutCartArea > section > form > ul > li > :is(img, dl),
     div.ftetcCareerArea > section > div > a,
     div.ftetcCareerArea > div:last-child > a{
         width: 100%;
@@ -2616,36 +2604,24 @@ div.ourstoreArea > div #map {
     div.chkoutCartArea > section > form > ul > li > div.qtyBox{
         width: 50%;
     }
-    main > section,
+    :is(main, div.ftetcCareerArea) > section,
     div.listArea > div > div.notSlide,
-    div.aboutArea > article:last-of-type,
-    div.aboutArea > figure,
+    div.aboutArea > :is(article:last-of-type, figure),
     [class*="mIrr"] > div.titleBox,
-    div.ftetcStoriesArea > article > div.popupTitle,
-    div.ftetcContractArea > article > div.popupTitle,
-    div.ftetcStoriesArea > article > figure,
-    div.ftetcStoriesArea > article > blockquote,
-    div.ftetcStoriesArea > article > ul.listBox,
-    div.ftetcStoriesArea > article > div.deploy3,
-    div.ftetcStoriesArea > article > p,
-    div.ftetcStoriesArea > article > div.videoBox,
+    :is(div.ftetcStoriesArea, div.ftetcContractArea) > article > div.popupTitle,
+    div.ftetcStoriesArea > article > :is(figure, blockquote, ul.listBox, div.deploy3, p, div.videoBox),
     div.ourResponsibleArea > article[id^="res"] > div,
-    div.ftetcStoriesArea > article > div.txtBox,
-    div.ftetcStoriesArea > article > div.listBox,
+    div.ftetcStoriesArea > article > :is(div.txtBox, div.listBox),
     div.ftetcContractArea > article > figure,
-    div.ourBoutiqueArea > div:first-of-type,
-    div.ourBoutiqueArea > div:last-of-type,
+    div.ourBoutiqueArea > :is(div:first-of-type, div:last-of-type),
     div[class*="ftetcClaimArea"] > section > div.titleBox,
-    div.ftetcCareerArea > section,
     div.ftetcCareerArea > div:last-child{
         padding: 0 3.57%;
     }
     div[class^="ft"] > article > div[class^="more"],
     div.giftArea > section > div:first-child,
-    section.signArea > div > div,
+    :is(section.signArea, div.acntAddressArea, div.acntOrderArea) > div > div,
     div[class^="acnt"] > div > div.subBox+div,
-    div.acntAddressArea > div > div,
-    div.acntOrderArea > div > div,
     div[class*="ftetcClaimArea"] > section > form > div{
         padding: var(--SP80) 3.57%;
     }
@@ -3031,10 +3007,7 @@ div.ourstoreArea > div #map {
     div[class^="chkout"] > section{
         padding: var(--SP60) 3.57% var(--SP120);
     }
-    div[class^="chkout"] > section > div:last-of-type > p{
-        text-align: center;
-    }
-    div[class^="chkout"] > section > div:last-of-type > ul{
+    div[class^="chkout"] > section > div:last-of-type > :is(p, ul){
         text-align: center;
     }
     div[class^="chkout"] > section > div:last-of-type > ul > li:not(:last-child){
@@ -3064,12 +3037,10 @@ div.ourstoreArea > div #map {
     div.chkoutDeliveryArea > section > div:nth-of-type(2) > input[type='checkbox']+label{
         background-position: left top;
     }
-    div[class*="Shipping"] > section > div:first-of-type > div > h3,
-    div[class*="Pay"] > section > div:first-of-type > div > h3{
+    :is(div[class*="Shipping"], div[class*="Pay"]) > section > div:first-of-type > div > h3{
         padding-right: 70px;
     }
-    div[class*="Shipping"] > section > div:first-of-type > div > a,
-    div[class*="Pay"] > section > div:first-of-type > div > a{
+    :is(div[class*="Shipping"], div[class*="Pay"]) > section > div:first-of-type > div > a{
         top: 35px;
     }
     div[class*="Shipping"] > section > form > input[type='radio']+label{
@@ -3437,9 +3408,6 @@ div.ourstoreArea > div #map {
     }
     div.ourstoreArea > div > div > address{
         padding: var(--SP80) 8.33%;
-        /* width: 55.55%;
-        left: 8.33%;
-        top: 50px; */
     }
     div.acntAddressArea > div:last-of-type > div > button[type='button']:first-of-type{
         top: 44px;
@@ -3599,9 +3567,6 @@ div.ourstoreArea > div #map {
     div.exploreArea:not(.bgliving):not(.bgkids) > figure:first-of-type{
         background-size: 100%; 
     }
-    /* div.exploreArea > figure:first-of-type > figcaption{
-        padding: 8.33%;
-    } */
     div.exploreArea > ul:nth-of-type(2) > li > figure{
         background-size: 100% auto;
     }
